@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_3sdp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:id="@+id/lay_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_slot_bg"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:id="@+id/lay_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_form_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Form name"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Dr. Ahmad Bajaber"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_appointment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_3sdp"
+                android:paddingEnd="@dimen/_3sdp"
+                android:text="Appointment Date: 12/03/2019"
+                android:textColor="@color/nav_title_color"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_submission_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_3sdp"
+                android:paddingEnd="@dimen/_3sdp"
+                android:text="Submission Date: 12/03/2019"
+                android:textColor="@color/nav_title_color"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_b"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_view_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_arrow_next"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/view_assessment_result"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

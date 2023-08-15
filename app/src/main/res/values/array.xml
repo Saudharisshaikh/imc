@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>--Select--</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+      <string-array name="id_type">
+        <item>--Select--</item>
+        <item>Iqama No.</item>
+        <item>National ID No.</item>
+        <item>Passport No.</item>
+        <item>Birth Notification</item>
+    </string-array>
+
+
+</resources>

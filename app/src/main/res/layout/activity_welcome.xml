@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color"
+    tools:context="sa.med.imc.myimc.WelcomeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_doc_pic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/option1" />
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_doc_pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_minus15sdp"
+                android:src="@drawable/imc_logo" />
+
+            <ImageView
+                android:id="@+id/iv_text_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/logo_text" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_label_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_text_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="@string/welcome_text"
+                android:textColor="@color/welcome_text_color"
+                android:textSize="@dimen/text_size_extra_big" />
+
+            <LinearLayout
+                android:id="@+id/lay_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_label_welcome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_sign_in"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/button_click_text_white_red"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:background="@drawable/btn_sign_up"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="@string/register_now"
+                    android:textColor="@color/button_click_text_white_blue"
+                    android:textSize="@dimen/text_size_normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_login_guest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bt_login_guest"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="@string/appointment_as_guest"
+                    android:textColor="#2c3e5b"
+                    android:textSize="@dimen/text_size_normal1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/lay_help"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/lay_buttons"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginStart="@dimen/_20sdp"-->
+            <!--android:layout_marginTop="@dimen/_10sdp"-->
+            <!--android:layout_marginEnd="@dimen/_20sdp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/card_find_doctor"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="@dimen/_5sdp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:elevation="@dimen/_5sdp"-->
+            <!--android:visibility="visible"-->
+            <!--app:cardBackgroundColor="@color/colorWhite"-->
+            <!--app:cardCornerRadius="@dimen/_8sdp">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="@dimen/_5sdp">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_find_doctor_icon" />-->
+
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/find_a_doctor"-->
+            <!--android:textColor="@color/text_blue_color"-->
+            <!--android:textSize="@dimen/text_size_normal" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/view_find_a_doctor"-->
+            <!--android:textSize="@dimen/text_size_extra_small" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/card_call_us"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginStart="@dimen/_5sdp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:elevation="@dimen/_5sdp"-->
+            <!--app:cardBackgroundColor="@color/colorWhite"-->
+            <!--app:cardCornerRadius="@dimen/_8sdp">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="@dimen/_5sdp">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_help_icon" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/help"-->
+            <!--android:textColor="@color/text_blue_color"-->
+            <!--android:textSize="@dimen/text_size_normal" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/_5sdp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/have_ques"-->
+            <!--android:textSize="@dimen/text_size_extra_small" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--</LinearLayout>-->
+
+
+            <LinearLayout
+                android:id="@+id/lay_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_language"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/lay_find_doctor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_home_option"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_find_doctor_icon" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/find_a_doctor"
+                        android:textColor="@color/text_blue_color"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/view_find_a_doctor"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lay_call_us"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_home_option"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_help_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/contact_us"
+                        android:textColor="@color/text_blue_color"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/have_ques"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lay_find"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_help"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/lay_health_byte"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_home_option"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_healthbyte_icon" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/health_tips"
+                        android:textColor="@color/text_blue_color"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/health_byte_content"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lay_departments"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_home_option"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_departments" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/departments"
+                        android:textColor="@color/text_blue_color"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/institutes_spec_view"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_virtual_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_find"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/background_home_option"
+                android:padding="@dimen/_13sdp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/iv_virtual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_virtual_reality" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_toEndOf="@+id/iv_virtual"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/virtual_tour_imc"
+                        android:textColor="@color/text_blue_color"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/virtual_tour_description"
+                        android:textSize="@dimen/text_size_extra_small" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_way_finder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_virtual_family"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/background_home_option"
+                android:padding="@dimen/_13sdp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_location_bottom_round" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/iv_find"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/location_map"
+                        android:textColor="@color/text_blue_color"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/view_way_finder"
+                        android:textSize="@dimen/text_size_extra_small" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lay_language"
+                android:layout_below="@+id/lay_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_en_selected"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="EN"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_arabic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_ar_unselected"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="عربى"
+                        android:textColor="@color/text_color_home_blue"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

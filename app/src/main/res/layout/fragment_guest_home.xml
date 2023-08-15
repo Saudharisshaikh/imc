@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_50sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/lay_request_appointment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_home_option"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_med"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_appointment_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/iv_med"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/request_appointment"
+                                android:textColor="@color/text_color_home_blue"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tap_here_complete_form"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_size_extra_small" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/lay_contact_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/background_home_option"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_que1"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/ic_contact_icon_blue" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/iv_que1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/contact_us"
+                                android:textColor="@color/text_color_home_blue"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/have_ques_con"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_size_extra_small" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lay_find_doctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/background_home_option"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_que"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/ic_find_doctor_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/iv_que"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/find_a_doctor"
+                                android:textColor="@color/text_color_home_blue"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/view_find_a_doctor"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_size_extra_small" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:id="@+id/lay_health_byte"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_home_option"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_healthbyte_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:text="@string/health_tips"
+                                android:textColor="@color/text_color_home_blue"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/health_byte_content"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_size_extra_small" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_institutes_spec"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_home_option"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_specialties" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:text="@string/clinics"
+                                android:textColor="@color/text_color_home_blue"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/institutes_spec_view"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_size_extra_small" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:id="@+id/lay_retail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_home_option"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_retails_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:text="@string/retail"
+                                android:textColor="@color/text_color_home_blue"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/view_retail"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_size_extra_small" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_location_map"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_home_option"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:src="@drawable/ic_location_bottom_round" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:text="@string/location_map"
+                                android:textColor="@color/text_color_home_blue"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/location_map_view"
+                                android:textColor="@color/text_grey_color"
+                                android:textSize="@dimen/text_size_extra_small" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/lay_virtual_family"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/background_home_option"
+                        android:padding="@dimen/_13sdp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/iv_virtual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_virtual_reality" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_toEndOf="@+id/iv_virtual"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/virtual_tour_imc"
+                                android:textColor="@color/text_blue_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="@string/virtual_tour_description"
+                                android:textSize="@dimen/text_size_extra_small" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_en_selected"
+                        android:paddingStart="@dimen/_25sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_25sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="EN"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:id="@+id/tv_arabic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_ar_unselected"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="عربى"
+                        android:textColor="@color/text_color_home_blue"
+                        android:textSize="@dimen/text_size_big" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ImageView
+            android:elevation="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/chatBot"
+            android:visibility="invisible"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chat_ic"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp" />
+    </RelativeLayout>
+</RelativeLayout>

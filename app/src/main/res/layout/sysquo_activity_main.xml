@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SYSQUO.Main.MainActivity"
+    android:background="@color/colorPrimaryDark">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/ImageView_ChateBackpressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sysquo_ic_forwardarrow"
+            android:layout_centerVertical="true"
+            android:rotation="180"
+            android:padding="@dimen/_15sdp"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            app:tint="@color/white" />
+        <TextView
+            android:id="@+id/TextView_ChatUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/login"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/ImageView_ChateVideoCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sysquo_ic_videocam"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_15sdp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sysquo_top_white_curved"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayout_Identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/identity_username"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginTop="@dimen/_30sdp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TextInputEditText_Identity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:maxLength="50"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayout_Doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/doctor_name"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginTop="@dimen/_30sdp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TextInputEditText_Doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/black"
+                android:maxLength="50"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_big"
+            android:textColor="@color/white"
+            android:onClick="onClickLogin"
+            android:text="@string/login_button_text"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_200sdp"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:id="@+id/englishLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="5"
+                android:background="@drawable/sysquo_white_rect"
+                android:gravity="center"
+                android:onClick="englishClickM"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/englishIV"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sysquo_ic_us_flag" />
+                <TextView
+                    android:id="@+id/englishTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/englishIV"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/english"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/arabicLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="5"
+                android:background="@drawable/sysquo_white_rect"
+                android:gravity="center"
+                android:onClick="arabicClickM"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/arabicIV"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sysquo_ic_sa_flag" />
+                <TextView
+                    android:id="@+id/arabicTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/arabicIV"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/arabic"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_normal"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

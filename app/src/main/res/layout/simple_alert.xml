@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/bottom_sheet_shap"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_error_red"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:tint="@color/grey_dark_color"/>
+
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/confirm_arrival_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+
+
+        <View
+            android:id="@+id/view_line_top"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_arrival"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/grey" />
+
+
+        <TextView
+            android:id="@+id/buttonOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/btn_sign_up"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/ok"
+            android:textColor="@color/button_click_text_white_blue"
+            android:textSize="@dimen/text_size_small" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

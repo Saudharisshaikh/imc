@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    android:background="@drawable/bt_inbox_white"
+    android:padding="@dimen/_5sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:elevation="@dimen/_3sdp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardPreventCornerOverlap="true">
+
+        <ImageView
+
+            android:id="@+id/iv_user_pic"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/male_img" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/lay_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/cardPic">
+
+
+        <LinearLayout
+            android:id="@+id/lay_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:includeFontPadding="false"
+                android:text="Keven Feil"
+                android:textColor="#01305d"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_3sdp"
+                android:paddingEnd="@dimen/_3sdp"
+                android:text="Nice to meet you, my friend"
+                android:textColor="#6d87a0"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

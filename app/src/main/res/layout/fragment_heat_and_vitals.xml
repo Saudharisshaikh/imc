@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_bg_color"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_220sdp"
+                android:background="@drawable/ic_blue_style_bg_v_calen" />
+
+            <RelativeLayout
+                android:id="@+id/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_back_" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/spartan_semibold"
+                    android:text="@string/heat_amp_vitals"
+                    android:textColor="#ffffff"
+                    android:textSize="17.7sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_430sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/background_home_option">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_dates"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:paddingStart="32dp"
+                        android:paddingTop="32dp"
+                        android:paddingEnd="32dp"
+                        android:paddingBottom="24dp"
+                        android:scrollbarSize="5dp"
+                        android:scrollbarThumbHorizontal="@color/color_ed_green"
+                        android:scrollbars="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/spartan_bold"
+                        android:text="@string/today"
+                        android:textColor="@color/color_ed_green"
+                        android:textSize="16.8sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rv_dates" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout3"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/body_measurement_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/today"
+                        app:layout_constraintTop_toBottomOf="@+id/today"
+                        app:layout_constraintVertical_chainStyle="spread">
+
+                        <ImageView
+                            android:id="@+id/addHeartRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:background="@drawable/green_circle_bg"
+                            android:src="@drawable/ic_add_white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:src="@drawable/ic_heart"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/addHeartRate"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="@string/heart_rate"
+                            android:textColor="@color/color_blue_progress"
+                            android:textSize="13.3sp"
+                            app:layout_constraintBottom_toBottomOf="@id/heart"
+                            app:layout_constraintStart_toEndOf="@id/heart"
+                            app:layout_constraintTop_toTopOf="@id/heart" />
+
+                        <TextView
+                            android:id="@+id/kg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="/bpm"
+                            android:textSize="9sp"
+                            android:textStyle="normal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_heart_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="0"
+                            android:textColor="@color/color_ed_green"
+                            android:textSize="17.7sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/kg"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/body_measurement_background"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                        <ImageView
+                            android:id="@+id/addBloodPressure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:background="@drawable/green_circle_bg"
+                            android:src="@drawable/ic_add_white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/blood_glucose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:src="@drawable/ic_blood_pressure_copy"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/addBloodPressure"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="@string/blood_pressure"
+                            android:textColor="@color/color_blue_progress"
+                            android:textSize="13.3sp"
+                            app:layout_constraintBottom_toBottomOf="@id/blood_glucose"
+                            app:layout_constraintEnd_toStartOf="@id/tv_bp_systolic"
+                            app:layout_constraintStart_toEndOf="@id/blood_glucose"
+                            app:layout_constraintTop_toTopOf="@id/blood_glucose" />
+
+                        <TextView
+                            android:id="@+id/dia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="/dia"
+                            android:textSize="9sp"
+                            android:textStyle="normal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_bp_diastolic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="0.0"
+                            android:textColor="@color/color_ed_green"
+                            android:textSize="17.7sp"
+                            app:layout_constraintBottom_toBottomOf="@id/dia"
+                            app:layout_constraintEnd_toStartOf="@id/dia"
+                            app:layout_constraintTop_toTopOf="@id/dia" />
+
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="/sys"
+                            android:textSize="9sp"
+                            android:textStyle="normal"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_bp_diastolic"
+                            app:layout_constraintEnd_toStartOf="@id/tv_bp_diastolic"
+                            app:layout_constraintTop_toTopOf="@id/tv_bp_diastolic" />
+
+                        <TextView
+                            android:id="@+id/tv_bp_systolic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="0.0"
+                            android:textColor="@color/color_ed_green"
+                            android:textSize="17.7sp"
+                            app:layout_constraintBottom_toBottomOf="@id/textView10"
+                            app:layout_constraintEnd_toStartOf="@id/textView10"
+                            app:layout_constraintTop_toTopOf="@id/textView10" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout4"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/body_measurement_background"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                        <ImageView
+                            android:id="@+id/addGlucose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:background="@drawable/green_circle_bg"
+                            android:src="@drawable/ic_add_white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/blood_gulocose_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:src="@drawable/ic_blood_glucose"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/addGlucose"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="@string/blood_glucose"
+                            android:textColor="@color/color_blue_progress"
+                            android:textSize="13.3sp"
+                            app:layout_constraintBottom_toBottomOf="@id/blood_gulocose_icon"
+                            app:layout_constraintStart_toEndOf="@id/blood_gulocose_icon"
+                            app:layout_constraintTop_toTopOf="@id/blood_gulocose_icon" />
+
+                        <TextView
+                            android:id="@+id/mmol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="/mmol"
+                            android:textSize="9sp"
+                            android:textStyle="normal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_blood_gulocose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="0"
+                            android:textColor="@color/color_ed_green"
+                            android:textSize="17.7sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/mmol"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout5"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/body_measurement_background"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout4"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout4"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                        <ImageView
+                            android:id="@+id/addOxygen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:background="@drawable/green_circle_bg"
+                            android:src="@drawable/ic_add_white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/oxygen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:src="@drawable/ic_oxygen"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/addOxygen"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="@string/blood_oxygen"
+                            android:textColor="@color/color_blue_progress"
+                            android:textSize="13.3sp"
+                            app:layout_constraintBottom_toBottomOf="@id/oxygen"
+                            app:layout_constraintStart_toEndOf="@id/oxygen"
+                            app:layout_constraintTop_toTopOf="@id/oxygen" />
+
+                        <TextView
+                            android:id="@+id/percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="%"
+                            android:textSize="9sp"
+                            android:textStyle="normal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_blood_oxygen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="0"
+                            android:textColor="@color/color_ed_green"
+                            android:textSize="17.7sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/percent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout6"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/body_measurement_background"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+                        <ImageView
+                            android:id="@+id/addBodyTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:background="@drawable/green_circle_bg"
+                            android:src="@drawable/ic_add_white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/body_temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:src="@drawable/ic_body_temp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/addBodyTemp"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="@string/body_temp"
+                            android:textColor="@color/color_blue_progress"
+                            android:textSize="13.3sp"
+                            app:layout_constraintBottom_toBottomOf="@id/body_temp"
+                            app:layout_constraintStart_toEndOf="@id/body_temp"
+                            app:layout_constraintTop_toTopOf="@id/body_temp" />
+
+                        <TextView
+                            android:id="@+id/F"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="/C"
+                            android:textSize="9sp"
+                            android:textStyle="normal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_body_temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:fontFamily="@font/spartan_bold"
+                            android:text="0.0"
+                            android:textColor="@color/color_ed_green"
+                            android:textSize="17.7sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/F"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>

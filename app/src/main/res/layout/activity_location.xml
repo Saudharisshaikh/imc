@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="onNavigation"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="onSearch"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="onDone"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layoutDirection="ltr"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            />
+
+        <ImageView
+            android:onClick="@{onNavigation}"
+            android:id="@+id/ivBack"
+            android:padding="2dp"
+            android:background="@drawable/circle_smokey_white"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_back_blue"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+
+        <ImageView
+            android:onClick="@{onSearch}"
+            android:id="@+id/ivSearch"
+            android:padding="5dp"
+            android:background="@drawable/circle_smokey_white"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivDone"
+            android:src="@drawable/ic_search"
+            app:tint="@color/primary_color_dark"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+        <ImageView
+            android:onClick="@{onDone}"
+            android:id="@+id/ivDone"
+            android:padding="2dp"
+            android:background="@drawable/circle_smokey_white"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_tick"
+            app:tint="@color/primary_color_dark"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

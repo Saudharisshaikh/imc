@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:background="@drawable/ic_blue_style_bg_v_calen" />
+
+
+    <RelativeLayout
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_5sdp"
+
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_" />
+
+        <LinearLayout
+            android:id="@+id/filter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_search"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_filter"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/clinic_spinner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/btn_margin_top_h3"
+        android:layout_marginEnd="@dimen/btn_margin_top_h3"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar">
+
+        <sa.med.imc.myimc.Utils.CustomTypingEditText
+            android:id="@+id/ed_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_title"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_search_grey"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLength="100"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btn_margin_top_h3"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="@string/speciality"
+            android:textColor="@color/text1"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_size_h1"
+            android:background="@color/color_ed_fill">
+
+            <Spinner
+                android:id="@+id/clinic_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_size_h1"
+                android:theme="@style/Spinner"
+                app:backgroundTint="@color/white"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/clinic_spinner_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clinic_spinner_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

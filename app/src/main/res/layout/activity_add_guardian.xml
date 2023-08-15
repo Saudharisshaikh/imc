@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color"
+    android:fitsSystemWindows="true"
+    android:focusable="false"
+    android:focusableInTouchMode="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/mainLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backgroud_style_grey_v"
+                    android:paddingBottom="@dimen/_55sdp">
+
+                    <LinearLayout
+                        android:id="@+id/lay_mrn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_blue_style_bg_v"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_30sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/main_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:theme="@style/AppTheme.AppBarOverlay">
+
+                            <ImageView
+                                android:id="@+id/iv_back"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_back_" />
+
+                            <ImageView
+                                android:id="@+id/iv_edit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:padding="@dimen/_8sdp"
+                                android:src="@drawable/ic_edit"
+                                android:visibility="gone" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_toolbar_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/add_guardian_menu"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_big"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_17sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/guardian_name"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_small"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_17sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_80sdp"
+                            android:background="@color/color_ed_fill"
+                            android:gravity="start"
+                            android:padding="@dimen/_8sdp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_normal"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_17sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/mrn"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <EditText
+                            android:id="@+id/et_mrn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_17sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_80sdp"
+                            android:background="@color/color_ed_fill"
+                            android:gravity="start"
+                            android:inputType="number"
+                            android:maxLength="50"
+                            android:padding="@dimen/_8sdp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_17sdp"
+                            android:layout_marginEnd="@dimen/_80sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/duration_of_guardian"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/text_size_normal" />
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/rd_unlimited"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/check_box_selector"
+                                    android:checked="true"
+                                    android:gravity="start|center_vertical"
+                                    android:padding="@dimen/_8sdp"
+                                    android:text="@string/unlimited"
+                                    android:textColor="@color/colorWhite"
+                                    android:textColorHint="#7aaff3"
+                                    android:textSize="@dimen/text_size_normal" />
+
+                                <RadioButton
+                                    android:id="@+id/rd_no_of_days"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:button="@drawable/check_box_selector"
+                                    android:padding="@dimen/_8sdp"
+                                    android:text="@string/no_of_days"
+                                    android:textColor="@color/colorWhite"
+                                    android:textColorHint="#7aaff3"
+                                    android:textSize="@dimen/text_size_normal" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/et_number_days"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:background="@color/color_ed_fill"
+                                        android:inputType="number"
+                                        android:maxLength="4"
+                                        android:padding="@dimen/_8sdp"
+                                        android:textColor="@color/colorWhite"
+                                        android:textColorHint="#7aaff3"
+                                        android:textSize="@dimen/text_size_normal"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+                            </RadioGroup>
+
+
+                            <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_10sdp"-->
+                            <!--android:padding="@dimen/_5sdp"-->
+                            <!--android:text="@string/consent_des"-->
+                            <!--android:textColor="#cc7aaff3"-->
+                            <!--android:textSize="@dimen/text_size_small" />-->
+
+                            <!--<CheckBox-->
+                            <!--android:id="@+id/check1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:button="@drawable/check_box_selector"-->
+                            <!--android:padding="@dimen/_5sdp"-->
+                            <!--android:text="@string/check1"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:textSize="@dimen/text_size_normal" />-->
+
+                            <!--<CheckBox-->
+                            <!--android:id="@+id/check2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:button="@drawable/check_box_selector"-->
+                            <!--android:padding="@dimen/_5sdp"-->
+                            <!--android:text="@string/check2"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:textSize="@dimen/text_size_normal" />-->
+
+                            <!--<CheckBox-->
+                            <!--android:id="@+id/check3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:button="@drawable/check_box_selector"-->
+                            <!--android:padding="@dimen/_5sdp"-->
+                            <!--android:text="@string/check3"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:textSize="@dimen/text_size_normal" />-->
+
+                            <!--<CheckBox-->
+                            <!--android:id="@+id/check4"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:button="@drawable/check_box_selector"-->
+                            <!--android:padding="@dimen/_5sdp"-->
+                            <!--android:text="@string/check4"-->
+                            <!--android:textColor="@color/colorWhite"-->
+                            <!--android:textSize="@dimen/text_size_normal" />-->
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8sdp">
+
+                                <TextView
+                                    android:id="@+id/tv_active"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="@string/active"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/text_size_normal" />
+
+                                <Switch
+                                    android:id="@+id/switchActive"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:checked="true"
+                                    android:thumb="@drawable/on_switch_active"
+                                    android:track="@drawable/switch_on_off" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_btn_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_80sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/btn_sign_up"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_50sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_50sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/tv_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/done"
+                        android:textColor="@color/button_click_text_white_blue"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <include layout="@layout/content_no_network" />
+
+            <include layout="@layout/content_time_out" />
+
+            <include layout="@layout/content_no_data" />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

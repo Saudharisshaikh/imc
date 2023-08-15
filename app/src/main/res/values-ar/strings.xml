@@ -1,0 +1,1885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">My IMC</string>
+    <string name="imc_network">IMC Network</string>
+    <string name="plesae_try_again">Problem loading data, please try again</string>
+    <string name="please_wait">يرجى الانتظار</string>
+
+   <!-- <string name="payment_error">لا يمكن إتمام الدفع</string> -->
+    <string name="payment_error">Payment Error. If amount is debited, please call +%1$s with transaction details</string>
+
+
+    <string name="plesae_mrn_number">Please check your mrn number</string>
+    <string name="invalid_number">يجب أن يتكون رقم الهاتف المحمول من 10 أرقام ويجب أن يبدأ بـ 05</string>
+    <string name="profile_updated">تم تحديث المعلومات بنجاح</string>
+    <string name="validated_email">التحقق من البريدالالكتروني</string>
+    <string name="emai_not_validate">لا يمكن التحقق من صحة البريد الإلكتروني</string>
+    <string name="email_sent">أرسل البريد الإلكتروني</string>
+    <string name="special_instructions">تنبيه:</string>
+    <string name="complete_appointment_assessment_error">التقيم الطبي متاح خلال %1$d ايام من موعدك المكتمل.</string>
+    <string name="upcoming_appointment_assessment_error">التقيم الطبي متاح فقط خلال %1$d ايام قبل موعدك</string>
+
+
+
+
+    <string name="available">متاح</string>
+    <string name="reserved">غير متاح</string>
+
+    <!--Welcome-->
+
+    <!--«مرحبأ»  to «مرحباً»-->
+    <string name="welcome_text">مرحباً بـكم في\nالمركز الطبي الدولي</string>
+    <string name="welcome_text_FC">Welcome to \nThe First Clinic</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="register_now">فتح ملف</string>
+    <string name="request_appointment">طلب موعد</string>
+    <string name="have_ques">هل لديك أي أسئلة؟ اتصل بنا أو قم بمراسلتنا عبر البريد الإلكتروني</string>
+    <string name="pament_zero">لا يوجد دفع معلق</string>
+
+    <!--In Progress-->
+
+    <!--Login-->
+    <string name="des_signin">تسجيل دخول المريض</string>
+    <string name="select_id">رقم الهوية / الإقامة</string>
+    <string name="mrn">رقم سجل المريض</string>
+
+
+    <string name="login">تسجيل الدخول</string>
+    <string name="or">أو</string>
+    <string name="or_s">أو</string>
+
+    <string name="or_line">-- أو --</string>
+
+    <string name="done">تم</string>
+    <string name="login_id_hint">رقم الهوية / رقم الجواز / تبليغ الولادة</string>
+    <string name="national_id_names">رقم الهوية / رقم الجواز / تبليغ الولادة</string>
+
+    <string name="remember_me">تذكرنى</string>
+
+    <string name="verify_number">تحقق من رقمك!</string>
+    <string name="verify_email">قم بتأكيد بريدك الألكتروني</string>
+    <string name="otp_sent">تم إرسال رمز التحقق على رقمك المسجل
+
+</string>
+    <string name="enter_for_digit">ادخل رمز التحقق</string>
+    <string name="appointment_as_guest">احجز موعد كزائر</string>
+
+    <string name="resend"><u>إعاده إرسال رمز التحقق</u></string>
+    <string name="guest_user">حساب زائر</string>
+    <string name="cancel_appointment_error">لا يمكنك إلغاء هذا الموعد. يرجى الاتصال بمركز الاتصال للحجز المواعيد على: + %1$s.</string>
+
+
+    <!--Register Number-->
+    <string name="register_number">تسجيل رقم هاتفك المحمول</string>
+    <string name="reg_content">سنقوم بإرسال رمز التحقق لتوثيق حسابك</string>
+    <string name="country_code">رمز بلدك</string>
+    <string name="your_mobile_number">رقم هاتفك</string>
+    <string name="submit">إرسال</string>
+    <string name="emergency_contact">رقم تواصل في حالة الطوارئ (يجب أن يختلف عن صاحب الطلب)</string>
+
+    <!--Sign Up -->
+    <string name="welcome">مرحباً بكم!</string>
+    <string name="introduce">نموذج فتح ملف</string>
+    <string name="contine_send_otp">تابع وأرسل OTP</string>
+
+    <string name="id_type">نوع الهوية (هوية وطنية / إقامة / جواز سفر / تبليغ الولادة)*</string>
+    <string name="first_name">الاسم الأول *</string>
+    <string name="family_name">اسم العائلة *</string>
+
+    <string name="upload">تحميل</string>
+
+    <string name="agree_to_policy">أوافق على <b><a href="https://www.imc.med.sa/ar/terms-and-conditions" style="color:black"> الشروط والأحكام</a></b> و <b><a href="https://www.imc.med.sa/ar/terms-and-conditions" style="color:black"> سياسة الخصوصية</a></b>.</string>
+
+    <string name="note_signup">.IMC غير مسؤولة في حالة عدم صحة البيانات المدخلة من قبل المريض <b>ملاحظة: </b></string>
+    <string name="certify_cobtent">أقر بأنني قرأت استمارة الموافقة على العلاج العام وأقر بأنني على علم بوجوب تعبئتي لاستمارة الموافقة على العلاج العام عند وصولي لمقر المستشفى. أقر بموافقتي على اعطاء IMC الصلاحية بتقديم العلاج لي، للمريض التابع لي، أو لقريبي وأنني املك كامل الصلاحية القانونية بالتوقيع نيابة عن المريض.</string>
+
+    <string name="register">تسجيل</string>
+    <string name="back">رجوع</string>
+    <string name="type_here">أكتب هنا</string>
+
+    <string name="self">نفسه</string>
+    <string name="legal_gurdian">ولي أمر</string>
+    <string name="relative">قريب</string>
+    <string name="submitter_invalid">الاسم يجب أن يكون مابين 10 إلى 70 حرف</string>
+
+    <string name="upload_id_card">اضافة صورة بطاقة الهوية (الهوية الوطنية، الاقامة أو جواز السفر) *</string>
+    <string name="do_you_valid_isurance">هل لديك تأمين صحي ساري المفعول؟ *</string>
+    <string name="insurance_compnay">شركة التأمين الصحي *</string>
+    <string name="policy_number">رقم البوليصة</string>
+    <string name="membership_id">رقم المشترك</string>
+    <string name="submitter_name">اسم مقدم الطلب *</string>
+    <string name="relation_to_patiet">صلة القرابة بالمريض *</string>
+
+
+    <string name="insurance_expiry_date">تاريخ انتهاء التأمين الصحي</string>
+    <string name="class_plan">الفئة/الدرجة</string>
+    <string name="attach_insuarnce_card">اضافة صورة بطاقة التأمين</string>
+    <string name="introduce_page_two">الرجاء ادخال صورة الهوية ومعلومات التأمين</string>
+    <string name="home_tel">رقم هاتف المنزل *</string>
+    <string name="abort">الغاء</string>
+    <string name="abort_mesgae">هل تريد الغاء التسجيل؟</string>
+    <string name="attach_id_card">يرجى رفع صورة الهوية</string>
+    <string name="select_insurance_company">يرجى اختيار شركة التأمين الصحي</string>
+    <string name="max_file_size">حجم الملف يجب أن لا يتجاوز 1.5MB</string>
+    <string name="note_max_file_size">(ملحوظة :حجم الملف يجب أن لا يتجاوز 1.5MB)</string>
+    <string name="select_id_expiry_date">تاريخ انتهاء الهوية</string>
+
+    <!--Profile-->
+    <string name="phone_number">رقم الجوال</string>
+    <string name="phone_number_">رقم الجوال *</string>
+    <string name="phone_number_cell">رقم الجوال *</string>
+
+    <string name="phone_validation_note">(يرجى ادخال رقم جوال صحيح. سيتم ارسال رسالة تحقق إلى رقم الجوال المدخل في الخطوة التالية)</string>
+    <string name="address">العنوان</string>
+    <string name="address_c">العنوان:</string>
+
+    <string name="address_en">العنوان (انجليزي)</string>
+    <string name="address_ar">العنوان (عربي)</string>
+    <string name="nationality">الجنسية</string>
+    <string name="nationality_req">الجنسية *</string>
+
+    <!--tab-->
+    <string name="appointment">موعد</string>
+    <string name="home">الرئيسية</string>
+    <string name="records">التقارير</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="chatbot">تحدث معنا</string>
+
+
+    <!--Logout text-->
+    <string name="are_sure_logout">سيتم الغاء التنبيهات على هذا الجهاز عند تسجيل الخروج</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+
+    <!--drawer-->
+    <string name="dashboard_menu">الصفحة الرئيسية</string>
+    <string name="documents_menu">المستندات</string>
+    <string name="medical_cards_menu">البطاقات الطبية</string>
+    <string name="add_guardian_menu">أضف اسم الوصي</string>
+    <string name="settings_menu">الإعدادات</string>
+    <string name="about_us_menu">من نحن</string>
+    <string name="help_menu">مساعدة</string>
+    <string name="logout_menu">تسجيل الخروج</string>
+    <string name="general">عام</string>
+
+
+    <!--Home-->
+    <string name="next_appointment">موعدك القادم</string>
+    <string name="reports">التقارير</string>
+    <string name="specialities">التخصصات</string>
+    <string name="manage_bookings">إدارة المواعيد</string>
+    <string name="cancel_appointment">إلغاء الموعد</string>
+    <string name="manage_appointment">إدارة المواعيد</string>
+    <string name="view_booking">عرض مواعيدي</string>
+    <string name="medication_prescription">الوصفات/الأدوية</string>
+    <string name="prescription_">الوصفة</string>
+    <string name="view_medication_pres">عرض وصفاتك/أدويتك</string>
+
+    <string name="prescription">الوصفات</string>
+    <string name="view_perscription">عرض الوصفة</string>
+    <string name="pharmacy">صيدلية</string>
+    <string name="buy">صرف الوصفة</string>
+    <string name="medication">الأدوية</string>
+    <string name="medication_">الأدوية</string>
+
+    <string name="sick_leave_report">الإجازات المرضية</string>
+
+    <string name="lab_reports">تقارير المختبر</string>
+    <string name="lab_report">تقرير المختبر</string>
+
+    <string name="view_lab_reports">عرض التقارير الحالية والسابقة</string>
+    <string name="view_lab_reports1">عرض نتائج اختبار الموعد الحالي</string>
+    <string name="title_camera_and_storage_access">لتتمكن من تحميل التقرير، الرجاء السماح للتطبيق باستخدام ذاكرة التخزين.</string>
+    <string name="permission_title">يرغب تطبيق “My IMC” باستخدام ذاكرة التخزين بجهازك</string>
+    <string name="open_settings">عرض الإعدادت</string>
+
+    <string name="operative_reports">تقارير العمليات الجراحية</string>
+    <string name="operative_report">تقريرالعملية الجراحية</string>
+
+    <string name="discharge_reports">تقارير الخروج</string>
+    <string name="discharge_report">تقرير الخروج</string>
+
+    <string name="cardio_reports">تقارير قسم القلب</string>
+    <string name="cardio_report">تقرير قسم القلب</string>
+<!--    <string name="filter_by_exam">Filter by exam date</string>-->
+
+    <string name="operative_reports_total">عدد التقارير: </string>
+    <string name="discharge_reports_total">عدد التقارير: </string>
+    <string name="cardio_reports_total">عدد التقارير: </string>
+    <string name="view_current_past_reports">عرض التقارير الحالية والسابقة</string>
+    <string name="view_operative_reports">عرض تقارير العمليات الجراحية الحالية والسابقة</string>
+    <string name="next_available_time">أقرب موعد:</string>
+    <string name="location_not_accessible">لا يمكن الوصول إلى موقعك ، يرجى المحاولة مرة أخرى</string>
+
+
+    <string name="radiology_reports">تقارير الأشعة</string>
+    <string name="radiology_report">تقرير الأشعة</string>
+
+
+    <string name="view_radiology_reports">عرض التقارير الحالية والسابقة</string>
+
+    <string name="find_a_doctor">ابحث عن طبيبك</string>
+    <string name="view_find_a_doctor">اعرف المزيد عن أطبائنا</string>
+
+    <string name="view_specilaities">تعرف على خدماتنا الطبية والجراحية</string>
+
+    <string name="way_finder">طريقة مكتشف</string>
+    <string name="view_way_finder">انقر هنا للحصول على الاتجاهات</string>
+
+    <string name="health_ques">استبيانات الصحة</string>
+    <string name="view_health_ques">عرض كل استبيانات صحتك في مكان واحد</string>
+
+    <string name="symtom_tracker">المشخص الطبي</string>
+    <string name="view_symtom_tracker">احصل على التشخيص المحتمل لحالتك باختيار الأعراض والاجابة على بعض الأسئلة.</string>
+
+
+    <!--Guest Home-->
+    <string name="tap_here_complete_form">أنقر هنا لإكمال النموذج</string>
+    <string name="have_ques_con">لديك أي أسئلة؟ اتصل أو مراسلتنا عبر البريد الإلكتروني</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="health_byte">الصحة بايت</string>
+    <string name="health_tips">نصائح صحية</string>
+    <string name="departments">الأقسام الطبية</string>
+
+    <string name="mayo_clinic">مايو كلينك</string>
+    <string name="wellness">العافية</string>
+    <string name="health_fitness">الصحة واللياقة البدنية</string>
+
+
+
+    <string name="health_byte_content">تصفح مدونة الصحة والعافية</string>
+    <string name="institutes_spec_view">تعرف على خدماتنا الطبية والجراحية</string>
+    <string name="retail">المرافق والخدمات</string>
+    <string name="view_retail">تعرف على خدماتنا</string>
+    <string name="location_map">خريطة الموقع</string>
+    <string name="location_map_view">انقر هنا للحصول على اتجاهات القيادة</string>
+
+
+    <!--Appointments-->
+    <string name="select_time_slot">فضلا حدد الوقت</string>
+    <string name="how_you_want_booking">كيف تريد أن تكون زيارتك الطبية</string>
+    <string name="select_service">حدد الخدمة</string>
+    <string name="appointment_successfull">تم حجز موعدك بنجاح. سوف تحصل على تذكير لهذا الموعد</string>
+
+    <string name="next">التالي</string>
+    <string name="no_result">لم يتم العثور على نتائج.</string>
+    <string name="search">بحث</string>
+    <string name="confirm1">نعم</string>
+
+    <!--Physician-->
+    <string name="phyisician">الطبيب</string>
+    <string name="view_profile">عرض الصفحة الشخصية</string>
+    <string name="book_appointment">حجز موعد</string>
+    <string name="book_now">احجز الآن</string>
+    <string name="phyisician_detail">معلومات الطبيب</string>
+    <string name="view_report">عرض التقارير</string>
+    <string name="appointment_message">سيتم عرض مواعيد السنة الماضية</string>
+
+    <!--Profile-->
+    <string name="edit_profile">تعديل الصفحه الشخصية</string>
+    <string name="personal_info">معلومات شخصية</string>
+    <string name="dob">تاريخ الميلاد</string>
+    <string name="blood_group">فصيلة الدم</string>
+    <string name="marital_status">الحالة الاجتماعية *</string>
+    <string name="height">الطول</string>
+    <string name="weight">الوزن</string>
+    <string name="allergy">الحساسية</string>
+    <string name="allergies">الحساسية</string>
+    <string name="view_allergies">عرض أنواع الحساسية التي تعاني منها في مكان واحد</string>
+    <string name="single">أعزب</string>
+    <string name="married">متزوج</string>
+    <string name="other_status">أخرى</string>
+
+    <string name="days_of_treat">أيام العلاج</string>
+    <string name="settings">الأعدادات</string>
+    <string name="about_us">من نحن</string>
+    <string name="notifications">التنبيهات</string>
+    <string name="change_language">تغير اللغة</string>
+
+    <string name="english">English</string>
+    <string name="arabic">العربية</string>
+    <string name="arabic_lang">العربية</string>
+    <string name="english_lang">الإنجليزية</string>
+    <string name="in_person">الحضور شخصياً</string>
+    <string name="tele_med">المعاينة عن بعد</string>
+    <string name="goto_consult">بدأ الاتصال</string>
+    <string name="view_assessment">بدء التقييم الذاتي</string>
+    <string name="assessment">التقييم الذاتي</string>
+    <string name="exit">انهاء</string>
+    <string name="exit_alert_assess">هل ترغب بانهاء التقييم؟</string>
+    <string name="prev">السابق</string>
+    <string name="start">بدء</string>
+    <string name="resume">استكمال</string>
+
+    <string name="thank_content">شكرا لاتمامك التقييم الذاتي. لمعاينة النتيجة، اضغط الرابط أدناه:</string>
+    <string name="view_my_report">عرض تقرير</string>
+    <string name="assessment_result">نتيجة التقييم الذاتي</string>
+    <string name="assessment_completed">التقييمات الذاتية المكتملة</string>
+    <string name="view_assessment_result">عرض النتيجة</string>
+    <string name="view_assessment_des">عرض التقييمات الذاتية المكتملة ونتائجها</string>
+    <string name="average_score">متوسط النتيجة: 50</string>
+    <string name="your_score">نتيجة التقييم لاختبار  %1$s </string>
+    <string name="theta_value">Theta value: %1$s </string>
+    <string name="std_error">Standard error: %1$s </string>
+    <string name="order_value">رقم الوصفة: %1$s</string>
+    <string name="download_prescription">تم تحميل الوصفة بنجاح.</string>
+
+    <!--Physician detail- not required-->
+
+    <string name="education">التعليم</string>
+    <string name="affilations">البحوث / المنشورات</string>
+    <string name="research">الدراسات والبحوث</string>
+    <string name="languages">لغات التواصل</string>
+
+    <!--Medicine Detail-->
+    <string name="save">حفظ</string>
+    <string name="set_reminder">ضبط التنبيه</string>
+    <string name="med_detail">ضبط تنبيه الأدوية</string>
+    <string name="med_name">أسم الدواء</string>
+    <string name="ongoing_medication">دواء مستمر</string>
+    <string name="med_state_date">تاريخ بدء الدواء</string>
+    <string name="time_1">1. مرة في اليوم</string>
+    <string name="time_2">2. مرة في اليوم</string>
+    <string name="time_3">3. مرة في اليوم</string>
+    <string name="time_4">4. مرة في اليوم</string>
+
+    <string name="provider_name">أسم المقدم</string>
+    <string name="reminder_end_date">تاريخ انتهاء التذكير</string>
+    <string name="reminder">التذكير</string>
+    <string name="reminder_not_content">من المقرر ان تاخذ هذا \n الدواء<b> 28 دقيقة</b></string>
+    <string name="skip">ترك</string>
+    <string name="take">خذ</string>
+    <string name="delivered">تم التوصيل</string>
+    <string name="not_yet">ليس بعد</string>
+    <string name="select_schedule">Select Schedule</string>
+
+    <string name="rate_review">التقييم والمراجعة</string>
+    <string name="feed_back_to_phy">الملاحظات للطبيب</string>
+    <string name="review">مراجعة</string>
+    <string name="write_here">اكتب رأيك هنا ...</string>
+
+    <!--Settings-->
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="terms_condition">الشروط والأحكام</string>
+    <string name="about_app">حول التطبيق</string>
+    <string name="string_sync_data_with_watch">مزامنة البيانات مع</string>
+    <string name="string_unlock_with_fingerprint">إفتح ببصمة الإصبع</string>
+
+
+
+
+    <!--Manage Bookings-->
+    <string name="upcoming">القادمة</string>
+    <string name="completed">المكتملة</string>
+    <string name="cancelled">المُلغاة</string>
+    <string name="no_show">لم يتم الحضورها</string>
+
+
+    <!--Questionnaire-->
+    <string name="ques_title"><b>مرحبا بكم في مركز التقييم الذاتي الالكتروني</b>\n\nيرجى اختيار الاختبارات التي تود أخذها ثم النقر على زر البدء. يستغرق كل اختبار 1-2 دقائق لاستكمال الاختبار والحصول على النتيجة.</string>
+
+
+    <!--ContactUs-->
+    <string name="name">الاسم</string>
+    <string name="email_id">البريد الإلكتروني</string>
+    <string name="send">إرسال</string>
+    <string name="message_">نص الرسالة *</string>
+
+    <!--ContactUs-->
+    <string name="virtual_tour">جولة افتراضية للعائلة</string>
+    <string name="virtual_tour_imc">جولة افتراضية</string>
+    <string name="virtual_tour_description">هل ترغب بمعرفة المزيد عن المركز الطبي الدولي؟ يمكنك الآن القيام بجولة افتراضية داخل المستشفى.</string>
+
+    <string name="enter_data">أدخل البريد الإلكتروني ورقم الهاتف</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="email_address_">البريد الإلكتروني *</string>
+
+    <!--Map-->
+    <string name="clinic_map">خريطة العيادة</string>
+
+    <string name="about_app_content" tools:ignore="StringEscaping"><![CDATA[<style>
+ul li{
+padding:10px 0px;
+}
+</style>
+
+<p style=\'text-align:justify\'>
+
+تطبيق <strong>My IMC</strong> هو جزء من التزامنا تجاه المجتمع بصناعة نموذج فريد لرعاية صحية ذات نظرة شمولية لشفاء الإنسان جسداً وعقلاً وروحاً باتباع أفضل المعايير الطبية العالمية للعلاج واقتفاء المعايير الربانية في المعاملة والأخلاق.
+
+</p>
+<p style=\'text-align:justify\'>نسعى من خلال هذا التطبيق إلى تقديم تجربة موحدة لمرضانا وزوارنا عبر قنوات الخدمة المتعددة والمناسبة، والتي تتيح لهم الوصول الآمن إلى الرعاية الصحية الإلكترونية أينما كانوا وفي أي وقت، دون الحاجة لزيارة المرافق الصحية التابعة لنا.
+</p>
+<p style=\'text-align:justify\'>
+تم تصميم تطبيق <Strong>My IMC</strong> لخدمة مرضانا من خلال توفير لمحة شاملة حول حالتهم الصحية (باستعراض السجلات الطبية والأدوية والحساسية).
+ 
+
+</p>
+<p style=\'text-align:justify\'>
+<strong>ومن أهم خصائص تطبيق My IMC:
+</strong>
+</p>
+<ul>
+<li>	إمكانية حجز المواعيد و إعادة جدولتها أوإلغاؤها.
+</li>
+<li>	عرض نتائج التحاليل الطبية وتحميل نسخة إلكترونية منها.  </li>
+<li>	عرض الوصفات الطبية.
+</li>
+<li>	عرض الملخصات الصحية وتحميل نسخة إلكترونية منها.  </li>
+<li>	البحث عن طبيب مختص.
+</li>
+<li>	الاستفادة من النصائح الصحية المقدمة من شركائنا؛ شبكة مايو كلينك للرعاية الصحية.
+</li>
+<li>	التعرّف على المزيد حول العيادات والأقسام الطبية بالمركز الطبي الدولي
+</li>
+<li>	تلقي التنبيهات المفيدة والمهمة.
+</li>
+<li>	الاتصال بنا مباشرةً أو طلب إعادة الاتصال للاستفسار عن خدماتنا.
+</li>
+<li>	معرفة أماكن مرافق الرعاية الصحية التابعة لنا.
+</li>
+</ul>
+
+<p style=\'text-align:justify\'>سيعمل المركز الطبي الدولي على إجراء تحديثات دورية لتطبيق <strong>My IMC</strong>، وذلك سعياً منا لإيجاد واحدة من أهم وأكثر الخدمات تفاعلية وابتكارًا على الصعيد العالمي.
+</p>
+<p style=\'text-align:justify\'>لتقديم الاقتراحات أو الآراء حول التطبيق، يُرجى التواصل مع مركز الاتصال على الرقم 778 027 920 966+ أو إرسال بريد إلكتروني إلى العنوان الآتي: patientportal@imc.med.sa.
+</p>
+
+<p style=\'text-align:justify\'>ترقبوا المزيد من الخصائص قريبًا. مع تمنياتنا بدوام نعمة الصحة والعافية لكم ولأحبائكم.
+</p>]]></string>
+
+    <!--<DATA-->
+    <string name="phyisian_des">مبنى 18 ، شارع 1 ، دبي ، الإمارات العربية المتحدة</string>
+
+    <!--<DATA-->
+
+
+    <string name="visit_detail">تفاصيل الزيارة</string>
+    <string name="add_rating">قييم هذا الطبيب</string>
+
+    <!--INBOX-->
+    <string name="inbox_list_empty">قائمة البريد الوارد فارغة</string>
+
+    <!--Consent Form-->
+    <string name="consent_form">نموذج التعهد</string>
+    <string name="en_number">عدد MR</string>
+    <string name="patient_name">اسم المريض</string>
+    <string name="from">من</string>
+    <string name="to">إلى</string>
+
+    <!--Consent Form-->
+    <string name="telemedcinice_consent_form">موافقة حجز مُعاينة عن بُعد</string>
+    <string name="i_certify_not_exp_heath">أقر بأنني لا اواجه حاليا أي من الحالات\الأعراض الصحية المذكورة أعلاه.</string>
+    <string name="i_certify_take_care_under_teleheath">أوافق أنا المريض/ ولي الأمر/القريب على المشاركة لي/ تابعي /قريبي في الإستشارة الصحية عن بعد وفقا للشروط الموضحة أعلاه.</string>
+    <string name="proceed_to_booking">المتابعة للحجز</string>
+    <string name="note_imc_not_liable">ملاحظة : المركز الطبي الدولي غير مسؤول في حالة عدم صحة البيانات المدخلة</string>
+    <string name="i_agree">أوافق</string>
+    <string name="i_disagree">لا أوافق</string>
+
+    <string name="telemedcinice_consent_content"><![CDATA[<p>
+    <span style="color: rgb(13, 155, 43); font-size: 42px;">في حين أن أطبائنا قادرون على علاج أهم المشكلات الصحية التي قد يحتاج المريض إلى مراجعة طبيب بشأنها، إلا أنه هناك بعض الحالات التي لا تتم معيانتها عبر خدمة (Telemedicine - عن بعد). لذلك نود أن نحيطكم علماً بأنه إذا واجهتم أي من الحالات الصحية التالية التي تتطلب فحص جسدي، يُرجى زيارة الطبيب أو المستشفى شخصيا.</span></p>
+<ul class="ak-ul">
+<li>
+<p>إصابات رضحية بالدماغ والنخاع الشوكي.</p>
+</li>
+<li>
+<p>ألم في الصدر و / أو فقدان الإحساس (خدر).</p>
+</li>
+<li>
+<p>التقيؤ أو السعال المصاحب بدم.</p>
+</li>
+<li>
+<p>الجروح الغائرة التي تتطلب خياطة.</p>
+</li>
+<li>
+<p>فقدان الوعي.</p>
+</li>
+<li>
+<p>كسور بالعظم.</p>
+</li>
+<li>
+<p>الحروق الشديدة.</p>
+</li>
+<li>
+<p>فقدان البصر الحاد.</p>
+</li>
+<li>
+<p>آلام في الصدر.</p>
+</li>
+<li>
+<p>تغير في الحالة العقلية.</p>
+</li>
+<li>
+<p>دم في البراز.</p>
+</li>
+<li>
+<p>أفكار إجرامية أو انتحارية.</p>
+</li>
+<li>
+<p>جرعة زائدة من المخدرات.</p>
+</li>
+</ul>
+<p>لا يستطيع أطبائنا كتابة الوصفات الطبية للأدوية الخاضعة للرقابة. يرجى مراجعة الطبيب شخصيا إذا كنت بحاجة إلى دواء مصنف من الأدوية الخاضعة للرقابة.</p>
+]]></string>
+
+
+    <string name="more">المزيد</string>
+    <string name="more_slot">المزيد</string>
+    <string name="start_record">ابدأ التسجيل</string>
+    <string name="take_pic">التقط صورة</string>
+    <string name="end_call">إنهاء المكالمة</string>
+    <string name="view_month">عرض الشهر</string>
+    <string name="view_week">عرض الأسبوع</string>
+
+    <string name="reschedule">إعادة جدولة الموعد</string>
+    <string name="reschedule_appointment">إعادة جدولة الموعد</string>
+    <string name="check_in">تسجيل الحضور</string>
+<!--    <string name="scan_visit_number">Scan Visit Number</string>-->
+
+    <string name="confirm_payment">تأكيد الدفع</string>
+    <string name="pay_only">الدفع فقط</string>
+    <string name="pay_and_checkin">الدفع وتسجيل الحضور</string>
+    <string name="checkin_now">سجل حضورك الآن</string>
+    <string name="confirm_arrival">تأكيد الحضور</string>
+    <string name="confirm_arrival_content"> بوجودك داخل نطاق المستشفى</string>
+    <string name="pending">لم يتم</string>
+    <string name="paid">مدفوع</string>
+
+    <string name="assessments">التقييم الطبي</string>
+    <string name="arrived">حالة الحضور</string>
+    <string name="reported_date">تاريخ التقرير: </string>
+    <string name="exam_date">تاريخ الاختبار: </string>
+    <string name="report_number">رقم التقرير: </string>
+
+    <string name="updated_bill">فاتورة محدثة</string>
+    <string name="co_payment">الدفع المشترك</string>
+    <string name="nin_reimbursable">غير قابلة للسداد</string>
+    <string name="total_estimated">المجموع:n/ التقديري</string>
+    <string name="insurance">تأمين</string>
+    <string name="pay_now">ادفع الآن</string>
+
+    <string name="payment_successful">تم الدفع بنجاح</string>
+    <string name="payment_success_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="duration_of_guardian">مدة وجود الوصي</string>
+    <string name="unlimited">غير محدود</string>
+    <string name="no_of_days">عدد الأيام</string>
+    <string name="id_number">* رقم الهوية</string>
+
+
+    <!--Request Appointment- -->
+
+    <string name="first_name_en">الاسم الأول (انجليزي)</string>
+    <string name="first_name_ar_req">الاسم الاول (عربي)</string>
+
+    <string name="mid_name_father_en">الأب / الاسم الأوسط (انجليزي)</string>
+    <string name="mid_name_father_ar_req">الأب / الاسم الأوسط (عربي)</string>
+
+    <string name="grand_father_name_en">اسم الجد (انجليزي)</string>
+    <string name="grand_father_name_ar">اسم الجد (عربي)</string>
+
+    <string name="last_name_family_en">الاسم الأخير (انجليزي)</string>
+    <string name="last_name_family_ar_req">الاسم الأخير (عربي)</string>
+    <string name="id_exp_date">تاريخ انتهاء الهوية *</string>
+    <string name="select_natioality">الجنسية</string>
+    <string name="select_city">المدينة</string>
+    <string name="select_distt">الحي</string>
+    <string name="select_country">العنوان</string>
+
+    <string name="dob_">تاريخ الميلاد *</string>
+
+    <string name="who_are_you_looking_for">من الذي تبحث عنه؟</string>
+    <string name="myself">أنا</string>
+    <string name="someone_else">شخص آخر</string>
+    <string name="is_it_visit_first">هل هذه هي زيارتك الأولى؟</string>
+    <string name="what_your_relationship">ماهي علاقتك بالمريض؟</string>
+    <string name="your_info">معلومات الاتصال الخاصة بك</string>
+    <string name="last_name_family">العائلة/الاسم الأخير</string>
+
+    <string name="reason_visit">سبب الزيارة</string>
+    <string name="request_appointment_">حجز موعد</string>
+    <string name="string_please_fill_empty">الرجاء ملء الحقول الفارغة</string>
+    <string name="content_request">توفر جدولة المواعيد عبر الهاتف من 7:00 ص إلى 7:00 م في أيام الأسبوع. بدلاً من ذلك، يمكنك إكمال النموذج الإلكتروني وسنقوم بالاتصال بك لتأكيد الموعد.
+
+\n\nيعمل قسم الطوارئ 24 ساعة في اليوم، سبعة أيام في الأسبوع، 365 يوما في السنة.
+
+\n\n يمكنك الاتصال بنا في أي وقت للاستفسار والحصول على المعلومات العامة.</string>
+
+    <string name="read_more">اقرأ المزيد</string>
+    <string name="select_card">اختر بطاقتك</string>
+    <string name="pay_cash">الدفع نقداً</string>
+
+    <string name="select_gender">فضلاًً حدد الجنس</string>
+    <!--<string name="select_lang">Please select language</string>-->
+    <string name="select_dob">فضلاً اختر تاريخ الميلاد</string>
+    <!--<string name="select__lang_dob">Please select language and date of birth</string>-->
+    <!--<string name="select_lang_gender">Please select gender and language</string>-->
+    <!--<string name="select_lang_gender_dob">Please select gender, language and date of birth</string>-->
+    <string name="invalid">غير صالحة</string>
+    <string name="enter_id_here">أدخل الرقم هنا*</string>
+
+
+    <!--Validations-->
+    <string name="mrn_empty_error">فضلاً ادخل رقم سجل المريض الخاص بك  أو رقم الهوية لتسجيل الدخول إلى المركز الطبي الدولي</string>
+    <string name="ok">حسناً</string>
+    <string name="cancel">إلغاء</string>
+    <string name="empty_fields">حقول فارغ</string>
+    <string name="take_a_photo">الكاميرا</string>
+    <string name="choose_from_gallery">البوم الصور</string>
+
+
+    <string name="no_network_title">خطأ باتصال الانترنت!</string>
+    <string name="network_content">يرجى التحقق من اتصالك بالانترنت والمحاولة مرة أخرى</string>
+
+
+    <!--Retail module-->
+    <string name="categories">التصنيفات</string>
+    <string name="view_product">عرض المنتج</string>
+    <string name="product_detail">تفاصيل المنتج</string>
+    <string name="quantity">الكمية</string>
+    <string name="benefits">الفوائد</string>
+    <string name="expiry">مدة الصلاحية</string>
+    <string name="notes">ملاحظات</string>
+    <string name="reviews">%1$s تعليقات</string>
+    <string name="add_to_cart">اضف إلى سلة التسوق</string>
+    <string name="review_empty">لا يوجد تعليقات</string>
+    <string name="reviews_t">جميع التعليقات</string>
+    <string name="place_order">ضع الطلب</string>
+    <string name="my_cart">سلتي (%1$s)</string>
+
+    <string name="price_details">تفاصيل السعر</string>
+    <string name="price_items">سعر (%1$s  منتجات)</string>
+    <string name="delivery">التوصيل</string>
+    <string name="payable_amount">المبلغ المستحق</string>
+    <string name="remove">إزالة</string>
+
+    <string name="remove_cart_item_content">هل تريد إزالة هذا المنتج؟</string>
+    <string name="remove_item">إزالة المنتج</string>
+    <string name="removed_success">تمت إزالة المنتج من سلة التسوق</string>
+
+    <string name="fill_info_guest_order">ضع الطلب</string>
+    <string name="your_info_for_delivery">معلومات توصيل الطلب</string>
+    <string name="order_placed">تم الطلب</string>
+    <string name="order_placed_content">تم الطلب بنجاح، سوف يصلك بريد إلكتروني عن حالة الطلب.</string>
+    <string name="item_added">تمت إضافة المنتج إلى سلة تسوق بنجاح</string>
+    <string name="go_to_cart">اذهب إلى سلة التسوق</string>
+
+
+    <!--Address-->
+    <string name="adress_">قائمة العناوين المحفوظة</string>
+    <string name="add_address">إضافة عنوان</string>
+    <string name="edit_address">تحديث العنوان</string>
+    <string name="edit">تعديل</string>
+
+    <string name="pincode">الرقم السري*</string>
+    <string name="house_no_villa_no_building">رقم المنزل/الفيلا، اسم المبنى*</string>
+    <string name="road_name_area">اسم الطريق، المنطقة*</string>
+    <string name="city">المدينة *</string>
+    <string name="state">الدولة *</string>
+    <string name="district">الحي *</string>
+    <string name="country">الدولة *</string>
+
+    <string name="landmark">معلم (اختياري)</string>
+    <string name="name_">الاسم*</string>
+    <string name="phone_number_o">رقم الجوال المكون من 10 أرقام *</string>
+
+    <string name="address_type">نوع العنوان</string>
+    <string name="home_address">عنوان المنزل</string>
+    <string name="work_address">عنوان العمل/المكتب</string>
+    <string name="address_added">تم حفظ العنوان بنجاح</string>
+    <string name="address_updated">تم تعديل العنوان بنجاح</string>
+
+    <string name="remove_address_item_content">هل تريد حذف هذا العنوان؟</string>
+    <string name="remove_address">حذف العنوان</string>
+    <string name="removed_success_address">تم حذف العنوان من القائمة</string>
+
+    <string name="my_orders">طلباتي</string>
+    <string name="my_orders_">طلباتي</string>
+    <string name="health_calculators">الحاسبة الصحية</string>
+
+    <string name="need_help">تحتاج مساعدة؟</string>
+    <string name="orders_detail">تفاصيل الطلب</string>
+    <string name="phone_value"><b>رقم الهاتف: </b></string>
+    <string name="shipping_detail">تفاصيل الشحن</string>
+    <string name="other_items_in_order">منتجات أخرى في هذا الطلب</string>
+    <string name="payment_mode">طريقة الدفع: الدفع عند الاستلام</string>
+    <string name="payment_status">حالة الدفع</string>
+
+    <string name="debit_card">بطاقة ائتمان</string>
+    <string name="cod">الدفع عند الاستلام</string>
+    <string name="payment">الدفع</string>
+    <string name="payment_success">تم تأكيد الدفع للطلب رقم OD123217647123.
+سوف يصلك إشعار عند تغيير حالة الطلب.</string>
+
+    <!--POP UPS-->
+
+    <!--POP UPS-->
+
+    <string name="visit_reception">فضلاً توجه إلى مكتب الاستقبال للدفع</string>
+    <string name="payment_option">خيار الدفع</string>
+    <string name="payment_cash">الدفع نقداً</string>
+    <string name="credit_card">بطاقة ائتمان</string>
+    <string name="medical_card">بطاقة طبية</string>
+    <string name="upload_medical_card">تحميل البطاقة الطبية</string>
+    <string name="goto_ocr_validity">الذهاب للحصول على صلاحية ORC</string>
+    <string name="click_here_to_upload">اضغط هنا للتحميل</string>
+
+    <string name="payment_unsuccess">عملية دفع غير ناجحة</string>
+
+    <string name="card_number">رقم البطاقة</string>
+    <string name="expiry_date">تاريخ الانتهاء</string>
+
+    <string name="find_by_doc">البحث حسب \n الطبيب</string>
+    <string name="find_by_spec">البحث حسب \n التخصص</string>
+
+    <!--Validations-->
+    <string name="otp_successfully_sent">تم إرسال رمز التحقق  بنجاح إلى رقم المسجل لدينا</string>
+    <string name="otp_not_matched">رمز التحقق غير صحيح</string>
+    <string name="otp_invalid">ادخل رمز تحقق صحيح</string>
+    <string name="required">مطلوب</string>
+    <string name="enter_valid_email">بريد إلكتروني غير صحيح</string>
+    <string name="enter_valid_phone">رقم الهاتف غير صحيح</string>
+    <string name="enter_some_more_text">اضف مزيد من النص</string>
+
+    <string name="select_any_id">اختر مُعرف واحد</string>
+    <string name="agree_to_terms">يرجى الموافقة على شروط الاستخدام وسياسة الخصوصية الخاصة بالمركز الطبي الدولي</string>
+    <string name="alert">تنبيه</string>
+    <string name="agree_to_consent">يرجى قرائة الموافقة على العلاج العام وقبولها.</string>
+
+    <string name="no_net_title">تحقق من اتصالك بالإنترنت وحاول مرة أخرى</string>
+    <string name="no_net_des">لا يمكن الاتصال بالخادم</string>
+    <string name="try_again">حاول الآن</string>
+    <string name="oops">عذراً..</string>
+    <string name="time_out">انتهى الوقت المحدد للجلسة</string>
+    <string name="otp_resent">تم إعادة إرسال رمز التحقق إلى رقم جوالك المسجل</string>
+
+    <string name="no_data_available">لا توجد بيانات متاحة</string>
+    <string name="no_data_content">لا توجد بيانات لعرضها لك الآن</string>
+    <string name="load_more">عرض المزيد ..</string>
+
+
+    <!--Dialog text-->
+    <string name="confirmation">تأكيد الموعد!</string>
+
+    <string name="want_cancel_booking">هل أنت متأكد من إلغاء هذا الحجز؟</string>
+    <string name="diagnosis">هل ترغب في إضافة التشخيص إلى التقرير؟</string>
+    <string name="want_reschedule_booking">هل أنت متأكد من رغبتك بإعادة جدولة الموعد؟</string>
+    <string name="want_go_consult">هل أنت متأكد من رغبتك ببدء الاتصال عن بعد مع طبيبك؟</string>
+
+    <string name="success">نجحت</string>
+    <string name="download_dialog">تم تنزيل تقريرك بنجاح</string>
+    <string name="download_confirmation">تم تحميل استمارة تأكيد الموعد بنجاح.</string>
+    <string name="download_invoice">تم تنزيل إيصال الفاتورة بنجاح.</string>
+
+    <string name="open">افتحه الآن</string>
+    <string name="later">لاحقاً</string>
+    <string name="filter">فرز</string>
+    <string name="rating">تقييم</string>
+    <string name="select">--الرجاء الاختيار--</string>
+    <string name="title">العنوان</string>
+    <string name="by_rating">حسب التقييم</string>
+
+
+    <string name="lab">المختبر</string>
+    <string name="radiology">الأشعة</string>
+    <string name="sick_levae">الإجازات المرضية</string>
+
+    <string name="confirm_booking">تأكيد الموعد</string>
+    <string name="no_time_slot">لا يوجد موعد متاح في هذا اليوم</string>
+    <string name="please_select_time_slot">فضلاً حدد الوقت</string>
+    <string name="wrong_captcha">كلمة التحقق خاطئة</string>
+
+    <string name="time_out_messgae">انتهى الوقت. حاول مرة أخرى</string>
+    <string name="phyisician_">الطبيب</string>
+
+    <string name="clinic_">العيادة</string>
+    <string name="clinics">العيادة</string>
+    <string name="speciality">التخصص</string>
+    <string name="appointment_date">تاريخ</string>
+    <string name="appointment_time">الوقت</string>
+    <string name="appointment_type">نوع الزيارة</string>
+    <string name="patient_pay">تحمل المريض</string>
+    <string name="patient_discount">الخصم</string>
+    <string name="patient_vat">الضريبة</string>
+    <string name="appointment_price">القيمة الإجمالية</string>
+
+    <!--BookingStatus-->
+    <string name="failed">فشل</string>
+    <string name="success_booking">تم حجز موعدك بنجاح. سوف تصلك رسالة تذكير بالموعد.</string>
+    <string name="booking_slot_taken">الوقت الذي اخترته محجوز من قبل مريض آخر. يرجى اختيار وقت آخر.</string>
+    <string name="booking_exist">يتعذر حجز الموعد لوجود موعد آخر في نفس العيادة، يُرجى التواصل مع مركز الحجز الهاتفي على: %1$s</string>
+    <string name="booking_max">لقد تجاوزت عدد المواعيد المسموح بها يوميًا</string>
+    <string name="booking_age_less">عمرك أقل من العمر المطلوب لذلك لا يمكنك حجز موعد.</string>
+    <string name="booking_age_more">عمرك أكبر من العمر المطلوب لذلك لا يمكنك حجز موعد.</string>
+    <string name="booking_gender">يوجد تعارض في اختيار الجنس الخاص بك، لذلك لا يمكن حجز موعد.</string>
+    <string name="booking_failed">لن تتمكن من الحجز لسبب غير معروف.</string>
+    <string name="booking_time_in_other_clinic">لديك حجز في عيادة أخرى في نفس اليوم والوقت. فضلاً حدد يوماً أو وقتاً آخر.</string>
+
+    <string name="success_booking_reschedue">تمت إعادة جدولة موعدك بنجاح.</string>
+    <string name="pending_pre_authorization">عزيزي المراجع . هذه الخدمه تحتاج الي موافقة مسبقة من شركة التامين التابع لها برجاء الانتظار وسنوافيك بالرد في اسرع وقت متمنين لكم الشفاء العاجل</string>
+
+    <!--You will get a reminder for this appointment prior 45 minutes of scheduled time.</string>-->
+
+    <string name="no_result_available">لا توجد تقارير متاحة</string>
+    <string name="result_not_made">النتيجة لم تصدر</string>
+
+    <string name="deleted">محذوف</string>
+    <string name="login_captch_text">الرجاء إدخال الرقم الموجود في الصورة  للتحقق من أنك لست روبوتًا</string>
+    <string name="please_accept_condent">رجاءا الموافقة على هذا التعهد</string>
+
+    <string name="no_show_message">لا يمكنك حجز موعد لعدم حضورك الموعد السابق. لذلك لن تتمكن من حجز موعد آخر لمدة أسبوعين من تاريخ هذا الموعد. للاستفسار يرجى الاتصال بالدعم الفني.</string>
+    <!--Booking is denied due to a missed appointment-->
+
+    <string name="no_dates">لا يوجد بيانات.</string>
+
+    <string name="no_service_content">الرجاء الإتصال على الرقم الموحد %1$s لحجز الموعد</string>
+    <!--bookings.no_services_found-->
+
+
+    <string name="ser_med">البحث عن تقرير أشعة</string>
+    <string name="ser_lab">البحث عن تقرير مختبر</string>
+    <string name="accept">أوافق</string>
+    <string name="consent_data_t"><![CDATA[<p><strong>شروط الاستخدام</strong></p>
+<p><strong> </strong></p>
+<p>تحدد هذه الشروط والأحكام وتضبط استخدامك لموقعنا الالكتروني، حيث يُعد استخدامك لهذا الموقع قبولاً تاماً بكامل هذه الشروط والأحكام، فإن لم تكن موافقاً عليها أو على أي جزء منها فيجب عليك الامتناع عن استخدام موقعنا الالكتروني.</p>
+<table width="98%">
+<tbody>
+<tr>
+<td width="99%">
+<p><strong>1- استخدام الموقع الإلكتروني</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>1-1</strong>      تم إعداد الموقع الإلكتروني بشكل أساسي من أجل تسهيل إمكانية الحصول على خدمات ومعلومات الرعاية الصحية التي يقدمها المركز.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>1-2</strong> الموقع الإلكتروني مخصصة فقط لاستخدامك الشخصي</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>2- انتفاء الضمانات</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>إننا لا نضمن ولا نقر ولا نتعهد بأي مما يلي:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>أ)</strong> أن يلبي الموقع الإلكتروني احتياجاتك أو أن تعمل دون انقطاع أو بشكل منضبط أو آمن أو خالي من الأخطاء أو الفيروسات.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>ب)</strong> أن تكون أوصاف المحتوى أو الصور الفوتوغرافية أو مقاطع الفيديو المتاحة على الموقع الإلكتروني دقيقة فيما يتعلق بخدمات الرعاية الصحية التي يقدمها المركز.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong> </strong></p>
+<p><strong>3- شروط حجز المواعيد</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>3-1</strong> لا يجوز استخدام الموقع الإلكتروني لإجراء حجوزات مواعيد زائفة أو احتيالية، كما أنك تضمن وتقر وتتعهد أن تكون جميع المعلومات التي تقدمها عنك أو عن أي شخص آخر صحيحة ودقيقة وقت تقديمك تلك المعلومات لحجز الموعد.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>3-2</strong> لا يمكن إجراء حجوزات المواعيد إلا من خلال الموقع الإلكتروني ولعيادات مختارة تابعة للمركز نحددها لك وفق تقديرنا المطلق.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>3-3</strong> بالنسبة لعيادات المركز التي لا يُسمح بإجراء الحجوزات فيها من خلال الموقع الإلكتروني، يجب أن يتم حجز الموعد عن طريق الهاتف أو بالحضور الشخصي.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>3-4</strong> من أجل إجراء حجوزات المواعيد من خلال الموقع الإلكتروني يجب أن يكون لديك ملف مسبق في المستشفى.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>3-5</strong> عند استخدامك الموقع الإلكتروني ، يحق لك فقط ما يلي:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>أ) حجز موعد في إحدى العيادات التابعة للمركز الطبي الدولي التي تم تسجيلك كمريض فيها.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ب) حجز ثلاثة مواعيد في نفس اليوم كحد أقصى.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ج) حجز موعد واحد في العيادة الواحدة.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>3-6</strong> نحتفظ بالحق في حرمانك من ميزة حجز المواعيد من خلال الموقع الإلكتروني لأي مدة نحددها وفق تقديرنا المطلق في الحالات التالية:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>أ) التخلف عن حضور أي موعد تم حجزه من خلال الموقع الإلكتروني</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ب) إذا قررنا ذلك وفق تقديرنا المطلق لأي سبب.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>4- الاستخدامات المحظورة </strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>4-1</strong> لا يجوز لك استخدام الموقع الإلكتروني بأي طريقة يمكن أن تؤدي إلى إلحاق الضرر أو زيادة الحمولة على خوادمنا أو على أي شبكة متصلة بأي من خوادمنا. كما لا يجوز استخدام الموقع الإلكتروني بأي طريقة يمكن أن تؤدي إلى التعارض مع استخدام أي طرف آخر للموقع، أو أي طريقة تكون أو من المحتمل أن تكون مخالفة لأي من الأنظمة المعمول بها أو تَضر حقوق أي طرف أو تتسبب في استحقاقات قانونية بموجب أي من الأنظمة المعمول بها.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>4-2</strong> لا يجوز لك إساءة استخدام الموقع الإلكتروني من خلال إدخال فيروسات أو أحصنة طروادة أو الفيروسات المتنقلة أو القنابل المنطقية أو غيرها من المواد الخبيثة أو الضارة تقنيًا إليها بصورة متعمدة. كما لا يجوز لك محاولة الوصول غير المصرح به إلى الموقع الإلكتروني أو الخادم المضيف المخزنة عليه الموقع الإلكتروني أو أي خادم آخر أو أجهزة كمبيوتر أو قاعدة بيانات متصلة بالموقع الإلكتروني. كما لا يجوز لك مهاجمة الموقع الإلكتروني باستخدام برامج قطع الخدمة أو هجوم موزع لبرامج قطع الخدمة.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>4-3</strong> سنقوم بإبلاغ سلطات إنفاذ القانون المعنية عن أي مخالفة للبند 5-2 وسنتعاون مع هذه السلطات من خلال الكشف عن هويتك لهم. وفي حال حدوث مثل تلك المخالفة، فسيتم إنهاء حقك في استخدام الموقع الإلكتروني على الفور.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>4-4</strong> إنك توافق بموجبه على عدم القيام بأي مما يلي - سواءً بنفسك أو من خلال طرف ثالث - :</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>أ) استخدام أي روبوتات أو عناكب محركات البحث أو ماسحات الشاشة أو أدوات تجميع البيانات أو أي أجهزة أوتوماتيكية أخرى أو عمليات لمعالجة أو مراقبة أو نسخ أو استخراج أي صفحات ويب من الموقع الإلكتروني، أو أي معلومات أو محتوى أو بيانات موجودة فيه أو يمكن الوصول إليها من خلال الموقع الإلكتروني دون موافقة كتابية مسبقة منا.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ب) استخدام أي عمليات أوتوماتيكية لتجميع أو دمج المعلومات أو المحتوى أو البيانات الموجودة بالموقع الإلكتروني أو التي يمكن الوصول إليها من خلال الموقع الإلكتروني مع المعلومات أو المحتوى أو البيانات التي يتم الوصول إليها من خلال أي طرف ثالث أو الحصول عليها عن طريقه.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ج) استخدام أي عملية أوتوماتيكية للتداخل أو محاولة التداخل في عمل الموقع الإلكتروني.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>د) اتخاذ أي إجراء من شأنه وضع حمل ضخم غير منطقي أو غير متناسب على البنية التحتية للمواقع الإلكترونية أو على النطاق الترددي المتصل بالموقع الإلكتروني.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>هـ) القيام بهندسة عكسية، أو تجميع عكسي، أو تفكيك، أو محاولة الكشف بأي طريقة عن كود المصدر أو أي معادلة خوارزمية أو عمليات أخرى تخص البرمجيات الأساسية للبنية التحتية والعمليات المرتبطة بالموقع الإلكتروني.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>د) نسخ أو استنساخ أو تغيير أو تعديل أو إنشاء أعمال مشتقة من أي جزء من أي محتوى مأخوذ من الموقع الإلكتروني - أو العرض العلني لها - دون الحصول على موافقة كتابية مسبقة منا.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>5- سبل الوصول</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>5-1</strong> إن استخدامك لهذا الموقع الإلكتروني على مسئوليتك الشخصية.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>5-2</strong> لا يجوز لك الدخول إلى الموقع الإلكتروني باستخدام أجهزة أو خدمات تم تصميمها لتوفير وصول تلقائي متكرر عالي السرعة.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>5-3</strong> هناك أجزاء محددة في الموقع الإلكتروني محمية بكلمات مرور أو تتطلب تسجيل الدخول. لذا يحظر عليك الحصول أو محاولة الحصول على وصول غير مصرح به إلى هذه الأجزاء، أو إلى أي مواد أو معلومات أخرى محمية من خلال أي وسيلة غير متاحة عن قصد من قبلنا لاستخدامها في هذا الغرض.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>5-4</strong> لكي تتمكن من استخدام الموقع الإلكتروني، فعليك القيام بما يلي:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>أ)</strong> إدخال بيانات إثبات الشخصية (الرقم الوطني أو رقم السجل الطبي)</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>ب)</strong> إدخال رمز التعريف الشخصي الصالح للاستخدام لمرة واحدة الذي يتم إرساله لك برسالة نصية على جوالك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>5-5</strong> باستخدامك للمواقع الإلكترونية فأنت تقر وتتعهد وتضمن ما يلي:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>أ) استيفاءك لشرط الحد الأدنى للعمر.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ب) تقديمك معلومات كاملة وصحيحة خاصة بالتسجيل، ومواظبتك على تحديثها أولاً بأول.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>تفويضنا بتنفيذ جميع التعليمات والمعاملات نيابة عنك فيما يتعلق باستخدامك للمواقع الإلكترونية.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ج) استخدامك الموقع الإلكتروني لا يخالف شروط الاستخدام هذه ولا أي قوانين معمول بها.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>5-6</strong> نحتفظ بالاحتفاظ بالحق في ما يلي :</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>أ) رفض أو إلغاء طلبك الدخول إلى الموقع الإلكتروني لأي سبب من الأسباب وفق تقديرنا الخاص، أو تجميد إمكانية دخول الموقع الإلكتروني.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ب) استخدام معلوماتك المسجلة لدينا لأغراض التحليل دون إذن مسبق منك وفقاً لشروط الاستخدام هذه.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>5-7</strong> حتى يتسنى لك استخدام الموقع الإلكتروني، تحتاج إلى الاتصال بالإنترنت. وتتحمل وحدك أي رسوم اتصال وخدمات وغيرها من الرسوم المرتبطة بالاتصال بالإنترنت وعن توفير كافة المعدات اللازمة لاتصالك بالإنترنت -بما في ذلك جهاز كمبيوتر ومودم أو جهاز أخرى له إمكانية الاتصال-.</p>
+</td>
+</tr>
+<tr>
+<td width="99%"> </td>
+</tr>
+<tr>
+<td width="99%"> </td>
+</tr>
+<tr>
+<td width="99%"> </td>
+</tr>
+<tr>
+<td width="99%"> </td>
+</tr>
+<tr>
+<td width="99%"> </td>
+</tr>
+<tr>
+<td width="99%"> </td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>6- أمن كلمة المرور والإشعارات الخاصة بها</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>6-1</strong> تتحمل وحدك المسؤولية عن جميع الأنشطة المتعلقة بتفاصيل تسجيل الدخول الخاصة بك المتعلقة بالموقع الإلكتروني. وبالتالي، يتعين عليك اتخاذ كافة الخطوات اللازمة لضمان سرية تفاصيل تسجيل دخولك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>6-2</strong> عليك إبلاغنا في الحال فور علمك بانكشاف تفاصيل تسجيل الدخول الخاصة بك أو فقدانها أو سرقتها أو استخدامها بصورة غير مصرح بها.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>7- الروابط الإلكترونية الموصلة للمواقع الإلكترونية</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>لا يجوز نسخ الإطار التصميمي للموقع ووضعه على أي موقع إلكتروني آخر، كما لا يجوز لك إنشاء رابط يوصل إلى أي جزء من موقعنا غير الصفحة الرئيسية. ونحتفظ بحقنا في سحب الإذن بالربط الإلكتروني دون الحاجة لإرسال إشعار مسبق بذلك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>8- تحديد المسئولية</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>8-1</strong> مع مراعاة أي مسئوليات ينص عليها القانون ولا يمكن استثناؤها أو التنصل منها، لا يتحمل أي من مدرائنا أو موظفينا أو وكلائنا أو متعاقدينا أي مسئولية تجاهك عن أي خسائر أو تعويضات أو مسئوليات أو مطالبات أو نفقات (بما في ذلك على سبيل المثال لا الحصر النفقات القانونية أو نفقات الدفاع أمام الجهات القضائية أو نفقات التسوية) من أي نوع، سواء مباشرة أو غير مباشرة أو تبعية، ناشئة عن المحتوى أو عن أي مادة خارجية أو شركات خارجية أو عن دخولك إلى الموقع الإلكتروني، سواء كانت تلك المسؤولية عن تعاقدية أو تقصيرية  أو انتهاك واجب قانوني أو غير ذلك. وتجاوزاً للشك، فلا نتحمل أي مسؤولية عن أي نقص أو عدم اكتمال أو عدم إتاحة أو أي تأخير يعزى أو يصاحب أي نوع من أنواع البيانات المبينة في البند 5-4.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>8-2</strong> لا نتحمل المسئولية تجاهك أو تجاه أي شخصٍ آخر عن أي خسارة ناتجة عن سبب خارج عن نطاق سيطرتنا عليه، ويشمل ذلك أعطال المعدات الإلكترونية أو الميكانيكية أو خطوط الاتصالات، أو الوصول غير المرخص به، أو الفيروسات، أو السرقة، أو أخطاء المشغل، أو الطقس السيئ أو الظروف الجوية غير الطبيعية (بما في ذلك الفيضانات أو الزلازل أو غيرها من أفعال القضاء والقدر)، أو الحرائق، أو الحروب، أو حالات التمرد المسلحة، أو الهجمات الإرهابية، أو أعمال الشغب، أو النزاعات العمالية أو أي مشاكل أخرى خاصة بالعمال، أو الحوادث، أو حالات الطوارئ، أو التأخيرات، أو الحجوزات الزائدة المتجاوزة للحد، أو الإلغاءات، أو انتقال السلطة، أو أي إجراء متخذ من جانب الحكومة.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>9- إتاحة الموقع الإلكتروني </strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>9-1</strong> حيث أن الخدمات الإلكترونية عرضة للانقطاع أو الأعطال، فإن إمكانية الوصول إلى الموقع الإلكتروني تقدم بالحالة التي عليها وحسبما هو متاح فقط لا غير.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>9-2</strong> يجوز لنا - وفقًا لتقديرنا المطلق - فرض قيود أو حدود على إمكانية استخدامك الموقع الإلكتروني. كما أنه يجوز لنا  لأسباب أمنية أو تقنية أو قانونية أو تشريعية أو لأسباب متعلقة بالصيانة أو بسبب أي مخالفة لشروط الاستخدام هذه سحب الموقع الإلكتروني أو منعك من دخولها في أي وقت ودون الحاجة لتقديم أي إشعار.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10- الخصوصية </strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10-1</strong> إن خصوصيتك وأمنك أمران في غاية الأهمية بالنسبة لنا. ونحن مسئولون عنى احترام خصوصيتك في أي ولاية قانونية نمارس أعمالنا فيها. كما اننا ملتزمون بجميع التزاماتنا المنصوص عليها في قوانين حماية البيانات المعمول بها وذات الصلة في هذا الخصوص بما في ذلك النصوص القانونية المعمول بها في المملكة العربية السعودية. وتعتبر موافقتك على شروط الاستخدام هذه موافقة صريحة على استخدام البيانات على النحو المبين في شروط استخدام الموقع الإلكتروني.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10-2</strong> قد نقوم بجمع بيانات العمليات والاحتفاظ بالمعلومات التالية عنك:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>)      المعلومات التي يمكن من خلالها تحديد هويتك والتي تزودنا بها وقت التسجيل للحصول على الخدمات المقدمة من قبلنا أو يتم جمعها من خلال استخدامك للموقع الإلكتروني.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ب) المعلومات التي نعتبرها معلومات شخصية حساسة تتعلق بحالتك الصحية والتي قد تتضمن ما يلي:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>1- معلومات حول صحتك الشخصية، بما في ذلك تاريخك الطبي.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>2- معلومات عن أي إعاقات عانيت أو ما تزال تعاني منها.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>3- معلومات حول أي خدمات رعاية صحية قدمت أو ماتزال تقدم لك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>4- معلومات مقدمة من قبلك ذات علاقة بتبرعك بأي عضو من أعضائك أو بأي مادة من مواد جسمك أو مستمدة من أي اختبارات أو فحوص أجريتها على أي جزء أو مادة من جسمك،</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>5- معلومات متعلقة بك وتم جمعها قبل أو أثناء تقديم أي خدمات رعاية صحية لك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10-3</strong> إننا نستخدم معلوماتك الشخصية عند الضرورة فقط وبما يمكّننا من تقديم الخدمات لك، أو لتنفيذ المعاملات التي طلبتها أو لتشغيل الموقع الإلكتروني. وقد نستخدم هذه المعلومات الشخصية في الأغراض الآتية:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>أ) متابعة أنماط حركة مرور البيانات من وإلى الموقع الإلكتروني (والتي قد تشمل الاحتفاظ بالتفاصيل المتعلقة بعنوان بروتوكول الانترنت (IP) الخاص بك، أو بنظام التشغيل، وبالمتصفح، أو بالنطاق أو بمعلومات أي مستخدم آخر (كاسم المستخدم الخاص بك مثلاً).</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ب) تبسيط عملية إدخال المعلومات الشخصية الخاصة بك في بعض النماذج عبر الإنترنت. و تمكينك من دخول الموقع الإلكتروني والحصول على بعض الخدمات المقدمة من خلالها.</p>
+</td>
+</tr>
+<tr>
+<td width="99%"> </td>
+</tr>
+<tr>
+<td width="99%">
+<p>ج) تحليل السجلات الطبية للمرضى بما في ذلك على سبيل المثال لا الحصر، التشخيص، والوصفات الطبية، والنتائج المخبرية، إلخ.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10-4</strong> لن نقوم بالكشف عن أي معلومات شخصية لأي طرف من الغير إلا ضمن الحالات المنصوص عليها في شروط الاستخدام هذه أو بالحدود المسموح بها قانوناً أو تجيزها أي محكمة مختصة.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10-5</strong> يعمل الموقع الإلكتروني على تسجل وتتبع استخدامك للمواقع الإلكترونية من خلال أدوات تتبع عديدة كملفات تعريف الارتباط (الكوكيز) وغيرها من أدوات وأجهزة الرصد. ويمكنك اختيار تعطيل الكوكيز في المتصفح الخاص بك أو حذفها من القرص الصلب حيث لا تحتاج إلى تشغيل الكوكيز لاستخدام الموقع الإلكتروني وإنما تحتاجها في دخول واستخدام بعض أجزاء الموقع الإلكتروني وفي الوصول إلى أي محتوى مخصص أو آمن على الموقع الإلكتروني. وقد لا تعمل بعض صفحات الويب في الموقع الإلكتروني بشكل صحيح إذا لم يتم تشغيل الكوكيز .</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10-6</strong> إننا نستخدم المعلومات الشخصية الحساسة من أجل التأكد من أننا قادرون على تقديم الخدمات التي طلبتها التي يقدمها المركز بأفضل شكل يمكننا القيام به. وسوف نستخدم المعلومات الشخصية الحساسة للمساعدة في تزويدك بالمعلومات حول صحتك أو حول السجلات الطبية الخاصة بك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10-7</strong> لن نقوم من جهتنا بالكشف عن أي معلومات شخصية حساسة لأي طرف من الغير - عدا المشار إليهم في البند 10-8 - إلا في الحالات الآتية:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>أ) إذا حصلنا على موافقة خطية صريحة منك (أو مِن مَن يمثلك)، والتي قد نطلبها منك من وقت لآخر</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ب) إذا كان ذلك ضرورياً لحماية صحتك أو سلامتك أو صحة أو سلامة أي شخص آخر (أو مجموعة أشخاص آخرين) بما في ذلك في حالات الطوارئ أو لحماية الصحة والسلامة العامة.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ج) إذا كان الإفصاح عن تلك المعلومات يتم لأحد المهنيين الآخرين العاملين في مجال الرعاية الصحية لأغراض ضمان توفير وتعزيز أي علاج طبي يقدم في حينه أي أو خدمات صحية أو لتوفير الأدوية</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>د) إذا كان الإفصاح عن المعلومات يتم وفقا للممارسات المهنية المعتادة والمتعارف عليها.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>هـ) إذا كانت هذه المعلومات معروفه لغيرك من خلال الكشف عنها بصورة قانونية من قبلك أنت أو من يمثلك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>و) إذا كنا مطالبين بذلك بموجب القانون أو اللوائح أو أي محكمة مختصة.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10-8</strong> قد نشارك البيانات التي قدمتها إلينا مع شركائنا. ويجوز لنا أو لأي من شركائنا وأي تابع لنا استخدام المعلومات التي تزودنا بها للأغراض التالية:</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>أ) التثبت من أن محتوى الموقع الإلكتروني يقدم بالطريقة الأكثر فعالية بالنسبة لك وبالنسبة للجهاز الذي تستخدمه للوصول إلى الموقع الإلكتروني.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ب) تسهيل أو تحسين أداء الموقع الإلكتروني ، والخدمات المتاحة عليها لك؛</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>ج) تزويدك بالمعلومات أو الخدمات التي تطلبها أو التي نرى انها قد تهمك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>د) إبلاغك بأي تغييرات في الموقع الإلكتروني أو خدماتنا، حيثما ينطبق ذلك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>هـ) تحليل أداء الموقع الإلكتروني</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p>و) تحليل السجلات الطبية للمرضى</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>10-9</strong> يجوز لنا مشاركة معلوماتك على هيئة بيانات مجهولة المصدر مع أطراف من الغير بحيث لا يمكن من خلالها تحديد الأفراد، لأغراض بحثية أو إحصائية أو لدراسة الخصائص الوبائية وفقا للمتطلبات القانونية و / أو اللوائح أو قرارات المحاكم المختصة .</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>11- حقوق الموقع الإلكتروني والعلامات التجارية</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>11-1</strong> جميع حقوق الملكية الفكرية مملوكة لنا أو للجهات المرخصة من قبلنا.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>11-2</strong> العلامة التجارية هي ملكية حصرية لنا أو للجهات المرخصة من قبلنا.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>11-3</strong> لا يجوز لك استخدام العلامة التجارية إلا بعد الحصول على موافقة كتابية صريحة من جانبنا</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>11-4</strong> لا يجوز استنساخ أي جزء من الموقع الإلكتروني أو تخزينه في أي نظام إلكتروني أو أي نظام استعادة آخر، أو تعديله، أو تهيئته، أو تحميله إلى مواقع تابعا لأطراف من الغير، أو استنساخ إطاره التصميمي، أو عرضه أمام العامة، أو نقله، في أي صورة أخرى من خلال أي إجراء أيًا كان، من دون الحصول على موافقة كتابية مسبقة محددة من جانبنا، باستثناء ما تقتضيه الضرورة للعرض الشخصي لهذا الموقع الإلكتروني عبر متصفح الإنترنت الخاص بك أو ما يستتبع ذلك، أو بحسب ما تسمح به شروط الاستخدام الحالية أو بموجب القوانين المعمول بها.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>12- الإنهاء</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>12-1</strong> يجوز لنا إنهاء استخدامك للمواقع الإلكترونية وإمكانية دخولك إليها بسبب وبدون سبب في أي وقت سواء بموجب إخطار أو بدونه و دون تحمل أي مسؤولية تجاهك.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>12-2</strong> تبقى الشروط الخاصة بالقيود وإبراء الذمة والاستثناء من المسؤولية سارية بعد أي إنهاء. وفي حال الإنهاء، يحظر عليك الدخول إلى الموقع الإلكتروني و استخدامها بشكل مباشر أو غير مباشر.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>12-3</strong> قد يترتب على أي مخالفة للبنود لتعليق استخدامك للمواقع الإلكترونية وإمكانية دخولك إليها فوراً.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>13- أحكام عامة</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>13-1</strong> تخضع المواقع الإلكتروني والمنازعات الناشئة عنها للأنظمة المعمول بها في المملكة العربية السعودية، مع مراعاة التزاماتك المنصوص عليها في القوانين والأنظمة المعمول بها في بلد إقامتك. وأنك تقر بموجبه بخضوعك بشكل نهائي لا رجعة فيه للاختصاص القضائي لمحاكم المملكة العربية السعودية.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>13-2</strong> يجوز لنا تنفيذ أي من التزاماتنا واستعمال أي من الحقوق الممنوحة لنا بموجب شروط الاستخدام هذه عن طريق أي طرف من الغير. كما يجوز لنا التنازل كلياً أو جزئياً عن حقوقنا والتزاماتنا المنصوص عليها في شروط الاستخدام هذه إلى أي طرف من الغير.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>13-3</strong> إذا تبين أن أي بند - أو جزء من اي بند من بنود شروط الاستخدام هذه باطل أو غير قابل للتنفيذ أو غير ساري، يتم فصله من شروط الاستخدام هذه، وتظل باقي بنود شروط الاستخدام سارية ونافذة بكامل أثرها، شريطةً أن لا يغير مثل هذا الفصل من الطبيعية الأساسية لشروط الاستخدام هذه.</p>
+</td>
+</tr>
+<tr>
+<td width="99%">
+<p><strong>13-4</strong> لا يجوز تفسير أي عبارات من عباراتنا أو أي سلوك من جانبنا على أنه تنازل منا عن أي حق، ولا يعتد بأي تنازل عن الحق.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p> ]]></string>
+
+    <string name="session_expired">لقد تم إنهاء الجلسة أو تم تسجيل الدخول من جهاز مختلف.</string>
+
+    <string name="exit_alert">هل انت متأكد من أنك تريد الخروج من التطبيق؟</string>
+
+    <!--ID names-->
+    <string name="passport_id">رقم جواز السفر</string>
+    <string name="iqama_id">رقم الاقامة</string>
+    <string name="national_id">رقم الهوية الوطنية</string>
+    <string name="birth_notification">تبليغ الولادة</string>
+
+    <string name="delivery_number">رقم الطلب</string>
+    <string name="delivery_date">تاريخ الاستلام</string>
+
+    <string name="discard_booking">هل انت متأكد من إلغاء الموعد؟</string>
+    <string name="no_service_print">الجهاز لا يدعم خاصية الطباعة</string>
+
+    <string name="language">اللغة</string>
+    <string name="language_m">اللغة *</string>
+    <string name="please_try_again">حاول مرة اخرى</string>
+
+    <string name="total_lab_reports">إجمالي تقارير المختبر:</string>
+
+    <string name="total_lab_radio">إجمالي تقارير الأشعة:</string>
+    <string name="total_lab_sick">إجمالي الإجازات المرضية:</string>
+
+    <string name="total_upcoming">إجمالي المواعيد القادمة:</string>
+    <string name="total_completed">إجمالي المواعيد المُكتملة:</string>
+    <string name="total_cancelled">إجمالي المواعيد المُلغاة:</string>
+    <string name="total_no_show">إجمالي عدد المواعيد:</string>
+
+    <string name="clear_notifications">هل أنت متأكد من مسح جميع الإشعارات؟</string>
+    <string name="clear_all">مسح الكل</string>
+
+    <string name="time_passed_away">التوقيت الذي اخترته قد مر، فضلا اختر وقتاً.</string>
+    <string name="doctor_not_available">عفواً، لا توجد مواعيد متاحة لهذا الطبيب، لمزيد من المعلومات يرجى الاتصال على الرقم الموحد %1$s .</string>
+    <string name="print">طباعة</string>
+    <string name="download">تحميل</string>
+    <string name="dr">د.</string>
+
+    <string name="request_a_callback">طلب معاودة الاتصال</string>
+    <string name="complete_form_get_call">فضلاً قم بتعبئة النموذج وسنعاود الاتصال بك خلال 24 ساعة القادمة.</string>
+    <string name="call_us_direct">اتصل بنا</string>
+    <string name="call_us_content">اتصل بنا على الرقم %1$s وسيكون موظفو مركز الاتصال سعيدون بخدمتك.</string>
+    <string name="request_for_report">طلب تقرير</string>
+    <string name="complete_form_request_for_report">فضلاً قم بتعبئة النموذج ليصلك التقرير المطلوب عبر البريد الإلكتروني.</string>
+
+
+    <!--ABOUT US-->
+
+    <string name="select_from">اختر من التاريخ الأول</string>
+
+    <string name="health_summary">صحتي</string>
+    <string name="view_health_summary">أطلع على معلوماتك الصحية من مكان واحد</string>
+
+
+    <!--Retail data-->
+    <string name="talah">تالة الجود</string>
+    <string name="little_flower">زهرة صغيرة</string>
+    <string name="lavera">لافيرا</string>
+    <string name="fine_chocolate">جوديفا</string>
+    <string name="gardenia">جاردينيا</string>
+    <string name="baby_fitaihi">بيبي فيتيحي</string>
+
+    <string name="talah_emp">ياسر</string>
+    <string name="little_flower_emp">منير</string>
+    <string name="lavera_emp">بشير- أيمن- نهى</string>
+    <string name="fine_chocolate_emp">--</string>
+    <string name="gardenia_emp">محمد</string>
+    <string name="baby_fitaihi_emp">احسان - وعد</string>
+
+    <string name="sat_sun">يوم السبت-الخميس:</string>
+    <string name="contact">رقم الاتصال:</string>
+    <string name="fridays">يوم الجمعة</string>
+
+    <string name="employee">الموظفون</string>
+    <string name="open_time">أوقات العمل</string>
+    <string name="everyday">كل يوم</string>
+
+
+    <string name="gender">جنس</string>
+    <string name="gender_req">جنس *</string>
+
+    <string name="both">كلا</string>
+    <string name="male">الذكر</string>
+    <string name="female">أنثى</string>
+    <string name="unspecified">غير محدد</string>
+
+    <string name="sort_by">صنف حسب</string>
+
+    <string name="first_a_z">الاسم الأول (أ - ي)</string>
+    <string name="first_z_a">الاسم الأول (ي - أ)</string>
+    <string name="last_a_z">اسم العائلة (أ - ي)</string>
+    <string name="last_z_a">اسم العائلة (ي - أ)</string>
+
+    <string name="delivery_status">حالة التسليم</string>
+    <string name="urgency">طريقة الاستخدام</string>
+    <string name="description">وصف</string>
+
+
+    <string name="consent_for_add_guardian"><![CDATA[<p>إن موافقتك تمنح المستخدم حق الوصول إلى جميع بياناتك، بما في ذلك المواعيد والتقارير والمعلومات الشخصية. عند تسجيل دخول الوصي لتطبيق “My IMC” فسيتمكن من رؤية رقم ملفك الطبي في قائمة التابعين، كما يمكنه الانتقال إلى ملفك الطبي وعندئذٍ ستكون جميع بياناتك متاحة له.</p>
+<p><strong>عند إضافتك للوصي فسيتمكن من استخدام الخصائص التالية:</strong></p>
+<ul style="list-style-type: circle;">
+<li>عرض جميع المواعيد.</li>
+<li>عرض جميع التقارير.</li>
+<li>عرض أنواع الحساسية.</li>
+<li>عرض الأدوية.</li>
+<li>عرض بيانات الملف الشخصي.</li>
+<li>حجز موعد.</li>
+<li>إلغاء وإعادة جدولة الموعد.</li>
+</ul>
+<p><strong>ملاحظة:</strong>يمكنك الربط / إلغاء الربط أو إزالة الوصي في أي وقت.</p>
+<p>&nbsp;</p>
+<p>إن موافقتك تعني منح الوصي حق الوصول وإدارة بياناتك.</p>]]></string>
+
+    <string name="active">فصل الوصي</string>
+    <string name="inactive">ربط الوصي</string>
+
+    <string name="guardian_name">اسم الوصي</string>
+    <string name="guardian_detail"> بيانات الوصي</string>
+    <string name="switch_to_dependent">الانتقال إلى رقم الملف الطبي للشخص التابع</string>
+    <string name="switch_to_my">الانتقال إلى رقم ملفي الطبي</string>
+    <string name="dependent_list"> اختر رقم الملف الطبي للشخص التابع</string>
+    <string name="viewing_dependent">أنت الآن تعرض سجل الشخص التابع.</string>
+    <string name="remove_gurdian_content"> هل ترغب بحذف الوصي؟</string>
+    <string name="switch_to_dependent_content">هل ترغب بالانتقال إلى رقم الملف الطبي للتابع %1$s</string>
+    <string name="num_day_greater">عدد الأيام يجب أن يكون أكبر من 0</string>
+    <string name="edit_guardian_content">You can edit duration of guardian in edit option.</string>
+
+    <string name="update_available">نسخة جديدة من التطبيق</string>
+    <string name="update_meaage">يتوفر الآن الإصدار الجديد %1$s من تطبيق My IMC على متجر Play</string>
+    <!--<string name="update_meaage">\nNew Version of MY IMC application is available on Play Store. Please update to get new features and improvements.\n</string>-->
+    <string name="update_now">قم بالتحديث الآن</string>
+
+    <string name="report_type">اختر نوع التقرير *</string>
+    <string name="booking_id_date">رقم الموعد وتاريخه *</string>
+    <string name="booking_id_date_">رقم الموعد وتاريخه</string>
+
+    <string name="booking_date">تاريخ الموعد *</string>
+    <string name="subject">الموضوع</string>
+    <string name="appointment_date_">تاريخ الموعد:</string>
+
+    <string name="select_report_type">اختر نوع التقرير</string>
+    <string name="select_appon_date_id">اختر رقم الموعد وتاريخه</string>
+    <string name="what_you_need">ما نوع نسخة التقرير التي تحتاجها؟</string>
+    <string name="physical_copy">نسخة ورقية</string>
+    <string name="scanned_copy">نسخة مصورة</string>
+    <string name="request_translation">طلب ترجمة</string>
+    <string name="request_translation_file">يرجى ارفاق صورة طلب من الجهة الطالبة للتقرير المترجم* (حد أعلى 2MB)</string>
+
+    <string name="general_report">تقرير عام</string>
+    <string name="recent_visit_report">تقرير لمراجعة سابقة</string>
+    <string name="other_reports">تقرير آخر</string>
+
+    <string name="vital_signs">العلامات الحيوية</string>
+    <string name="view_vital_signs">عرض العلامات الحيوية والقياسات الخاصة بك في مكان واحد</string>
+
+    <string name="bmi">مؤشر كتلة الجسم</string>
+    <string name="bmi_cal">حاسبة مؤشر كتلة الجسم</string>
+
+    <string name="temperature">درجة الحرارة</string>
+    <string name="pulse_rate">معدل النبض</string>
+    <string name="bp">ضغط الدم</string>
+    <string name="respiratory">معدل التنفس</string>
+    <string name="ox_gen"> التشبع الأكسجيني</string>
+    <string name="bloos_sugar">سكر الدم</string>
+    <string name="reading_date">تاريخ القراءة: </string>
+
+    <string name="vital_patient">العلامات الحيوية للمريض</string>
+    <string name="bee">BEE</string>
+    <string name="bsa"> مساحة سطح الجسم</string>
+    <string name="ibw"> وزن الجسم المثالي</string>
+
+    <string name="bmr">معدل الأيض الأساسي</string>
+    <string name="bmr_cal">حاسبة السعرات الحرارية</string>
+
+    <string name="vital_capacity">الطاقة الحيوية</string>
+    <string name="ideal_body_weight">الوزن المثالي</string>
+    <string name="sleep_cycle">دورة النوم</string>
+    <string name="heart_rate">معدل نبضات القلب</string>
+    <string name="calculate">احسب</string>
+
+    <string name="height_cm">الطول (سم)</string>
+    <string name="weight_kg">الوزن (كج)</string>
+    <string name="age">العمر</string>
+    <string name="activity_level">فضلاً حدد مستوى نشاطك</string>
+
+    <string name="bmi_under_weight">مؤشر كتلة جسمك (BMI) هو %1$s كجم/²م  \n أنت تعاني من نقص الوزن.</string>
+    <string name="bmi_normal_weight">مؤشر كتلة جسمك (BMI) هو %1$s كجم/²م  \n وزنك ضمن المعدل الطبيعي.</string>
+    <string name="bmi_over_weight">مؤشر كتلة جسمك (BMI) هو %1$s كجم/²م  \n أنت تعاني من الوزن.</string>
+    <string name="bmi_obese_weight">مؤشر كتلة جسمك (BMI) هو %1$s كجم/²م  \n أنت تعاني من السمنة.</string>
+
+    <string name="level_sedentary">I am sedentary (little or no exercise)</string>
+    <string name="level_lightly">I am lightly active (light exercise or sports 1–3 days per week)</string>
+    <string name="level_moderately">I am moderately active (moderate exercise or sports 3–5 days per week)</string>
+    <string name="level_active">I am very active (hard exercise or sports 6–7 days per week)</string>
+    <string name="level_super">I am super active (very hard exercise or sports and a physical job)</string>
+    <string name="your_bmr">Your BMR</string>
+    <string name="maintenance_calory_per_day">Maintenance calories per day</string>
+    <string name="please_select_activity_level">فضلاً اختر مستوى نشاطك</string>
+
+    <string name="option_one_bmi">0 – 18.5\nأقل</string>
+    <string name="option_two_bmi">18.6 – 24.9\nطبيعي</string>
+    <string name="option_three_bmi">25.0 – 29.9\nزائد</string>
+    <string name="option_four_bmi">> 30.0\nسمنة</string>
+
+    <string name="ibw_cal">IBW Calculator</string>
+    <string name="age_validation">Please provide an age between 15 and 80</string>
+
+
+    <!--Medicine Reminder-->
+    <string name="reminder_noti_message">%1$s you need to take your medicine \'%2$s\'.</string>
+    <string name="medicine_reminder">Medicine Reminder</string>
+    <string name="select_time_schedule">Select schedule time</string>
+    <string name="select_at_least_one_time">Select at least one time of day</string>
+    <string name="select_at_least_one_day">Select at least one week day</string>
+    <string name="reminder_saved">Reminder saved</string>
+    <string name="select_end_date">تاريخ انهاء التنبيه</string>
+
+    <string name="once">Once</string>
+    <string name="hourly">Hourly</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+
+    <string name="monday">الإثنين</string>
+    <string name="tuesday">الثلاثاء</string>
+    <string name="wednesday">الأربعاء</string>
+    <string name="thursday">الخميس</string>
+    <string name="friday">يوم الجمعة</string>
+    <string name="saturday">يوم السبت</string>
+    <string name="sunday">الأحد</string>
+    <string name="tooltip_message"><![CDATA[الغاء، إعادة الجدولة وغيرها انتقلت هنا]]></string>
+
+    <string name="no_of_hours">Number of hours</string>
+    <string name="booking_confirmed">تم حجز الموعد بنجاح!</string>
+
+    <string-array name="months">
+        <item>يناير</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>مايو</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>سبتمبر</item>
+        <item>أكتوبر</item>
+        <item>نوفمبر</item>
+        <item>ديسمبر</item>
+
+    </string-array>
+
+    <!--updated string -->
+    <string name="new_">جديد</string>
+    <string name="new_appointment_doctor">موعد جديد - %1$s</string>
+    <string name="view_alternate_phyisician">الأطباء المتاحون لنفس اليوم</string>
+    <string name="scan_visit_number">مسح رقم الموعد</string>
+    <string name="select_a_visit" >اختر الزيارة*</string>
+    <string name="detail_of_person">معلومات مستلم التقرير</string>
+    <string name="full_name">الاسم الرباعي*</string>
+    <string name="national_id_iquama">رقم الهوية\الاقامة*</string>
+    <string name="dob_title">تاريخ الميلاد*</string>
+    <string name="i_submitted">أقر بإن جميع المعلومات أعلاه صحيحة وأن أي خطأ قد يعرض الطلب للتأخير او الالغاء.</string>
+    <string name="i_agree_to">أوافق على الشروط والأحكام وسياسة الخصوصية.</string>
+    <string name="add_email_id">اضافة\توثيق الايميل</string>
+    <string name="make_sure"> التأكد من استخدام بريدك الالكتروني الخاص بك. سيتم ربط هذا البريد الالكتروني بملفك الطبي.</string>
+    <string name="enter_the_verification">ادخل رمز التفعيل المرسل على بريدك الالكتروني.</string>
+    <string name="otp_title">كود التفعيل*</string>
+    <string name="close"> اغلاق </string>
+    <string name="send_otp">ارسل الرمز</string>
+    <string name="add_email">اضافة بريد..</string>
+    <string name="receive_it_by_in_person">أرغب باستلام التقرير شخصيا</string>
+    <string name="i_would_like_to_receive">أرغب باستلام التقرير عبر البريد الالكتروني</string>
+    <string name="filter_by_exam">فرز بتاريخ الاختبار</string>
+    <string name="submission_date">تاريخ التسليم</string>
+    <string name="app_email">البريد الإلكتروني</string>
+    <string name="app_email_value">xxxxxxx @</string>
+    <string name="order_no">رقم الطلب:</string>
+    <string name="smart_report">التقرير الذكي</string>
+    <string name="smart">تقرير ذكي:</string>
+    <string name="checked_in">تم تسجيل الحضور</string>
+    <string name="physician_name">اسم الطبيب:</string>
+    <string name="visit_date">تاريخ الزيارة:</string>
+
+    <string name="app_verify">التحقق</string>
+
+<!--    Health and Fitness-->
+    <string name="health_and_fitness">الصحة واللياقة</string>
+    <string name="apple_watch">ساعة أبل</string>
+    <string name="android_watch">ساعة ذكية</string>
+    <string name="connected">متصل</string>
+    <string name="not_connected">غير متصل</string>
+    <string name="health_features">البيانات الصحية</string>
+    <string name="activity">النشاط</string>
+    <string name="body_measurements">قياسات الجسم</string>
+    <string name="heat_amp_vitals">العلامات الحيوية</string>
+    <string name="exercise">التمرين</string>
+    <string name="time">وقت </string>
+    <string name="steps">خطوات</string>
+    <string name="_6_7">6.7</string>
+    <string name="hours">ساعات</string>
+    <string name="sleep">نايم</string>
+    <string name="cycle">دورة</string>
+    <string name="heart">قلب</string>
+    <string name="rate">معدل</string>
+    <string name="today">اليوم</string>
+    <string name="height_amp_weight">الطول والوزن</string>
+    <string name="healthyweight">/وزن صحي</string>
+    <string name="blood_pressure">/ضغط الدم</string>
+    <string name="blood_glucose">/جلوكوز الدم</string>
+    <string name="blood_oxygen">الأكسجين في الدم</string>
+    <string name="body_temp">حرارة الجسم</string>
+    <string name="set_sleep_target">تحديد هدف النوم</string>
+    <string name="record_manually">سجل يدويًا</string>
+    <string name="calories">سعرات حراريه</string>
+    <string name="burned">أحرق</string>
+    <string name="steps_counter">عداد الخطوات</string>
+    <string name="walking_distance">مسافة المشي</string>
+    <string name="mile">ميل</string>
+    <string name="km">كيلومترات</string>
+    <string name="move_minutes">دقائق الحركة</string>
+    <string name="_8000_goal">8000 الهدف</string>
+    <string name="awake">مستيقظ</string>
+    <string name="out_of_bed">خارج السرير</string>
+    <string name="light">ضوء</string>
+    <string name="deep">عميق</string>
+    <string name="rem">حركة العين السريعة</string>
+
+
+
+    4
+    <!--    Rate the app  -->
+
+    <string name="rta_dialog_title">قيم هذا التطبيق</string>
+    <string name="rta_dialog_message">إذا احببت هذا التطبيق أبدي ملاحظاتك ، افكارك من خلال تقييمه على سوق بلاي</string>
+    <string name="rta_dialog_ok">تقييم</string>
+    <string name="rta_dialog_cancel">لاحقا</string>
+    <string name="rta_dialog_no">لا شكرا</string>
+    <string name="permission_denied_explanation">تم رفض الإذن ، ولكنه ضروري للوظيفة الأساسية.</string>
+    <string name="coming_soon">قريبا</string>
+
+    <!--    Telr Actvity  -->
+    <string name="string_appointment">الموعد</string>
+    <string name="string_information">معلومات</string>
+    <string name="string_user_amp_payment"><![CDATA[الدفع ]]></string>
+    <string name="string_continue">إستمرار</string>
+    <string name="string_appointment_information">معلومات التعيين</string>
+    <string name="string_download_invoice">تحميل فاتورة</string>
+    <string name="informationMessage">معلومات الرسالة</string>
+    <string name="drAnotherCall">الرجاء الا نتظار في حين خدمة مرضى اخرين /من فضلك انتظر الطبيب في حين خدمة مريض اخر</string>
+    <string name="txt_healthcare">الرعاية الصحية المنزلية</string>
+    <string name="txt_form_select_something">يرجى تحديد خيار واحد على الأقل للمتابعة</string>
+    <string name="txt_form_submitted">تم إرسال النموذج بنجاح</string>
+    <string name="txt_proceed">تقدم</string>
+    <string name="txt_total">المجموع</string>
+    <string name="txt_enter_home_address">أدخل عنوان المنزل</string>
+    <string name="txt_select_all">اختر الكل</string>
+    <string name="txt_deselect_all">الغاء تحديد الكل</string>
+    <string name="txt_delivery_options">حدد خيار التسليم</string>
+
+    <string name="txt_in_process">دائر</string>
+    <string name="txt_approved">موافق عليه</string>
+    <string name="txt_partial_approved">تمت الموافقة جزئياً</string>
+    <string name="txt_reject">رفض</string>
+
+    <string name="txt_details">التفاصيل</string>
+    <string name="txt_duration">المدة</string>
+    <string name="txt_route">بيانات الدواء</string>
+    <string name="txt_dose">جرعة</string>
+    <string name="txt_status">الحالة</string>
+    <string name="txt_insurance_status">حالة التأمين</string>
+
+    <string name="txt_payment_success_home_delivery">تم إتمام الدفع بنجاح، ويمكنك تحميل الإيصال.. وسيتم توصيل أدويتك إلى عنوانك المسجل في خدمة التوصيل المنزلي</string>
+    <string name="txt_payment_success_op_pharmacy">تم إتمام الدفع بنجاح، ويمكنك تحميل الإيصال ثم التوجه للصيدلية لتسلم الدواء
+</string>
+
+    <string name="txt_success_home_delivery">تم إتمام الدفع بنجاح، ويمكنك تحميل الإيصال.. وسيتم توصيل أدويتك إلى عنوانك المسجل في خدمة التوصيل المنزلي</string>
+    <string name="txt_success_op_pharmacy">تم إتمام الدفع بنجاح، ويمكنك تحميل الإيصال ثم التوجه للصيدلية لتسلم الدواء
+</string>
+    <string name="txt_out_of_stock">إنتهى من المخزن</string>
+    <string name="txt_unpaid">غير مدفوع</string>
+    <string name="txt_payment_pending">انتظار الدفع</string>
+    <string name="txt_paid">مدفوع</string>
+    <string name="enter_name">ادخل الاسم</string>
+    <string name="enter_phone_number">ادخل رقم الجوال</string>
+    <string name="txt_healthcare_description">اضعط لطلب أي خدمة من خدمات الرعاية الصحية المنزلية المدرجة وسيقوم فريق الرعاية الصحية المنزلية بالاتصال بك بمجرد استلام الطلب.</string>
+    <string name="enter_email_address">أدخل عنوان البريد الالكتروني</string>
+
+    <string-array name="deliveryOptions">
+        <item>حدد خيار</item>
+        <item>التوصيل المنزلي</item>
+        <item>الاستلام من الصيدلية</item>
+    </string-array>
+    <string name="txt_download_receipt">يرجى تحميل الإيصال</string>
+    <string name="txt_success_download_receipt">تم تنزيل الإيصال الخاص بك بنجاح.</string>
+
+    <string name="txt_orderId">Order Id</string>
+    <string name="txt_placed_on">موضوع على</string>
+    <string name="txt_search_for_place">Search for place</string>
+    <string name="txt_pharmacy_continue">للستمرار</string>
+    <string name="pdf">بي دي إف</string>
+    <string name="image_text">صورة</string>
+    <string name="phone_number_code">(+966)</string>
+    <string name="invalid_user_id">هوية المستخدم غير صالحة يرجى المحاولة مره اخرى</string>
+    <string name="report_already_requested_ar">لديك بالفعل طلب بنفس النوع قيد التقدم.</string>
+    <string name="report_successfully_requested_ar">تم تقديم طلبك وستتم معالجته. ستستلمه في غضون خمسة (5) أيام عمل.</string>
+    <string name="session_exp">انتهت الجلسة</string>
+    <string name="no_telemedicine_services">لا تتوفر خدمات التطبيب عن بعد</string>
+    <string name="profile_data_not_avalible">بيانات الملف الشخصي غير متوفرة</string>
+    <string name="appointment_successfully_booked">تم حجز موعدك بنجاح. ستتلقى تذكيرًا بهذا الموعد قبل 45 دقيقة من الوقت المحدد.</string>
+    <string name="service_error">الخدمة غير متوفرة ، يرجى الاتصال بمركز الاتصال الخاص بنا: + %1$s</string>
+
+
+
+
+    <string name="consult">عملية الدفع</string>
+    <string name="appointment_onfirmation">تأكيد الحجز</string>
+    <string name="historical_vital_sign">المؤشرات الحيوية السابقة</string>
+    <string name="new_vital_sign">المؤشرات الحيوية الجديدة</string>
+    <string name="plesae_id_number">يرجى التحقق من رقم الهوية الخاص بك</string>
+    <string name="self_registration_success">تم تسجيلك بنجاح ، وسوف نقوم بتواصل معك قريبًا.</string>
+    <string name="request_submitted_success">تم تقديم طلبك بنجاح ، وسوف نقوم بتواصل معك قريبًا.</string>
+    <string name="result_not_published_yet">لم تظهر النتيجة بعد</string>
+    <string name="consultation_type">نوع الخدمة</string>
+    <string name="service_price">المبلغ الاجمالي</string>
+    <string name="patient_payable">نسبة الدفع</string>
+    <string name="pay_later">الدفع لاحقا</string>
+    <string name="want_include_diagnosis">هل تريد أن يشمل التشخيص في تقرير الإجازة المرضية؟</string>
+    <string name="emergency_call">رعاية خاصة</string>
+    <string name="date">التاريخ</string>
+
+
+
+
+
+    <string name="screen_capture_error">حدث خطأ في التقاط الشاشة</string>
+    <string name="screen_capture_permission_not_granted">لم يتم منح إذن التقاط الشاشة</string>
+    <string name="checkin_faild">انت لست في نطاق المستشفى</string>
+    <string name="check_availability">التحقق من الإتاحة</string>
+    <string name="pay_zero">حاليًا ، لا يمكنك إجراء الدفع في الوقت الحالي</string>
+
+
+    <string name="message_elipses">أكتب شيئا</string>
+    <string name="app_send">إرسال</string>
+    <string name="generic_error">حدث خطأ ، يرجى المحاولة مرة أخرى</string>
+    <string name="loading_channels_message">تحميل معلومات القناة</string>
+    <string name="new_channel_prompt">أدخل اسمًا للقناة الجديدة</string>
+    <string name="login_user_progress_message">تسجيل الدخول</string>
+    <string name="login_all_fields_required">جميع الحقول مطلوبة</string>
+    <string name="logo_text">شعار</string>
+    <string name="twilio_first_line">تطبيق محادثة بسيط تم إنشاؤه باستخدام</string>
+    <string name="twilio_second_line">Twilio واجهة برمجة تطبيق المحادثة</string>
+    <string name="login_button_text">تسجيل الدخول</string>
+    <string name="username_placeholder">اسم المستخدم</string>
+    <string name="doctor_name">اسم الطبيب</string>
+    <string name="identityError">الرجاء إدخال الهوية / اسم المريض</string>
+    <string name="doctorError">الرجاء إدخال اسم الطبيب</string>
+    <string name="app_emergencyall">مكالمة طارئة</string>
+    <string name="app_add_your_symptoms">أضف الأعراض الخاصة بك</string>
+    <string name="app_whatCare">ما نوع الرعاية التي تفكر فيها لهذه الأعراض؟</string>
+    <string name="app_doYouHaveSymptoms">هل لديك أي من الأعراض التالية؟</string>
+    <string name="app_submit_call">[إرسال والاتصال]البيانات الشخصية]</string>
+    <string name="identity_username">الهوية / اسم المستخدم</string>
+    <string name="app_chat">محادثة</string>
+    <string name="app_call_doctor">اتصل بالطبيب</string>
+    <string name="permissions_needed">هناك حاجة إلى أذونات الكاميرا والميكروفون. يرجى السماح في إعدادات التطبيق للحصول على وظائف إضافية</string>
+    <string name="room_screen_select_device">اختر جهاز</string>
+    <string name="error_retrieving_access_token">خطأ في استرداد الرمز</string>
+    <string name="action_leave_channel">غادر القناة</string>
+    <string name="action_delete_channel">حذف القناة</string>
+
+
+    <string name="codec_title">إذا لم يكن برنامج الترميز المفضل مدعومًا VP8 أو OPUS قم بتعيين برنامج ترميز الصوت والفيديو المفضل لديك. لا يتم دعم جميع برامج الترميز مع غرف المجموعة سيعود خادم الوسائط إلى</string>
+    <string name="pref_title_audio_codec">ترميز الصوت</string>
+    <string name="pref_title_video_codec">ترميز الفيديو</string>
+    <string name="sender_bandwidth_constraints">والتي تختلف حسب برنامج الترميز WebRTC تعيين قيود النطاق الترددي للمرسل. يمثل الصفر القيمة الافتراضية لـ</string>
+    <string name="max_audio_bitrate">أقصى معدل نقل للصوت (بت في الثانية)</string>
+    <string name="max_video_bitrate">الحد الأقصى لمعدل نقل بيانات الفيديو (بت في الثانية)</string>
+    <string name="vp8_simulcast">VP8 البث المتزامن لـ</string>
+    <string name="audio_device">جهاز صوتي</string>
+    <string name="title_activity_main_chat">القناة العامة</string>
+    <string name="title_activity_settings">الإعدادات</string>
+    <string name="call">اتصل</string>
+    <string name="select_file">حدد ملف</string>
+    <string name="fileSelectionError">pdf / image / text لقد قمت بتحديد ملف غير صالح ، يرجى تحديد ملف</string>
+
+
+    <string name="text">نص</string>
+    <string name="doctor_offline">دكتور غير متواجد حاليا</string>
+    <string name="openSetting">تحتاج إلى منح إذن في الإعدادات للسماح بالوصول إلى جميع الملفات. يرجى اتباع المسار</string>
+    <string name="openSeetingPath">مدير التطبيقات> ماي ا م س > التخزين> السماح بإدارة جميع الملفات</string>
+
+    <string name="fileNotExists">الملف غير موجود</string>
+    <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+
+
+</resources>

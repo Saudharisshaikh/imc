@@ -1,0 +1,851 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.firebase.appdistribution'
+apply plugin: 'kotlin-parcelize'
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('..\\imc.jks')
+            keyAlias 'myImc'
+            storePassword '911hpp'
+            keyPassword '911hpp'
+        }
+
+    }
+
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "sa.med.imc.myimc"
+        minSdkVersion 24
+        targetSdkVersion 31
+        versionCode 83
+        versionName "4.0.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+    }
+
+    allprojects {
+        repositories {
+            google()
+            jcenter()
+            maven {
+                url 'https://maven.google.com/'
+                name 'Google'
+            }
+            maven {
+                url "https://jitpack.io"
+                credentials { username authToken }
+            }
+            flatDir {
+                dirs 'libs'
+            }
+        }
+    }
+
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            // debuggable true
+            buildConfigField("String", 'BASE_URL', '"https://patientportal.imc.med.sa/imc-tc-wrapper-service-v2-kaust/"')
+            //  buildConfigField("String", 'BASE_URL', '"http://10.0.2.2:8082/"')
+            buildConfigField("String", 'BASE_URL_FOR_IMAGE', '"https://patientportal.imc.med.sa/"')
+            buildConfigField("String", 'BASE_URL_VIDEO', '"https://whealth.imc.med.sa:9443/imc_doctor/"')
+//            buildConfigField("String", 'MEDICUS_SERVER_URL', '"http://192.168.1.47:8080/imc_portal/web/medicus/"')
+//            buildConfigField("String", 'MEDICUS_SERVER_URL', '"https://patientportal.imc.med.sa/imc-tc-wrapper-service/api/medicus/"')
+            buildConfigField("String", 'MEDICUS_SERVER_URL', '"https://patientportal.imc.med.sa/old-imc-service/web/medicus/"')
+
+//            buildConfigField("String", 'LICENSE_KEY', '"MEDICUS-CORE-DEMO-FREE"')
+
+
+            buildConfigField("String", 'BASE_URL_PHARMACY', '"https://patientportal.imc.med.sa/imc_portal/"')
+            buildConfigField("String", 'IMAGE_UPLOAD_URL', '"https://patientportal.imc.med.sa/uploads/clinic/"')
+            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL', '"https://patientportal.imc.med.sa/uploads/docImg/"')
+            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL_FC', '"https://patientportal.imc.med.sa/uploads/docImg/FC/"')
+            buildConfigField("String", 'SYMPTOM_CHECKER_LINK', '"https://www.imc.med.sa/symptom-checker/"')
+//            buildConfigField("String", 'MEDICUS_SERVER_URL', '"https://patientportal.imc.med.sa/imc_portal/web/medicus/"')
+
+//            buildConfigField("String", 'BASE_URL', '"http://192.168.1.49:8080/imc_portal/"')
+//            buildConfigField("String", 'IMAGE_UPLOAD_URL', '"http://192.168.1.49:8080/uploads/clinic/"')
+//            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL', '"http://192.168.1.49:8080/uploads/docImg/"')
+            //  buildConfigField("String", 'SYMPTOM_CHECKER_LINK', '"http://vdh.noj.mybluehost.me/symptom-checker-test/"')
+            // buildConfigField("String", 'SYMPTOM_CHECKER_LINK', '"https://www.imc.med.sa/symptom-checker/"')
+
+
+            //startMethodTracing()
+            buildConfigField("int", 'DatabaseVersion', '5')
+            //  buildConfigField("String", 'LICENSE_KEY', '"MEDICUS-CORE-DEMO-FREE"')4jan
+            minifyEnabled false
+            //signingConfig signingConfigs.config
+            //signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            firebaseAppDistribution {
+                appId="1:258237203524:android:76d87141f328ccb28d2811"
+                releaseNotes="MYIMC pharmacy complete build geolocation and invoices"
+                groups="DB,IMC"
+            }
+            buildConfigField("String", 'BASE_URL_PHARMACY', '"http://192.168.1.47:8080/imc_portal/"')
+//            buildConfigField("String", 'IMAGE_UPLOAD_URL', '"http://192.168.1.47:8080/uploads/clinic/"')
+//            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL', '"http://192.168.1.47:8080/uploads/docImg/"')
+//            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL_FC', '"http://192.168.1.47:8080/uploads/docImg/FC/"')
+//            buildConfigField("String", 'BASE_URL', '"http://192.168.1.47:8080/imc_portal/"')
+
+            //buildConfigField("String", 'BASE_URL', '"http://10.11.28.74:8080/imc-tc-wrapper-service-v1-kaust/"')
+
+            buildConfigField("String", 'BASE_URL', '"http://10.11.28.74:8080/imc-tc-wrapper-service-v2-kaust/"')
+
+
+
+
+//            buildConfigField("String", 'BASE_URL', '"https://10.11.28.74:443/imc-tc-wrapper-service-real/"')
+
+            buildConfigField("String", 'BASE_URL_FOR_IMAGE', '"http://10.11.28.74:8080/"')
+//            buildConfigField("String", 'BASE_URL_FOR_IMAGE', '"https://10.11.28.74:443/"')
+
+            buildConfigField("String", 'BASE_URL_VIDEO', '"http://10.11.28.74:8080/imc-doctor/"')
+//            buildConfigField("String", 'BASE_URL_VIDEO', '"https://10.11.28.74:443/imc-doctor/"')
+
+            buildConfigField("String", 'BASE_URL_PHARMACY', '"https://telemed.imc.med.sa/imc_portal_op/"')
+            buildConfigField("String", 'IMAGE_UPLOAD_URL', '"https://telemed.imc.med.sa/uploads/clinic/"')
+            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL', '"https://telemed.imc.med.sa/uploads/docImg/"')
+            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL_FC', '"https://telemed.imc.med.sa/uploads/docImg/FC/"')
+            //  buildConfigField("String", 'SYMPTOM_CHECKER_LINK', '"http://vdh.noj.mybluehost.me/symptom-checker-test/"')
+            buildConfigField("String", 'SYMPTOM_CHECKER_LINK', '"https://www.imc.med.sa/symptom-checker/"')
+            buildConfigField("int", 'DatabaseVersion', '5')
+            buildConfigField("String", 'LICENSE_KEY', '"MEDICUS-CORE-DEMO-FREE"')
+            buildConfigField("String", 'MEDICUS_SERVER_URL', '"http://192.168.1.47:8080/imc_portal/web/medicus/"')
+
+            debuggable true
+            // minifyEnabled false
+            //applicationIdSuffix '.'
+
+            // Production linksdebug
+
+//            buildConfigField("String", 'BASE_URL', '"https://patientportal.imc.med.sa/imc_portal/"')
+//            buildConfigField("String", 'IMAGE_UPLOAD_URL', '"https://patientportal.imc.med.sa/uploads/clinic/"')
+//            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL', '"https://patientportal.imc.med.sa/uploads/docImg/"')
+//            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL_FC', '"https://patientportal.imc.med.sa/uploads/docImg/FC/"')
+//            buildConfigField("String", 'SYMPTOM_CHECKER_LINK', '"https://www.imc.med.sa/symptom-checker/"')
+//            buildConfigField("String", 'MEDICUS_SERVER_URL', '"https://patientportal.imc.med.sa/imc_portal/web/medicus/"')
+//
+////            buildConfigField("String", 'BASE_URL', '"http://192.168.1.49:8080/imc_portal/"')
+////            buildConfigField("String", 'IMAGE_UPLOAD_URL', '"http://192.168.1.49:8080/uploads/clinic/"')
+////            buildConfigField("String", 'IMAGE_UPLOAD_DOC_URL', '"http://192.168.1.49:8080/uploads/docImg/"')
+//            //  buildConfigField("String", 'SYMPTOM_CHECKER_LINK', '"http://vdh.noj.mybluehost.me/symptom-checker-test/"')
+//            // buildConfigField("String", 'SYMPTOM_CHECKER_LINK', '"https://www.imc.med.sa/symptom-checker/"')
+//
+//
+//            //startMethodTracing()
+//            buildConfigField("int", 'DatabaseVersion', '5')
+//            //  buildConfigField("String", 'LICENSE_KEY', '"MEDICUS-CORE-DEMO-FREE"')4jan
+//            minifyEnabled false
+//            //signingConfig signingConfigs.config
+//            //signingConfig signingConfigs.release
+//            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    task wrapper(type: Wrapper) {
+        gradleVersion = '2.14.1'
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+//    task prepareKotlinBuildScriptModel {
+//
+//    }
+
+
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', '../../../generated-src/java']
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildFeatures {
+        dataBinding true
+    }
+    configurations {
+        compile.exclude group: 'com.google.zxing'
+    }
+//    packagingOptions {
+//        exclude 'META-INF/license.txt'
+//        exclude 'META-INF/notice.txt'
+//    }
+
+    //4jan
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+
+}
+
+repositories {
+    mavenCentral() // jcenter() works as well because it pulls from Maven Central
+}
+ext {
+    compileSdkVersion = 30
+    buildToolsVersion = "29.0.2"
+}
+subprojects { subproject ->
+    afterEvaluate {
+        if ((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
+            android {
+                compileSdkVersion rootProject.ext.compileSdkVersion
+                buildToolsVersion rootProject.ext.buildToolsVersion
+            }
+        }
+    }
+}
+
+dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])                        // @Pm
+    implementation fileTree(dir: 'libs', include: ['.jar', '.so'])                    // @Pm
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+
+    //volly
+    implementation 'com.android.volley:volley:1.2.1'
+
+
+//    implementation files('libs/core-3.3.3.jar')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //Butter Knife
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    implementation 'nl.psdcompany:duo-navigation-drawer:3.0.0'
+
+    //Retrofit
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.3.1'
+
+    //ACRA crash reports
+    //implementation 'ch.acra:acra:4.6.2'
+
+    //Progress dialog
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'//71828
+
+
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //Captcha
+    implementation 'com.github.jineshfrancs:CaptchaImageView:1.0'
+    implementation 'com.google.android.gms:play-services-safetynet:17.0.0'
+    implementation 'com.github.GoodieBag:Pinview:v1.4'
+
+
+//    Firebase
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.google.firebase:firebase-core:18.0.2'
+
+    //Room database
+    implementation 'androidx.room:room-runtime:2.2.6'
+    annotationProcessor 'androidx.room:room-compiler:2.2.6'
+
+    // implementation 'com.crashlytics.sdk.android:crashlytics:17.2.2'
+    implementation 'com.google.android.play:core:1.9.1'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //Facebook sdk
+    implementation ('com.facebook.android:facebook-android-sdk:5.8.0'){
+        exclude group: 'com.google.zxing'
+    }
+
+
+    //Apps Flyer sdk
+    implementation 'com.appsflyer:af-android-sdk:6.5.2'
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'androidx.work:work-runtime:2.5.0'
+    implementation 'com.google.guava:guava:27.0.1-android'
+
+    implementation 'com.vincent.filepicker:MultiTypeFilePicker:1.0.8'
+    implementation 'com.google.android.gms:play-services-base:17.6.0'
+    implementation 'com.google.android.gms:play-services-identity:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+
+    api 'com.github.bumptech.glide:glide:4.11.0'           //  old ...
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'   //  old ...
+    //   implementation 'com.github.bumptech.glide:glide:3.7.0'               //new  ..
+    //  annotationProcessor 'com.github.bumptech.glide:compiler:3.7.0'   // new  ..
+    implementation 'com.karumi:dexter:6.2.1'
+
+    implementation 'com.github.takusemba:spotlight:1.3.3'
+
+    // Rxjava dependency  -->
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+//  implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.github.takusemba:multisnaprecyclerview:1.3.4'
+    implementation 'org.zakariya.stickyheaders:stickyheaders:0.7.10'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10'
+
+    implementation 'androidx.core:core-ktx:1.3.2'
+//    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+
+    // api 'org.apache.commons:commons-io:1.3.2' //4 jan
+
+//    api('com.github.thekhaeng:pushdown-anim-click:1.1.1') {
+//        exclude group: 'com.android.support'                    //4 jan
+//    }
+
+    // implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'//4 jan
+    implementation 'com.google.android:flexbox:2.0.1'
+    implementation 'com.github.Deishelon:RoundedBottomSheet:1.0.1'
+    api('com.github.florent37:beautifulparallax:1.0.0@aar') {
+        transitive = true
+    }
+
+    api 'com.airbnb.android:lottie:3.3.1'
+    api 'com.ycuwq.widgets:datepicker:1.3.1'
+
+
+    api 'io.supercharge:shimmerlayout:2.1.0'
+
+    api 'com.google.firebase:firebase-config-ktx:20.0.4'
+    api 'com.google.firebase:firebase-analytics-ktx:18.0.2'
+
+
+    //  api 'org.bitbucket.medicus:cerbo-graddle:0.4.4'
+    // 4 jan
+    // api 'org.bitbucket.medicus:cerbo-graddle:0.4.6'
+
+    /* api(name: 'utileco-release', ext: 'aar')   // 4jan          /// causing issue ?????????????????????????????????????????????????????????
+
+
+     api(name: 'insight-release', ext: 'aar')    // 4jan         /// causing issue ?????????????????????????????????????????????????????????
+
+
+     api(name: 'konekto-release', ext: 'aar') */
+    // 4jan          /// causing issue ?????????????????????????????????????????????????????????
+
+
+    // api(name: 'smart-report-release', ext: 'aar')     // 4jan    /// causing issue ?????????????????????????????????????????????????????????
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //implementation 'id.zelory:compressor:2.1.0'
+
+    //circular progress bar
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
+
+
+
+
+
+
+    def lifecycle_version = "2.2.0"
+    implementation fileTree(dir: 'libs', include: ['.jar', '.so'])
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
+
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    implementation 'com.google.android.material:material:1.2.0'
+
+
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
+    implementation 'com.tiagosantos:enchantedviewpager:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.google.guava:guava:24.1-jre'
+    implementation 'com.google.guava:guava:26.0-android'
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.3'
+    //noinspection GradleCompatible
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.afollestad:sectioned-recyclerview:0.5.0'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'me.relex:circleindicator:2.1.4@aar'
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    implementation 'biz.kasual:materialnumberpicker:1.2.1'
+    implementation 'com.github.rey5137:material:1.2.4'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'org.kie.modules:org-apache-commons-lang3:6.5.0.Final'
+    //    implementation 'org.apache.directory.studio:org.apache.commons.io:2.4'
+    implementation 'com.github.yalantis:ucrop:2.2.1'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.bignerdranch.android:expandablerecyclerview:3.0.0-RC1'
+    // implement .aar libraries
+
+//    implementation(name: 'imagepicker-release', ext: 'aar')
+//    implementation(name: 'StickyScrollViewItems-release', ext: 'aar')
+//    implementation 'com.daimajia.easing:library:2.0@aar'
+//    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+//    implementation 'com.wang.avi:library:2.1.3'
+//    implementation 'com.koushikdutta.ion:ion:2.2.1'
+//    implementation 'com.github.viethoa:fastscroller:1.2.0'
+//    implementation 'klogi.com:rtlviewpager:1.0.0'
+//    implementation 'me.leolin:ShortcutBadger:1.1.21@aar'
+//    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+//    implementation 'com.google.android.gms:play-services-location:17.0.0'
+//    implementation 'com.google.android.gms:play-services-places:17.0.0'
+//    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+//    api 'com.github.bumptech.glide:glide:4.11.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+//
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'jp.wasabeef:blurry:2.1.1'
+//    implementation 'com.github.drawers:SpinnerDatePicker:1.0.6'
+//    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+//    implementation 'com.google.http-client:google-http-client-gson:1.26.0'
+//    implementation('com.google.api-client:google-api-client-android:1.26.0') {
+//        exclude group: 'org.apache.httpcomponents'
+//    }
+//    implementation('com.google.apis:google-api-services-drive:v3-rev136-1.25.0') {
+//        exclude group: 'org.apache.httpcomponents'
+//    }
+//    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+//    implementation 'com.github.takusemba:multisnaprecyclerview:1.3.4'
+//    implementation 'org.zakariya.stickyheaders:stickyheaders:0.7.10'
+////    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//
+//
+//    //region SDKs
+//    //region Utileco
+//    implementation(name: 'utileco-release', ext: 'aar')
+//    api "androidx.viewpager2:viewpager2:1.0.0"
+////Recycler view
+//    api 'androidx.recyclerview:recyclerview:1.1.0'
+////Autofit Text View
+//    api 'me.grantland:autofittextview:0.2.1'
+////Gson
+//    api 'com.google.http-client:google-http-client-gson:1.26.0'
+////Event bus
+//    api 'org.greenrobot:eventbus:3.0.0'
+//// lifecycle
+//    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+//    api 'androidx.lifecycle:lifecycle-viewmodel:2.2.0'
+////Constraint layout
+//    api 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+////avi loader
+//    api 'com.wang.avi:library:2.1.3'
+//    // Glide
+//    api 'com.github.bumptech.glide:glide:4.11.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+//// Animations
+//    api 'com.daimajia.androidanimations:library:2.3@aar'
+//    api 'com.daimajia.easing:library:2.0@aar'
+////Card view
+//    api 'androidx.cardview:cardview:1.0.0'
+//    api 'com.github.viethoa:fastscroller:1.2.0'
+//    api 'com.google.android.material:material:1.1.0'
+////sticky recycler
+//    api 'org.zakariya.stickyheaders:stickyheaders:0.7.10'
+//    api 'me.relex:circleindicator:2.1.4'
+//    api 'com.github.prolificinteractive:material-calendarview:2.0.1'
+//    api 'com.github.drawers:SpinnerDatePicker:1.0.6'
+//    api 'com.jakewharton.threetenabp:threetenabp:1.2.0'
+//    api 'com.github.yalantis:ucrop:2.2.1'
+//    api 'org.apache.commons:commons-io:1.3.2'
+//    api('com.github.thekhaeng:pushdown-anim-click:1.1.1') {
+//        exclude group: 'com.android.support'
+//    }
+//    api 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+//    api 'klogi.com:rtlviewpager:1.0.0'
+//    api 'com.google.android.gms:play-services-maps:17.0.0'
+//    api 'com.google.android.gms:play-services-location:17.0.0'
+//    api 'com.google.android.gms:play-services-places:17.0.0'
+//    api 'com.google.android.gms:play-services-gcm:17.0.0'
+//    api 'com.google.code.gson:gson:2.8.5'
+//    api 'com.squareup.retrofit2:retrofit:2.5.0'
+//    api 'com.squareup.retrofit2:converter-gson:2.5.0'
+//    api 'org.bitbucket.medicus:cerbo-graddle:0.5.2'
+////endregion
+////region Insights
+//
+//    implementation(name: 'insight-release', ext: 'aar')
+////endregion
+////region Konekto
+//    implementation(name: 'konekto-release', ext: 'aar')
+////endregion
+////region smart-report
+//    implementation(name: 'smart-report-release', ext: 'aar')
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'com.github.takusemba:multisnaprecyclerview:1.3.4'
+//    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+////endregion
+
+
+    implementation fileTree(dir: 'libs', include: ['.jar', '.so'])
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
+
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    implementation 'com.google.android.material:material:1.2.0'
+
+
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
+    implementation 'com.tiagosantos:enchantedviewpager:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.google.guava:guava:24.1-jre'
+    implementation 'com.google.guava:guava:26.0-android'
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.3'
+    //noinspection GradleCompatible
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.afollestad:sectioned-recyclerview:0.5.0'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'me.relex:circleindicator:2.1.4@aar'
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    implementation 'biz.kasual:materialnumberpicker:1.2.1'
+    implementation 'com.github.rey5137:material:1.2.4'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'org.kie.modules:org-apache-commons-lang3:6.5.0.Final'
+    //    implementation 'org.apache.directory.studio:org.apache.commons.io:2.4'
+    implementation 'com.github.yalantis:ucrop:2.2.1'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.bignerdranch.android:expandablerecyclerview:3.0.0-RC1'
+    // implement .aar libraries
+
+//    implementation(name: 'imagepicker-release', ext: 'aar')
+//    implementation(name: 'StickyScrollViewItems-release', ext: 'aar')
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.koushikdutta.ion:ion:2.2.1'
+    implementation 'com.github.viethoa:fastscroller:1.2.0'
+    implementation 'klogi.com:rtlviewpager:1.0.0'
+    implementation 'me.leolin:ShortcutBadger:1.1.21@aar'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'jp.wasabeef:blurry:2.1.1'
+    implementation 'com.github.drawers:SpinnerDatePicker:1.0.6'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.http-client:google-http-client-gson:1.26.0'
+    implementation('com.google.api-client:google-api-client-android:1.26.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation('com.google.apis:google-api-services-drive:v3-rev136-1.25.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.github.takusemba:multisnaprecyclerview:1.3.4'
+    implementation 'org.zakariya.stickyheaders:stickyheaders:0.7.10'
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+    //region SDKs
+    //region Utileco
+//    api(name: 'utileco-release', ext: 'aar')
+
+    api 'androidx.core:core-ktx:1.3.1'
+
+//    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+//    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    api "androidx.viewpager2:viewpager2:1.0.0"
+
+    //Recycler view
+    api 'androidx.recyclerview:recyclerview:1.1.0'
+
+    //Autofit Text View
+    api 'me.grantland:autofittextview:0.2.1'
+
+    //Gson
+    api 'com.google.http-client:google-http-client-gson:1.26.0'
+
+    //Event bus
+    api 'org.greenrobot:eventbus:3.0.0'
+
+    // lifecycle
+    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+//    api 'androidx.lifecycle:lifecycle-viewmodel:2.2.0'
+
+    //Constraint layout
+    api 'androidx.constraintlayout:constraintlayout:2.0.0'
+
+    //avi loader
+    api 'com.wang.avi:library:2.1.3'
+
+    // Glide
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // Animations
+    api 'com.daimajia.androidanimations:library:2.3@aar'
+
+    api 'com.daimajia.easing:library:2.0@aar'
+
+    //Card view
+    api 'androidx.cardview:cardview:1.0.0'
+
+    api 'com.github.viethoa:fastscroller:1.2.0'
+
+    api 'com.google.android.material:material:1.2.0'
+
+    //sticky recycler
+    api 'org.zakariya.stickyheaders:stickyheaders:0.7.10'
+
+    api 'me.relex:circleindicator:2.1.4'
+
+    api 'com.github.prolificinteractive:material-calendarview:2.0.1'
+
+    api 'com.github.drawers:SpinnerDatePicker:1.0.6'
+
+    api 'com.jakewharton.threetenabp:threetenabp:1.2.0'
+
+    api 'com.github.yalantis:ucrop:2.2.1'
+
+    api 'org.apache.commons:commons-io:1.3.2'
+
+    api('com.github.thekhaeng:pushdown-anim-click:1.1.1') {
+        exclude group: 'com.android.support'
+    }
+
+//    api 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.1'
+    implementation 'androidx.work:work-runtime:2.7.1'
+
+    api 'klogi.com:rtlviewpager:1.0.0'
+
+    api 'com.google.android.gms:play-services-maps:17.0.0'
+    api 'com.google.android.gms:play-services-location:17.0.0'
+    api 'com.google.android.gms:play-services-places:17.0.0'
+    api 'com.google.android.gms:play-services-gcm:17.0.0'
+
+    api 'com.google.code.gson:gson:2.8.5'
+    api 'com.squareup.retrofit2:retrofit:2.5.0'
+    api 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    api 'com.google.android:flexbox:2.0.1'
+    api 'com.github.Deishelon:RoundedBottomSheet:1.0.1'
+
+    api ('com.github.florent37:beautifulparallax:1.0.0@aar'){
+        transitive=true
+    }
+
+    api 'com.airbnb.android:lottie:3.3.1'
+
+    api 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+
+    api 'com.ycuwq.widgets:datepicker:1.3.1'
+
+    api 'com.github.rey5137:material:1.2.4'
+
+    api 'io.supercharge:shimmerlayout:2.1.0'
+
+    api 'com.google.firebase:firebase-config-ktx:19.2.0'
+    api 'com.google.firebase:firebase-analytics-ktx:17.5.0'
+    api 'com.google.firebase:firebase-messaging:20.2.4'
+
+    api 'org.bitbucket.medicus:cerbo-graddle:3.1.13'
+
+
+//    api 'org.bitbucket.medicus:cerbo-graddle:3.1.12'
+    //endregion
+
+    //region Insights
+
+//    implementation(name: 'insight-release', ext: 'aar')
+
+    //endregion
+
+    //region Konekto
+
+//    implementation(name: 'konekto-release', ext: 'aar')
+
+    //endregion
+
+    //region Smart report
+//    api(name: 'smart-report-release', ext: 'aar')
+    implementation 'com.github.takusemba:multisnaprecyclerview:1.3.4'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //implementation 'id.zelory:compressor:2.1.0'
+    //endregion
+    //endregion
+
+
+    // Google Fit
+    implementation("com.google.android.gms:play-services-fitness:20.0.0")
+    implementation("com.google.android.gms:play-services-auth:19.0.0")
+
+    // MPAndroid Chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // Android PdfViewer
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    // Image Picker Library
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    // Commons IO
+    implementation "commons-io:commons-io:2.7"
+
+
+//    SYSQUO
+//    Twillo
+
+    implementation 'com.twilio:video-android:7.0.3'
+    implementation "com.twilio:audioswitch:1.1.4"
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+    implementation "com.koushikdutta.ion:ion:2.1.8"
+    //noinspection GradleCompatible
+    implementation "com.android.support:preference-v14:26.1.0"
+    //noinspection GradleCompatible
+    implementation "com.android.support:design:26.1.0"
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.4.0"
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+    implementation 'com.squareup.okhttp:okhttp:2.3.0'
+
+    // android-x lifecycle
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+//    CHAT
+    implementation "com.twilio:chat-android:6.0.0"
+//    implementation 'com.google.android.material:material:1.5.0'
+    implementation'com.google.android.material:material:1.5.0-alpha02'
+    implementation 'joda-time:joda-time:2.9.1'
+//    implementation 'com.mcxiaoke.volley:library-aar:1.0.1'
+//    runtime permission
+    implementation 'com.karumi:dexter:6.2.1'
+//    Edittext Drawable
+    implementation 'com.github.MindorksOpenSource:EditDrawableText:1.1.0'
+    //    Image Crop
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:palette-v7:26.1.0'
+    implementation "androidx.activity:activity:1.2.3"
+
+    //FILE PICKER
+
+    implementation 'com.github.HBiSoft:PickiT:2.0.5'
+    /*implementation 'com.github.jaiselrahman:FilePicker:1.3.2'
+    implementation 'com.github.abhishekti7:UnicornFilePicker:1.0.2'
+    implementation 'com.droidninja:filepicker:2.2.5'*/
+    implementation "androidx.fragment:fragment:1.3.4"
+
+    def lifecycle_version2 = "1.4.2"
+    def arch_version = "2.1.0"
+
+    // ViewModel
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version2"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version2"
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha01"
+
+    // Saved state module for ViewModel
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version2"
+
+
+    // optional - helpers for implementing LifecycleOwner in a Service
+    implementation "androidx.lifecycle:lifecycle-service:$lifecycle_version2"
+
+    // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version2"
+
+
+    // optional - Test helpers for LiveData
+    testImplementation "androidx.arch.core:core-testing:$arch_version"
+
+
+    implementation 'com.google.android.libraries.places:places:2.6.0'
+
+
+    //week calender view
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.0'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+
+    //swip recycler view
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+
+    //    NEW
+    implementation('com.shagi:material-datepicker:1.3') {
+        exclude group: 'com.android.support'
+    }
+
+}
+apply plugin: 'com.google.gms.google-services'

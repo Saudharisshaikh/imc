@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <ImageView
+                android:id="@+id/iv_back_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_close_blue" />
+
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="@string/scan_visit_number"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/text_size_big"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_toolbar">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_toolbar"
+                android:layout_margin="@dimen/_8sdp"
+                android:elevation="@dimen/_3sdp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:id="@+id/lay_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/time_slot_bg"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:id="@+id/iv_barcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_below="@+id/iv_barcode"
+                        android:id="@+id/tv_booking_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_25sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_big" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

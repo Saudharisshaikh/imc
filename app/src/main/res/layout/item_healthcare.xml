@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="text"
+            type="String" />
+        <variable
+            name="listVisibility"
+            type="Boolean" />
+        <variable
+            name="checkBoxSelection"
+            type="Boolean" />
+        <variable
+            name="showToolTip"
+            type="Boolean" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        >
+
+        <CheckBox
+            app:layout_constraintHorizontal_weight="0.9"
+            android:checked="@{checkBoxSelection}"
+            android:id="@+id/cbSelection"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivToolTip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@{text}"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="hello" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="@{listVisibility ? View.VISIBLE : View.GONE}"
+            android:id="@+id/recyclerView"
+            app:layout_constraintTop_toBottomOf="@id/cbSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+        <ImageView
+            android:visibility="@{showToolTip?View.VISIBLE:View.GONE}"
+            android:layout_marginStart="5dp"
+            app:layout_constraintHorizontal_weight="0.05"
+            app:layout_constraintStart_toEndOf="@id/cbSelection"
+            app:layout_constraintTop_toTopOf="@id/cbSelection"
+            app:layout_constraintBottom_toBottomOf="@id/cbSelection"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/ivToolTip"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_about_us_icon"
+            app:tint="@color/colorPrimaryDark"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

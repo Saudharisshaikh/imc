@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_220sdp"
+            android:background="@drawable/ic_blue_style_bg_v_calen" />
+
+        <RelativeLayout
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_back_" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_toolbar"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/payment"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_big"
+            android:visibility="visible" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_title"
+
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/main_radio_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/bt_inbox_white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <RadioButton
+                        android:id="@+id/rd_debit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/debit_card"
+                        android:textColor="#004e8c"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <RadioButton
+                        android:id="@+id/rd_credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/credit_card"
+                        android:textColor="#004e8c"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <RadioButton
+                        android:id="@+id/rd_medical_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/medical_card"
+                        android:textColor="#004e8c"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <RadioButton
+                        android:id="@+id/rd_cod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:checked="true"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/cod"
+                        android:textColor="#004e8c"
+                        android:textSize="@dimen/text_size_big" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/card_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_radio_card"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/bt_inbox_white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
+                    android:visibility="gone">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Card Detail"
+                        android:textColor="@color/grey_dark_color"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/card_number"
+                        android:textColor="@color/text_blue_color"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <EditText
+                        android:id="@+id/et_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_bg"
+                        android:gravity="start"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:padding="@dimen/_8sdp"
+                        android:textColor="@color/grey_dark_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_5sdp"
+                                android:text="Exp Date"
+                                android:textColor="@color/text_blue_color"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <EditText
+                                android:id="@+id/et_exp_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_bg"
+                                android:gravity="start"
+                                android:inputType="date"
+                                android:maxLength="5"
+                                android:padding="@dimen/_8sdp"
+                                android:textColor="@color/grey_dark_color"
+                                android:textSize="@dimen/text_size_normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_5sdp"
+                                android:text="CVV"
+                                android:textColor="@color/text_blue_color"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <EditText
+                                android:id="@+id/etcvv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_bg"
+                                android:gravity="start"
+                                android:inputType="numberPassword"
+                                android:maxLength="3"
+                                android:padding="@dimen/_8sdp"
+                                android:textColor="@color/grey_dark_color"
+                                android:textSize="@dimen/text_size_normal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_btn_pay_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_detail"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/btn_sign_up"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_50sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_50sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_now"
+                        android:textColor="@color/button_click_text_white_blue"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

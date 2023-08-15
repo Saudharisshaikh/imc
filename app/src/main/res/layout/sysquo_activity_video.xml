@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/LayoutVideoMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SYSQUO.Video.VideoActivity"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/BUtton_ScreenCapture"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_weight="1"
+        android:layout_gravity="top|start"
+        android:layout_margin="@dimen/_10sdp"
+        android:visibility="gone"
+        android:background="@drawable/sysquo_ic_screen_share_white_24dp"/>
+
+    <Button
+        android:id="@+id/BUtton_ChatEnable"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_gravity="top|end"
+        android:background="@drawable/sysquo_round_button"
+        android:layout_margin="@dimen/_10sdp"
+        android:visibility="visible"
+        android:drawableTop="@drawable/sysquo_ic_video_chat"
+        android:drawableTint="@color/app_blue"/>
+    <com.twilio.video.VideoView
+        android:id="@+id/thumbnail_video_view"
+        app:tviOverlaySurface="true"
+        app:tviMirror="true"
+        android:visibility="visible"
+        android:layout_width="@dimen/_96sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_gravity="bottom|start"/>
+
+    <View
+        android:id="@+id/VIEW_primary_video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:visibility="gone"/>
+
+    <com.twilio.video.VideoView
+        android:id="@+id/primary_video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+    <com.twilio.video.VideoView
+        android:id="@+id/Sharing_video_view"
+        app:tviOverlaySurface="true"
+        app:tviMirror="true"
+        android:visibility="gone"
+        android:layout_width="@dimen/_96sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_gravity="bottom|start"/>
+
+    <ProgressBar
+        android:id="@+id/reconnecting_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/waiting_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/video_status_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginBottom="-20dp">
+
+        <Button
+            android:id="@+id/mute_action_fab"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/sysquo_round_button"
+            android:drawableTop="@drawable/sysquo_mic_on" />
+
+        <Button
+            android:id="@+id/Button_VoiceLowHigh"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/sysquo_round_button"
+            android:drawableTop="@drawable/sysquo_loudspeaker_off" />
+        <Button
+            android:id="@+id/disconnect_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/sysquo_round_button"
+            android:drawableTop="@drawable/sysquo_ic_hangup" />
+        <Button
+            android:id="@+id/local_video_action_fab"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/sysquo_round_button"
+            android:drawableTop="@drawable/sysquo_video_pause"/>
+        <Button
+            android:id="@+id/switch_camera_action_fab"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/sysquo_round_button"
+            android:drawableTop="@drawable/sysquo_camera_flip" />
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/switch_camera_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:fabSize="mini"
+            app:backgroundTint="@color/white"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:src="@drawable/ic_switch_camera_white_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/local_video_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_gravity="center"
+            app:fabSize="mini"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/ic_videocam_white_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/mute_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_gravity="center"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/ic_mic_white_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/connect_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:fabSize="normal"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/ic_video_call_white_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/disconnect_action_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:fabSize="normal"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/ic_call_end_white_24px" />
+
+    </LinearLayout>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_3sdp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardCornerRadius="@dimen/_3sdp"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:id="@+id/lay_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingStart="@dimen/_2sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:includeFontPadding="false"
+            android:text="@string/vital_patient"
+            android:textColor="@color/text_blue_color"
+            android:textSize="@dimen/text_size_big" />
+
+        <RelativeLayout
+            android:id="@+id/lay_sma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title">
+
+            <TextView
+                android:id="@+id/tv_reading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:includeFontPadding="false"
+                android:text="@string/reading_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_reading_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/tv_reading"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_sma"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:numColumns="4"
+            android:rowCount="4"
+            android:visibility="gone">
+
+        </GridLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_sma"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:nestedScrollingEnabled="false"
+            android:numColumns="4"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

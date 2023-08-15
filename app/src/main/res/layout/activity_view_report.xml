@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/please_wait"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="center_vertical"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <ImageView
+                        android:id="@+id/iv_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_menu" />
+
+                    <ImageView
+                        android:id="@+id/iv_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/imc_logo" />
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_title"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_notifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_notification_icon_blue"
+                        android:visibility="visible" />
+
+                    <FrameLayout
+                        android:id="@+id/count_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_2sdp"
+                            android:src="@drawable/noti_circle"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_toStartOf="@+id/iv_notifications"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@android:drawable/ic_menu_search"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:background="#005497"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingTop="@dimen/_4sdp"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabTextAppearance="@style/MineCustomTabText"
+            app:tabTextColor="@color/grey_color_menu"
+            tools:layout_editor_absoluteX="0dp">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@+id/tabs1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tabs1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/tabs1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentBottom="true"
+                android:background="#005497"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tabGravity="fill"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="0dp"
+                app:tabPaddingStart="0dp"
+                app:tabPaddingTop="@dimen/_4sdp"
+                app:tabSelectedTextColor="@color/colorWhite"
+                app:tabTextAppearance="@style/MineCustomTabText"
+                app:tabTextColor="@color/grey_color_menu"
+                tools:layout_editor_absoluteX="0dp">
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/homeimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/ic_home_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tabs1" />
+
+            <TextView
+                android:id="@+id/hometv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/homeimage"
+                app:layout_constraintStart_toStartOf="@+id/homeimage"
+                app:layout_constraintTop_toBottomOf="@id/homeimage" />
+
+            <ImageView
+                android:id="@+id/record1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/ic_records_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/homeimage"
+                app:layout_constraintTop_toTopOf="@id/tabs1" />
+
+            <TextView
+                android:id="@+id/Recordtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="@string/records"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/record1"
+                app:layout_constraintStart_toStartOf="@+id/record1" />
+
+            <ImageView
+                android:id="@+id/appoint_center_button"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:src="@drawable/ic_appointment_center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/record1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appointment"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tabs1"
+                app:layout_constraintEnd_toEndOf="@+id/appoint_center_button"
+                app:layout_constraintStart_toStartOf="@+id/appoint_center_button"
+                app:layout_constraintTop_toBottomOf="@+id/appoint_center_button" />
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mayoimage"
+                app:layout_constraintTop_toTopOf="@id/tabs1"
+                app:srcCompat="@drawable/ic_profile_icon" />
+
+            <TextView
+                android:id="@+id/profiletv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="@string/profile"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/profileImage"
+                app:layout_constraintStart_toStartOf="@+id/profileImage" />
+
+            <ImageView
+                android:id="@+id/mayoimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/mayo"
+                app:layout_constraintStart_toEndOf="@+id/appoint_center_button"
+                app:layout_constraintTop_toTopOf="@+id/tabs1" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="@string/mayo_clinic"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mayoimage"
+                app:layout_constraintStart_toStartOf="@+id/mayoimage" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

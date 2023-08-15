@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<android.support.v4.widget.NestedScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/main_toolbar"-->
+            <!--android:clipToPadding="false"-->
+            <!--android:paddingBottom="@dimen/_10sdp">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_toolbar">
+
+            <RelativeLayout
+                android:id="@+id/mainContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_100sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_medicines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:clipToPadding="false"
+                    android:paddingBottom="@dimen/_20sdp" />
+
+                <TextView
+                    android:id="@+id/tv_load_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv_medicines"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="@string/load_more"
+                    android:textColor="@color/text_blue_color"
+                    android:textSize="@dimen/text_size_big"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--</android.support.v4.widget.NestedScrollView>-->
+
+        <include layout="@layout/content_no_network" />
+
+        <include layout="@layout/content_time_out" />
+
+        <include layout="@layout/content_no_data" />
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="@string/medication"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/text_size_big"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_back_blue"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

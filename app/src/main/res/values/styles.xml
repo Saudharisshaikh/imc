@@ -1,0 +1,243 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_app</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:actionMenuTextAppearance">@style/LowerCaseMenuTextAppearance</item>
+
+
+    </style>
+
+    <style name="LowerCaseMenuTextAppearance" parent="android:TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyAlertDialogTheme" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">90%</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowFixedWidthMinor">90%</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="FragmentThemeOne" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+
+    </style>
+
+
+    <style name="MyAlertDialogThemeFullChat" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">90%</item>
+        <item name="windowFixedWidthMinor">90%</item>
+        <item name="windowFixedHeightMajor">70%</item>
+        <item name="windowFixedHeightMinor">70%</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_extra_small</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/app_green</item>
+    </style>
+
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@drawable/calendar_click_text_change</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@drawable/calendar_click_text_change</item>
+    </style>
+
+    <style name="menuText" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+
+    </style>
+
+    <style name="CustomLabelTextView" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/nav_title_color</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:padding">@dimen/_3sdp</item>
+    </style>
+
+    <style name="CustomValueTextView" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:padding">@dimen/_3sdp</item>
+        <item name="android:textColor">@color/text_blue_color</item>
+    </style>
+
+    <style name="checkboxTheme" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/app_blue</item>
+        <item name="colorButtonNormal">@color/app_blue</item>
+    </style>
+
+    <!-- Toast Style -->
+    <style name="toastTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/sans_plain</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyAlertDialogStyleWh" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+      <style name="MyAlertDialogStyleWh2" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#028EDE</item>
+    </style>
+
+    <style name="CalendarWidgetHeader">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ImagePickerTheme" parent="ef_AppTheme">
+        <item name="colorPrimary">@color/turquoise</item>
+        <item name="colorPrimaryDark">@color/turquoise</item>
+        <item name="colorAccent">@color/turquoise</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="ef_AppTheme" parent="ef_BaseTheme">
+        <item name="colorPrimary">@color/ef_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/ef_colorPrimaryDark</item>
+        <item name="colorAccent">@color/ef_colorAccent</item>
+    </style>
+
+    <style name="ef_BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MCalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/app_blue</item>
+        <item name="colorPrimary">@color/backgroundBG</item>
+    </style>
+
+    <style name="MCalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/white</item>
+        <item name="dp_textDisableColor">@color/grey</item>
+        <item name="android:weekNumberColor">@color/color_ed_blue_activity</item>
+    </style>
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MCalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/backgroundBG</item>
+    </style>
+<!--    <style name="ToolTipAltStyle" parent="ToolTipLayoutDefaultStyle">-->
+<!--        <item name="ttlm_padding">20dp</item>-->
+<!--        <item name="ttlm_backgroundColor">@color/app_green</item>-->
+<!--        <item name="ttlm_cornerRadius">8dp</item>-->
+<!--        <item name="ttlm_overlayStyle">@style/ToolTipOverlayAltStyle</item>-->
+<!--        <item name="ttlm_animationStyle">@style/ToolTipAltAnimation</item>-->
+<!--        <item name="ttlm_textStyle">@style/ToolTipAltTextStyle</item>-->
+<!--    </style>-->
+
+<!--    <style name="ToolTipAltTextStyle" parent="ToolTipTextStyle">-->
+<!--        <item name="android:textColor">@android:color/white</item>-->
+<!--    </style>-->
+
+<!--    <style name="ToolTipOverlayAltStyle" parent="ToolTipOverlayDefaultStyle">-->
+<!--        <item name="android:color">#ABFFFFFF</item>-->
+<!--        <item name="android:alpha">0.3</item>-->
+<!--    </style>-->
+
+    <style name="ToolTipAltAnimation">
+        <item name="android:windowExitAnimation">@anim/custom_anim_exit</item>
+        <item name="android:windowEnterAnimation">@anim/custom_anim_enter</item>
+    </style>
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/horizontal_progress_bar</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="BottomSheetNoBackGroundDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalNoBackGround</item>
+    </style>
+    <style name="ModalNoBackGround" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+
+   <!-- <style name="Theme.CustomUnicorn" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/black</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+
+        &lt;!&ndash; textColorPrimary is for toolbar title text  &ndash;&gt;
+        <item name="android:textColorPrimary">@color/black</item>
+
+        &lt;!&ndash; textColorSecondary is for toolbar action icons tint&ndash;&gt;
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+
+        <item name="unicorn.colorAccent">@color/colorAccent</item>
+        <item name="unicorn.background">@color/white</item>
+        <item name="unicorn.secondaryTextColor">@color/black</item>
+        <item name="unicorn.primaryTextColor">@color/black</item>
+        <item name="unicorn.file.heading">@color/black</item>
+        <item name="unicorn.file.subHeading">@color/black</item>
+        <item name="unicorn.file.iconTint">@color/colorPrimary</item>
+        <item name="unicorn.file.arrowIconTint">@color/colorPrimary</item>
+        <item name="unicorn.file.selectionTint">@color/colorPrimary</item>
+        <item name="unicorn.fabColor">@color/colorPrimaryDark</item>
+    </style>-->
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/color_ed_fill</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_3sdp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:id="@+id/lay_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/doctor_cell_bg"
+        android:paddingTop="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/lay_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_physician_pic"
+                    android:layout_width="@dimen/_95sdp"
+                    android:background="@drawable/white_circle_nin"
+                    android:layout_height="@dimen/_95sdp"
+                    android:src="@drawable/male_img"
+                    app:civ_border_color="@color/grey_color"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/lay_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_toEndOf="@+id/iv_physician_pic"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_physician_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_3sdp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_physician_speciality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_clinic_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_small" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/rating"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:progressTint="#f79e00"
+                            android:rating="0"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_reviews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="@string/reviews"
+                            android:textColor="@color/button_click_text_reviews"
+                            android:textSize="@dimen/text_size_small"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/tv_physician_address"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".70"
+                            android:paddingStart="@dimen/_3sdp"
+                            android:paddingEnd="@dimen/_3sdp"
+                            android:textColor="@color/nav_title_color"
+                            android:textSize="@dimen/text_size_extra_small" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".30"
+                            android:gravity="end">
+
+                            <TextView
+                                android:id="@+id/tv_physician_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:gravity="center_vertical"
+                                android:paddingStart="@dimen/_3sdp"
+                                android:paddingEnd="@dimen/_3sdp"
+                                android:textColor="@color/nav_title_color"
+                                android:textSize="@dimen/text_size_extra_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_top"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/lay_item1"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/grey_color" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_view_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_login_guest"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/view_profile"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/text_size_extra_small2"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/tv_book_appointment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_request_appointment"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/book_appointment"
+                android:textColor="@color/button_click_text_white_pink"
+                android:textSize="@dimen/text_size_extra_small2"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

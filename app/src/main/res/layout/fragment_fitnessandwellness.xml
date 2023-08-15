@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startGuideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endGuideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <TextView
+            android:id="@+id/tv_HealthAndFitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/spartan_semibold"
+            android:text="@string/health_and_fitness"
+            android:textColor="@color/black"
+            android:textSize="17.7sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_HealthAndFitness"
+            app:layout_constraintStart_toEndOf="@id/tv_HealthAndFitness"
+            app:layout_constraintStart_toStartOf="@id/startGuideLine"
+            app:layout_constraintTop_toTopOf="@id/tv_HealthAndFitness" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/first_main"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_background_color"
+            app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+            app:layout_constraintStart_toStartOf="@id/startGuideLine"
+            app:layout_constraintTop_toBottomOf="@+id/tv_HealthAndFitness">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/main"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fitness_background_color"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/watch"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/watch"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tv_apple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/spartan_semibold"
+                    android:text="@string/android_watch"
+                    android:textColor="@color/black"
+                    android:textSize="13.3sp"
+                    app:layout_constraintStart_toEndOf="@id/watch"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/Bluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_bluetooth_connected"
+                    app:layout_constraintStart_toEndOf="@+id/watch"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_apple" />
+
+                <TextView
+                    android:id="@+id/tv_connected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="@string/not_connected"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Bluetooth"
+                    app:layout_constraintStart_toEndOf="@id/Bluetooth" />
+
+                <ImageView
+                    android:id="@+id/battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_battery"
+                    app:layout_constraintStart_toEndOf="@id/tv_connected"
+                    app:layout_constraintTop_toTopOf="@id/tv_connected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- - -"
+                    app:layout_constraintStart_toEndOf="@id/battery"
+                    app:layout_constraintTop_toTopOf="@id/battery" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/exercise_time"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/fitness_background_color"
+                app:layout_constraintEnd_toStartOf="@+id/heart_rate"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="@+id/main"
+                app:layout_constraintTop_toBottomOf="@id/main">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_one"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_marginBottom="20dp"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/progress_one"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:progress="0">
+
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="0.0"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_22sdp"
+                    android:text="kcal"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/Exercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="@string/burned"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintBottom_toTopOf="@id/time"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="@string/calories"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/heart_rate"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/fitness_background_color"
+                app:layout_constraintEnd_toStartOf="@+id/sleep_cycle"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/exercise_time"
+                app:layout_constraintTop_toBottomOf="@id/main">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_two"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_marginBottom="20dp"
+                    android:indeterminateOnly="false"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_two"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:progress="0">
+
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/km_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="33dp"
+                    android:text="bpm"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/two" />
+
+                <TextView
+                    android:id="@+id/heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="@string/heart"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/km_heart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="@string/rate"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/heart" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sleep_cycle"
+                android:layout_width="0dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/fitness_background_color"
+                app:layout_constraintEnd_toEndOf="@+id/main"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/heart_rate"
+                app:layout_constraintTop_toBottomOf="@id/main">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_three"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_marginBottom="20dp"
+                    android:indeterminateOnly="false"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_three"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:progress="0">
+
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_24sdp"
+                    android:text="@string/hours"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="34dp" />
+
+                <TextView
+                    android:id="@+id/sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="@string/sleep"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintBottom_toTopOf="@id/sleep"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="@string/cycle"
+                    android:textColor="@color/black"
+                    android:textSize="7sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sleep" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fitness_background_color"
+                app:layout_constraintBottom_toBottomOf="@id/sleep_cycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/main">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/CircularDeterminateProgressBar"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:indeterminateOnly="false"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:progress="0">
+
+                </ProgressBar>
+
+                <ImageView
+                    android:id="@+id/step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/ic_steps"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/step_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="0"
+                    android:textColor="@color/color_ed_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/step" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:fontFamily="@font/spartan_medium"
+                    android:text="@string/steps"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/step_count" />
+
+
+                <!--                <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+                <!--                    android:id="@+id/circularProgressBar"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginBottom="20dp"-->
+                <!--                    app:cpb_background_progressbar_color="#b6bbd8"-->
+                <!--                    app:cpb_background_progressbar_width="5dp"-->
+                <!--                    app:cpb_progress_direction="to_right"-->
+                <!--                    app:cpb_progressbar_color="#3f51b5"-->
+                <!--                    app:cpb_progressbar_width="10dp"-->
+                <!--                    app:cpb_round_border="false"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_health_and_features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="@string/health_features"
+            android:textColor="@color/color_ed_green"
+            android:textSize="16.8sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/startGuideLine"
+            app:layout_constraintTop_toBottomOf="@+id/first_main" />
+
+
+        <LinearLayout
+            android:id="@+id/mainCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="@id/startGuideLine"
+            app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+            app:layout_constraintTop_toBottomOf="@id/tv_health_and_features">
+
+
+            <LinearLayout
+                android:id="@+id/lay_activity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/background_home_option"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_activity" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:gravity="center"
+                    android:text="@string/activity"
+                    android:textColor="@color/color_ed_blue_activity"
+                    android:textSize="13.3sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_ed_blue_activity_inside"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Body_Measurement"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/background_home_option"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_body" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:gravity="center"
+                    android:text="@string/body_measurements"
+                    android:textColor="@color/color_ed_blue_activity"
+                    android:textSize="13.3sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_ed_blue_activity_inside"
+                    android:textSize="@dimen/text_size_extra_small" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_find"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_help"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+            app:layout_constraintStart_toStartOf="@id/startGuideLine"
+            app:layout_constraintTop_toBottomOf="@id/mainCardView">
+
+
+            <LinearLayout
+                android:id="@+id/lay_heat_and_vital"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/background_home_option"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+
+                <ImageView
+                    android:id="@+id/Wellness_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_heart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:gravity="center"
+                    android:text="@string/heat_amp_vitals"
+                    android:textColor="@color/color_ed_blue_activity"
+                    android:textSize="13.3sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_ed_blue_activity_inside"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sleepCycle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/background_home_option"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_sleep" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:gravity="center"
+                    android:text="@string/sleep_cycle"
+                    android:textColor="@color/color_ed_blue_activity"
+                    android:textSize="13.3sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_ed_blue_activity_inside"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/chat_bottom_lay"
+                layout="@layout/app_navigation_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

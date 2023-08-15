@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <sa.med.imc.myimc.Utils.CustomTypingEditText
+                android:id="@+id/ed_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableStart="@drawable/ic_search_grey"
+                android:drawablePadding="@dimen/_5sdp"
+                android:focusableInTouchMode="true"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:visibility="visible" />
+
+
+            <ImageView
+                android:id="@+id/iv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_close_g"
+                android:visibility="gone" />
+
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeToRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ed_search"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:outlineSpotShadowColor="@color/app_green">
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nestedScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_search"
+                    android:clipToPadding="false"
+                    android:paddingBottom="@dimen/_40sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_100sdp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/reports_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:text="@string/total_lab_radio"
+                                android:textColor="@color/text_blue_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tv_total"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_big"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_records"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/reports_lay"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:clipToPadding="false"
+                            android:paddingBottom="@dimen/_2sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_load_more"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rv_records"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:text="@string/load_more"
+                            android:textColor="@color/text_blue_color"
+                            android:textSize="@dimen/text_size_big"
+                            android:visibility="gone" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar_load"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_load_more"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:visibility="invisible" />
+
+                    </RelativeLayout>
+                </androidx.core.widget.NestedScrollView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <include layout="@layout/content_no_data_no_bg" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_no_network" />
+
+    <include layout="@layout/content_time_out" />
+
+    <include layout="@layout/content_no_data" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:clickable="true"
+        android:src="@drawable/ic_filter"
+        android:visibility="gone" />
+</RelativeLayout>

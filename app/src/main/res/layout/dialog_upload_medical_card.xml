@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_bg"
+    android:padding="@dimen/_7sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="@string/upload_medical_card"
+            android:textColor="#005497"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/lay_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/dotted_bg"
+            android:padding="@dimen/_15sdp">
+
+            <ImageView
+                android:id="@+id/iv_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_upload_medi_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_ip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/click_here_to_upload"
+                android:textColor="#5c005497"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bt_goto_ocr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_upload"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/button_ok"
+            android:paddingStart="@dimen/_45sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_45sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/goto_ocr_validity"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_grey_circle"
+        android:padding="@dimen/_8sdp"
+        android:src="@drawable/ic_pop_cancel" />
+
+</RelativeLayout>

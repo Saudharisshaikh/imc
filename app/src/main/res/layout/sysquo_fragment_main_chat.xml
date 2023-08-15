@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/listViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relSendMessage"
+        android:layout_alignParentTop="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="0dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/sysquo_message_send" />
+
+
+    <LinearLayout
+        android:id="@+id/relSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/login_tf_background_gray"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_5sdp">
+
+
+        <com.mindorks.editdrawabletext.EditDrawableText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".75"
+            android:background="@drawable/sysquo_message_input_shape"
+            android:hint="@string/message_elipses"
+            android:maxHeight="@dimen/_100sdp"
+            android:maxLength="200"
+            android:minHeight="@dimen/_40sdp"
+            android:padding="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_normal"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionSend"
+            android:drawableRight="@drawable/sysquo_attach_file"/>
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".25"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:maxHeight="@dimen/_100sdp"
+            android:minHeight="@dimen/_40sdp"
+            android:textSize="@dimen/text_size_big"
+            android:text="@string/app_send"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+</RelativeLayout>

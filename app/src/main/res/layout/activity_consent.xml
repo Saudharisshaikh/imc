@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_3sdp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/consent_form"
+                android:textColor="#005497"
+                android:textSize="@dimen/text_size_big"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/check_accept"
+            android:layout_below="@+id/main_toolbar"
+            android:clipToPadding="false"
+            android:fadeScrollbars="false"
+            android:paddingBottom="@dimen/_50sdp"
+            android:scrollbarSize="@dimen/_4sdp"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/grey_dark_color"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <CheckBox
+            android:id="@+id/check_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lay_btn_done"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/accept"
+            android:textColor="@color/text_blue_color"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            android:id="@+id/lay_btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/btn_sign_up"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_50sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_50sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:textColor="@color/button_click_text_white_blue"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="text_size_big">@dimen/_15sdp</dimen>
+    <dimen name="text_size_extra_big">@dimen/_18sdp</dimen>
+    <dimen name="text_size_extra_big2">@dimen/_25sdp</dimen>
+
+    <dimen name="text_size_normal">@dimen/_13sdp</dimen>
+    <dimen name="text_size_title">@dimen/_14sdp</dimen>
+    <dimen name="text_size_small">@dimen/_9sdp</dimen>
+    <dimen name="text_size_extra_small">@dimen/_9sdp</dimen>
+    <dimen name="text_size_extra_small2">@dimen/_10sdp</dimen>
+    <dimen name="text_size_extra_small3">@dimen/_8sdp</dimen>
+    <dimen name="text_size_normal1">@dimen/_12sdp</dimen>
+    <dimen name="smallTxtSize">14sp</dimen>
+    <dimen name="spinner_radius">5sp</dimen>
+
+
+
+    <dimen name="title_size">17dp</dimen>
+    <dimen name="title_size2">22dp</dimen>
+    <dimen name="h1">15dp</dimen>
+    <dimen name="h2">13dp</dimen>
+    <dimen name="h3">12dp</dimen>
+    <dimen name="h4">10dp</dimen>
+
+    <dimen name="divider_size">1dp</dimen>
+
+    <dimen name="logo_size_h1">75dp</dimen>
+    <dimen name="logo_size_h2">60dp</dimen>
+    <dimen name="logo_size_h3">25dp</dimen>
+    <dimen name="logo_size_h4">30dp</dimen>
+    <dimen name="logo_size_h5">15dp</dimen>
+    <dimen name="logo_size_h6">13dp</dimen>
+
+    <dimen name="logo_padding_h1">25dp</dimen>
+    <dimen name="logo_padding_h2">10dp</dimen>
+    <dimen name="logo_padding_h3">25dp</dimen>
+    <dimen name="logo_padding_h4">10dp</dimen>
+
+    <dimen name="edittext_size_h1">45dp</dimen>
+    <dimen name="edittext_size_h2">25dp</dimen>
+    <dimen name="edittext_size_h3">25dp</dimen>
+
+    <dimen name="btn_size">25dp</dimen>
+    <dimen name="massage_box_size">30dp</dimen>
+    <dimen name="btn_paddin">5dp</dimen>
+    <dimen name="btn_margin">10dp</dimen>
+
+    <dimen name="btn_margin_top_h1">30dp</dimen>
+    <dimen name="btn_margin_top_h2">20dp</dimen>
+    <dimen name="btn_margin_top_h3">15dp</dimen>
+    <dimen name="btn_margin_top_h4">10dp</dimen>
+
+    <dimen name="edittext_padding">10dp</dimen>
+    <dimen name="drawable_padding">5dp</dimen>
+
+    <dimen name="radiobutton_padding">5dp</dimen>
+    <dimen name="defaul_radiuas">5dp</dimen>
+
+</resources>

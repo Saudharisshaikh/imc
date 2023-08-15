@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg"
+        android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedScroll"
+        android:clipToPadding="false">
+
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/mai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_bg_appointm_cal"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/main_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_back_"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_logo"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/ic_logo"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_notifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_notification_icon"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/iv_notifications"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_search"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <!--<com.prolificinteractive.materialcalendarview.MaterialCalendarView-->
+                <!--android:id="@+id/calenderView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_below="@id/main_toolbar"-->
+                <!--android:layout_marginStart="@dimen/_5sdp"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:theme="@style/CalenderViewCustom"-->
+                <!--android:layout_marginEnd="@dimen/_5sdp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--/>-->
+                <!-- android:visibility="gone"-->
+                <TextView
+                    android:id="@+id/tv_new_appointment_doctor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_toolbar"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/new_appointment_doctor"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_normal1" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv_new_appointment_doctor_name">
+
+                    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="-10dp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:mcv_dateTextAppearance="@style/CalendarWidgetHeader"
+                        app:mcv_headerTextAppearance="@style/CalendarWidgetHeader"
+                        app:mcv_selectionColor="@color/app_green"
+                        app:mcv_showOtherDates="out_of_range"
+                        app:mcv_weekDayTextAppearance="@style/CalendarWidgetHeader" />
+
+                    <TextView
+                        android:id="@+id/changeModeMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/round"
+                        android:padding="10dp"
+                        android:text="@string/view_month"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/calendarView" />
+
+                    <TextView
+                        android:id="@+id/changeModeWeek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="50dp"
+                        android:background="@drawable/round_unselect"
+                        android:padding="10dp"
+                        android:text="@string/view_week"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/calendarView" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </RelativeLayout>
+
+<!-- android:visibility="gone"-->
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mai"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/how_you_want_booking"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/text_size_big"
+                android:visibility="visible" />
+            <!--  android:visibility="gone"-->
+            <RadioGroup
+                android:layout_below="@+id/label1"
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_in_persoh"
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/text_size_normal"
+                    android:checked="true"
+                    android:textAlignment="viewStart"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/in_person" />
+
+                <RadioButton
+                    android:textSize="@dimen/text_size_normal"
+                    android:id="@+id/rd_telemed"
+                    android:layout_width="0dp"
+                    android:textAlignment="viewStart"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tele_med" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/label_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/select_service"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/text_size_big" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_below="@+id/label_spinner"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/spinner_back" />
+
+<!--android:visibility="gone"-->
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/select_time_slot"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/text_size_big"
+                 />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_slots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:nestedScrollingEnabled="false" />
+<!-- android:visibility="gone"-->
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/layLegend"
+                android:layout_below="@+id/rv_slots"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:background="@drawable/white_legend_bg"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"/>
+                <TextView
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/available"/>
+                <View
+                    android:background="@drawable/grey_legend_bg"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"/>
+
+                <TextView
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/reserved"/>
+
+            </LinearLayout>
+<!--android:visibility="gone" -->
+            <TextView
+                android:visibility="gone"
+                android:autoLink="all"
+                android:id="@+id/no_slots"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/no_time_slot"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_big"
+                />
+<!--  android:visibility="gone"-->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lay_btn_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layLegend"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_90sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@drawable/btn_request_appointment"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+              >
+
+                <TextView
+                    android:id="@+id/tv_book_appointment_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_appointment"
+                    android:textColor="@color/button_click_text_white_pink"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+<!--  android:visibility="gone"-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/layDoctor"
+                android:layout_below="@+id/layLegend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_70sdp">
+
+                <TextView
+                    android:id="@+id/txt_alter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/view_alternate_phyisician"
+                    android:textColor="@color/text_blue_color"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <include
+                    android:layout_toEndOf="@+id/iv_prev"
+                    android:layout_toStartOf="@+id/iv_next"
+                    android:layout_below="@+id/txt_alter"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/list_item_physician"/>
+
+                <ImageView
+                    android:id="@+id/iv_prev"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_left_b"/>
+
+                <ImageView
+                    android:id="@+id/iv_next"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right_b"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_no_network" />
+
+    <include layout="@layout/content_time_out" />
+
+    <include layout="@layout/content_no_data" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:elevation="4dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <FrameLayout
+            android:id="@+id/fl_bottom_sheet_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/bottom_sheet_confirm_booking" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

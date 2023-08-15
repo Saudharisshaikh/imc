@@ -1,0 +1,1611 @@
+<resources>
+    <string name="app_name">My IMC</string>
+    <string name="MAPS_API_KEY" translatable="false">AIzaSyAP9NaXrTzzyg3jlfWIwcL6uYKVja3tgLo</string>
+    <string name="imc_network">IMC Network</string>
+
+    <string name="plesae_try_again">Problem loading data, please try again</string>
+    <string name="plesae_mrn_number">Please check your mrn number</string>
+    <string name="plesae_id_number">Please check your id number</string>
+
+    <string name="channel_name" translatable="false">imc channel</string>
+    <string name="version" translatable="false">Version 3.1.1</string>
+    <string name="facebook_app_id" translatable="false">2287078814932300</string>
+    <string name="app_flyer_dev_key" translatable="false">RZJpUoVLUtnp3atnSg65NP</string>
+
+    <string name="please_wait">Please wait...</string>
+    <string name="available">Available</string>
+    <string name="reserved">Reserved</string>
+    <string name="special_instructions">Special instructions:</string>
+    <string name="complete_appointment_assessment_error">Assessments will be available till %1$d days of appointment completion.</string>
+    <string name="upcoming_appointment_assessment_error">Assessments will be available only %1$d days prior to appointments slot.</string>
+
+    <string name="first_name">First Name</string>
+    <string name="screen_capture_error">Screen capturer error occurred.</string>
+    <string name="screen_capture_permission_not_granted">Screen capture permission not granted</string>
+    <string name="service_error">Service not availabe,  Please contact our call centre : +%1$s</string>
+    <string name="appointment_successfully_booked">Your appointment booked successfully. You will get a reminder for this appointment prior 45 minutes of scheduled time.</string>
+    <string name="invalid_user_id">Invalid user ID! Please try again.</string>
+    <string name="pament_zero">There is no payment pending</string>
+    <string name="profile_updated">Information updated successfully</string>
+    <string name="validated_email">Validated email</string>
+    <string name="emai_not_validate">Email couldn\'t be validated</string>
+    <string name="email_sent">Email sent!</string>
+    <string name="confirm1">Confirm</string>
+
+    <!--Welcome-->
+    <string name="welcome_text">Welcome to \nInternational Medical Center</string>
+    <string name="welcome_text_FC">Welcome to \nThe First Clinic</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register_now">Register Now</string>
+    <string name="request_appointment">Request an Appointment</string>
+    <string name="have_ques">Have any Questions? Call or email us</string>
+
+    <!--Login-->
+    <string name="des_signin">Patient Login</string>
+    <string name="select_id">Login Id</string>
+    <string name="mrn">MR Number</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="or_s">or</string>
+
+    <string name="or_line">-- OR --</string>
+
+    <string name="done">Done</string>
+    <string name="login_id_hint">National/Iqama/Passport/Birth Not. ID</string>
+    <string name="national_id_names">National/ Iqama No / Passport No</string>
+
+    <string name="remember_me">Remember me</string>
+
+    <string name="appointment_as_guest">Schedule an appointment as a guest</string>
+    <string name="verify_number">Verifying your number!</string>
+    <string name="verify_email">Verify your email!</string>
+    <string name="otp_sent">We have sent an OTP on your number </string>
+    <string name="enter_for_digit">Enter Four 4 Digit OTP</string>
+    <string name="resend">Resend OTP?</string>
+    <string name="guest_user">Guest User</string>
+    <string name="payment_error">Payment Error. If amount is debited, please call +%1$s with transaction details</string>
+
+
+    <!--Register Number-->
+    <string name="otp_successfully_sent">OTP sent successfully to registered mobile number</string>
+    <string name="register_number">Register your mobile number</string>
+    <string name="reg_content">We will send you an OTP to \n authenticate your account</string>
+    <string name="country_code">Country code</string>
+    <string name="your_mobile_number">Your mobile number</string>
+    <string name="submit">Submit</string>
+    <string name="emergency_contact">Emergency Contact Details (different from registrant)</string>
+
+    <!--Sign Up -->
+    <string name="welcome">Welcome!</string>
+    <string name="contine_send_otp">Continue and Send OTP</string>
+    <string name="introduce">Open File Application</string>
+    <string name="id_type">ID Type (National ID / Iqama / Passport / Birth Notification)*</string>
+    <string name="id_number">Id Number *</string>
+    <string name="upload">Upload</string>
+    <string name="family_name">Family Name *</string>
+
+    <!--    <string name="agree_to_policy">I accept <b>Terms &amp; Conditions</b> and <b>Privacy Policy</b>.</string>-->
+
+    <string name="agree_to_policy"><![CDATA[I agree to <u><a href="https://www.imc.med.sa/en/terms-and-conditions" style="color:black"> Terms of Use</a></u>
+    and <u><a href="https://www.imc.med.sa/en/social-media-policy" style="color:black">Privacy policy</a> </u>]]></string>
+    <string name="note_signup"><b>Note: </b>IMC will not be liable in case information is not correctly provided by the patient.</string>
+    <string name="certify_cobtent">I certify that I read the Consent for General Treatment and I certify that I will need to fill out and sign the consent upon arrival at the hospital. I hereby give consent to IMC to provide treatment for myself, my dependant or my relative and I have the legal right to sign for the patient being registered.</string>
+
+    <string name="register">Register</string>
+    <string name="back">Back</string>
+    <string name="self">Self</string>
+    <string name="legal_gurdian">Legal Gurdian</string>
+    <string name="relative">Relative</string>
+    <string name="submitter_invalid">Name must be between 10 and 70</string>
+
+
+    <string name="upload_id_card">Add scanned copy of ID card (National/Iqama/Passport Number) *</string>
+    <string name="do_you_valid_isurance">Do you have a valid insurance? *</string>
+    <string name="insurance_compnay">Insurance Company *</string>
+    <string name="policy_number">Policy Number</string>
+    <string name="membership_id">Insurance Membership ID</string>
+    <string name="submitter_name">Name of the Submitter *</string>
+    <string name="relation_to_patiet">Relation to Patient *</string>
+
+    <string name="insurance_expiry_date">Insurance Expiry Date</string>
+    <string name="class_plan">Class/Plan</string>
+    <string name="attach_insuarnce_card">Attach Insurance Card</string>
+    <string name="introduce_page_two">Please enter your ID copy and Insurance details</string>
+    <string name="home_tel">Home Phone Number *</string>
+    <string name="abort">Abort</string>
+    <string name="abort_mesgae">Do you want to abort signup?</string>
+    <string name="attach_id_card">Please attach ID card scanned copy</string>
+    <string name="select_insurance_company">Please select insurance company</string>
+    <string name="max_file_size">File size should not greater than 1.5MB</string>
+    <string name="note_max_file_size">(Note: File size should not be greater than 1.5MB.)</string>
+    <string name="select_id_expiry_date">Please select ID expiry date</string>
+    <string name="cancel_appointment_error">You cannot cancel this Appointment. Please call the Reservation/Appointment contact Center on:+ %1$s.</string>
+    <string name="self_registration_success">Your registration has been successfully completed, we will be in touch with you shortly.</string>
+    <string name="request_submitted_success">Your request has been successfully submitted, we will be in touch with you shortly.</string>
+    <string name="result_not_published_yet">Result not published yet</string>
+    <string name="checkin_faild">You are not in hospital checkIN diameter</string>
+    <string name="no_telemedicine_services">No Telemedicine Services are available</string>
+
+    <!--Profile-->
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_">Phone Number *</string>
+    <string name="phone_number_cell">Cell Phone Number *</string>
+
+    <string name="phone_validation_note">(Please enter a valid number, an OTP will be sent to the number you provide to verify.)</string>
+    <string name="address">Address</string>
+    <string name="address_c">Address:</string>
+
+    <string name="address_en">Address in English</string>
+    <string name="address_ar">Address in Arabic</string>
+
+    <string name="nationality">Nationality</string>
+    <string name="nationality_req">Nationality *</string>
+
+
+    <!--tab-->
+    <string name="appointment">Appointment</string>
+    <string name="home">Home</string>
+    <string name="records">Records</string>
+    <string name="chatbot">Chatbot</string>
+    <string name="profile">Profile</string>
+    <string name="appointment_message">Past 1 year appointment details will be displayed.</string>
+    <string name="new_reports">New reports</string>
+
+    <!--Logout text-->
+    <string name="are_sure_logout">are you sure to log out.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--drawer-->
+    <string name="dashboard_menu">Dashboard</string>
+    <string name="documents_menu">Documents</string>
+    <string name="medical_cards_menu">Medical Cards</string>
+    <string name="add_guardian_menu">Add Guardian</string>
+    <string name="settings_menu">Settings</string>
+    <string name="about_us_menu">About Us</string>
+    <string name="help_menu">Help</string>
+    <string name="logout_menu">Logout</string>
+    <string name="general">General</string>
+
+    <!--Home-->
+    <string name="next_appointment">Your Next Appointment</string>
+    <string name="reports">Reports</string>
+    <string name="specialities">Specialities</string>
+
+    <string name="manage_bookings">Manage Appointments</string>
+    <string name="cancel_appointment">Cancel Appointment</string>
+    <string name="manage_appointment">Manage Appointment</string>
+    <string name="view_booking">View your appointment history</string>
+
+    <string name="medication_prescription">Prescriptions/Medications</string>
+    <string name="prescription">Prescriptions</string>
+    <string name="prescription_">Prescription</string>
+    <string name="view_medication_pres">View your prescriptions/medications</string>
+    <string name="download_prescription">Your prescription downloaded successfully.</string>
+
+    <string name="view_perscription">View Prescription</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="buy">Buy</string>
+
+    <string name="medication">Medications</string>
+    <string name="medication_">Medication</string>
+
+    <string name="symtom_tracker">Symptom Checker</string>
+    <string name="view_symtom_tracker">Find a possible diagnosis by choosing a symptom and answering a few simple questions.</string>
+
+    <string name="sick_leave_report">Sick Leave Reports</string>
+
+    <string name="lab_reports">Lab Reports</string>
+    <string name="lab_report">Lab Report</string>
+
+    <string name="view_lab_reports">View current and past reports</string>
+    <string name="view_lab_reports1">View current appointment test results</string>
+    <string name="title_camera_and_storage_access">We need this permission to download report file on your device.</string>
+    <string name="permission_title">“My IMC“ app would like to access Storage on your device</string>
+    <string name="open_settings">Open Settings</string>
+
+    <string name="operative_reports">Operative Reports</string>
+    <string name="operative_report">Operative Report</string>
+
+    <string name="discharge_reports">Discharge Reports</string>
+    <string name="discharge_report">Discharge Report</string>
+
+    <string name="cardio_reports">Cardiology Reports</string>
+    <string name="cardio_report">Cardiology Report</string>
+    <string name="filter_by_exam">Filter by exam date</string>
+
+    <string name="operative_reports_total">Total Reports: </string>
+    <string name="discharge_reports_total">Total Reports: </string>
+    <string name="cardio_reports_total">Total Reports: </string>
+    <string name="view_current_past_reports">View current and past reports</string>
+    <string name="next_available_time">Earliest Appointment:</string>
+
+    <string name="radiology_reports">Radiology Reports</string>
+    <string name="radiology_report">Radiology Report</string>
+
+    <string name="view_radiology_reports">View current and past test results</string>
+
+    <string name="find_a_doctor">Find a doctor</string>
+    <string name="view_find_a_doctor">Learn more about our physicians</string>
+
+    <string name="view_specilaities">Explore our medical &amp; surgical services</string>
+
+    <string name="way_finder">Way Finder</string>
+    <string name="view_way_finder">Tap here for driving directions</string>
+
+    <string name="health_ques">Health questionnaires</string>
+    <string name="view_health_ques">View your health questionnaires in one place</string>
+
+
+    <!--Guest Home-->
+    <string name="tap_here_complete_form">Tap here to Complete our form</string>
+    <string name="have_ques_con">Have any Questions? Call or email us</string>
+    <!--exist on top-->
+    <string name="contact_us">Contact Us</string>
+    <string name="health_byte">Health Bytes</string>
+    <string name="health_tips">Health Tips</string>
+    <string name="departments">Departments</string>
+    <string name="mayo_clinic">Mayo Clinic</string>
+    <string name="wellness">Wellness</string>
+
+    <string name="health_byte_content">Discover our health and wellness blog</string>
+    <string name="institutes_spec_view">Explore our medical &amp; surgical services</string>
+    <string name="retail">Retail &amp; Facilities</string>
+    <string name="view_retail">Explore our services</string>
+    <string name="location_map">Location Map</string>
+    <string name="location_map_view">Tap here for driving directions</string>
+
+    <!--Appointments-->
+    <string name="select_time_slot">Select Time Slot</string>
+    <string name="new_appointment_doctor">New Appointment - %1$s</string>
+    <string name="how_you_want_booking">How would you like to have the appointment</string>
+    <string name="appointment_successfull">Your Appointment booked Successfully. You will get reminder for this appointment</string>
+    <string name="select_service">Select Service</string>
+    <string name="new_">New</string>
+
+    <string name="next">Next</string>
+    <string name="no_result">No result found</string>
+    <string name="search">Search</string>
+
+    <!--Physician-->
+    <string name="phyisician">Physicians</string>
+    <string name="date">Date</string>
+    <string name="consultation_type">Consultation Type</string>
+    <string name="service_price">Service Price</string>
+    <string name="patient_payable">Patient Pay (Payable)</string>
+    <string name="view_profile">View Profile</string>
+    <string name="book_appointment">Request an Appointment</string>
+    <string name="book_now">Book Now</string>
+    <string name="phyisician_detail">Physician Detail</string>
+    <string name="view_report">View Report</string>
+    <string name="type_here">Type here</string>
+    <string name="alternate_phyisician" translatable="false">Alternate Physicians</string>
+    <string name="view_alternate_phyisician">Available Doctors for Selected Date</string>
+
+    <!--Profile-->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="dob">Date of Birth</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="marital_status">Marital Status *</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="allergy">Allergy</string>
+    <string name="allergies">Allergies</string>
+    <string name="view_allergies">View your allergies in one place</string>
+    <string name="single">Single</string>
+    <string name="married">Married</string>
+    <string name="other_status">Other</string>
+
+    <string name="days_of_treat">Days of Treat</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About Us</string>
+    <string name="notifications">Notifications</string>
+    <string name="change_language">Change Language</string>
+
+    <string name="english">English</string>
+    <string name="arabic">العربية</string>
+    <string name="arabic_lang">Arabic</string>
+    <string name="english_lang">English</string>
+    <string name="in_person">InPerson</string>
+    <string name="tele_med">TeleMedicine</string>
+    <string name="goto_consult">Go To Consultation</string>
+    <string name="consult">Consultation</string>
+    <string name="appointment_onfirmation">Appointment Confirmation</string>
+    <string name="view_assessment">Start Assessment</string>
+    <string name="assessment">Assessment</string>
+    <string name="exit">Exit</string>
+    <string name="exit_alert_assess">Do you want to exit?</string>
+    <string name="prev">Previous</string>
+    <string name="start">Start</string>
+    <string name="resume">Resume</string>
+    <string name="historical_vital_sign">History Vital Sign</string>
+    <string name="new_vital_sign">New Vital Sign</string>
+    <string name="invalid_number">Mobile number should be of 10 digits and should start with 05</string>
+
+    <string name="thank_content">Thank you, you have finished the assessment. To see your result please click below link:</string>
+    <string name="view_my_report">View My Report</string>
+    <string name="assessment_result">Assessment Result</string>
+    <string name="assessment_completed">Completed Assessments</string>
+    <string name="view_assessment_result">View Result</string>
+    <string name="view_assessment_des">View past completed assessments and results</string>
+    <string name="average_score">Average score: 50</string>
+    <string name="your_score">Your score on %1$s: </string>
+    <string name="theta_value">Theta value: %1$s </string>
+    <string name="std_error">Standard error: %1$s </string>
+    <string name="order_value">Prescription Number: %1$s</string>
+
+    <!--Medicine Detail-->
+    <string name="save">Save</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="med_detail">Set Medicine Reminder</string>
+    <string name="med_name">Medicine Name</string>
+    <string name="ongoing_medication">Ongoing Medication</string>
+    <string name="med_state_date">Medicine Start Date</string>
+    <string name="time_1">1. Time of a day</string>
+    <string name="time_2">2. Time of a day</string>
+    <string name="time_3">3. Time of a day</string>
+    <string name="time_4">4. Time of a day</string>
+
+    <string name="provider_name">Provider Name</string>
+    <string name="reminder_end_date">Reminder End Date</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_not_content">You are scheduled to take this\nmedicine in <b>28 min</b></string>
+    <string name="skip">Skip</string>
+    <string name="take">Take</string>
+    <string name="delivered">Delivered</string>
+    <string name="not_yet">Not yet</string>
+
+    <string name="rate_review">Rating &amp; Review</string>
+    <string name="feed_back_to_phy">Feedback to Physician</string>
+    <string name="review">Review</string>
+    <string name="write_here">Write Your review here...</string>
+    <string name="select_schedule">Select Schedule</string>
+
+    <!--Physician detail- not required-->
+
+    <string name="education">Education</string>
+    <string name="affilations">Affiliations</string>
+    <string name="research">Researches/Publications</string>
+    <string name="languages">Communicated Languages</string>
+
+    <!--Settings-->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="about_app">About App</string>
+    <string name="string_sync_data_with_watch">Sync data with Watch</string>
+    <string name="string_unlock_with_fingerprint">Unlock with Fingerprint</string>
+
+
+    <!--Manage Bookings-->
+    <string name="upcoming">Upcoming</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="no_show">No Show</string>
+
+    <!--Questionnaire-->
+    <string name="ques_title"><b>Welcome to the Assessment Center Computerized Adaptive Test (CAT)</b>\n\nPlease select the CATs you would like to complete and then click the Start button. Each CAT takes 1–2 minutes to answer all the questions and get your report.</string>
+
+    <!--ContactUs-->
+    <string name="name">Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="send">Send</string>
+    <string name="message_">Message *</string>
+
+    <!--ContactUs-->
+    <string name="virtual_tour">Virtual Family Tour</string>
+    <string name="virtual_tour_imc">Virtual Tour</string>
+    <string name="virtual_tour_description">Want to find out more about IMC? Get an access to a virtual tour of our state-of-the-art facility.</string>
+
+    <string name="enter_data">Enter you Email and Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="email_address_">Email Address *</string>
+
+    <!--Map-->
+    <string name="clinic_map">Clinic Map</string>
+    <string name="about_app_content"><![CDATA[<style>
+ul li{
+padding:10px; 0px;
+}
+</style>
+
+
+
+
+<p style=\'text-align:justify\'>
+
+<strong>My IMC</strong> App is part of our commitment to the community to pioneer a unique approach of healing the body, mind and soul by applying the best global healthcare standards and pursuing divine ethics.
+We strive to provide a seamless patient experience using convenient channels for our visitors and patients, providing them with secure access to digital healthcare anywhere and anytime without the need to visit our healthcare facilities.
+</p>
+
+<p style=\'text-align:justify\'>
+<strong>My IMC</strong> is designed to serve our patients by giving them a full overview of their health situation (medical records, medications and allergies).
+</p>
+<p style=\'text-align:justify\'>
+<strong>My IMC App features include:</strong>
+</p>
+<ul>
+<li>	Book/reschedule/cancel appointments.</li>
+<li>	View and download test results.</li>
+<li>	View prescribed medication.</li>
+<li>	View and download health summaries.</li>
+<li>	Find a doctor.</li>
+<li>	Access exclusive health tips from our partner the Mayo Clinic Care Network.</li>
+<li>	Learn more about IMC clinics and departments.</li>
+<li>	Receive helpful reminders.</li>
+<li>	Call us directly or request a callback for our services.</li>
+<li>	Get directions to our healthcare facilities.</li>
+</ul>
+
+<p style=\'text-align:justify\'>International Medical Center (IMC) will add regular updates to the My IMC App, aiming to build one of the most useful, interactive and innovative services globally.</p>
+<p style=\'text-align:justify\'>To provide suggestions or feedback on the App, please get in touch with our contact center at +966 920 027 778 or send an email at patientportal@imc.med.sa. </p>
+
+<p style=\'text-align:justify\'>Please stay tuned for upcoming features. May you and your loved ones continue to enjoy the blessing of health.</p>]]></string>
+
+    <!--<DATA-->
+    <string name="phyisian_des">Building 18, Street 1, Dubai-UAE</string>
+    <string name="visit_detail">Visit Details</string>
+    <string name="add_rating">Rate this doctor</string>
+
+    <!--INBOX-->
+    <string name="inbox_list_empty">Inbox list empty</string>
+
+    <!--Consent Form-->
+    <string name="telemedcinice_consent_form">TeleMedicine Consent</string>
+    <string name="i_certify_not_exp_heath">I certify that I am NOT experiencing any of the above health conditions/symptoms.</string>
+    <string name="i_certify_take_care_under_teleheath">I the patient/parent/guardian, hereby consent to the participation of care and treatment under IMC Telehealth.</string>
+    <string name="proceed_to_booking">Proceed to Booking</string>
+    <string name="i_agree">I agree</string>
+    <string name="i_disagree">I disagree</string>
+
+    <string name="note_imc_not_liable">Note: IMC will not be liable in case information is not correctly provided by the patient.</string>
+    <string name="telemedcinice_consent_content"><![CDATA[<p><span style="color: rgb(13, 155, 43); font-size: 42px;">While our doctors are able to treat the top issues you would go see a doctor about, there are conditions that we don&rsquo;t treat. Please see an in-person doctor or hospital if you experience any of the following:</span></p>
+<ul>
+    <li>Traumatic brain or spinal cord injury</li>
+    <li>Chest pain and/or numbness</li>
+    <li>Vomiting or coughing blood</li>
+    <li>Lacerations</li>
+    <li>Loss of consciousness</li>
+    <li>Broken bones</li>
+    <li>Severe burns</li>
+    <li>Acute vision loss</li>
+    <li>Chest Pain</li>
+    <li>Altered mental status</li>
+    <li>Blood in stool</li>
+    <li>homicidal or suicidal thoughts</li>
+    <li>Drug overdose</li>
+</ul>
+<p>Our doctors are unable to write prescriptions for controlled substances. Please see a doctor in person if you require medication classified as a controlled substance.</p>]]></string>
+
+    <string name="consent_form">Consent</string>
+    <string name="en_number">MR Number</string>
+    <string name="patient_name">Patient Name</string>
+
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="view_month">View Month</string>
+    <string name="view_week">View Weeks</string>
+
+    <string name="more">More</string>
+    <string name="more_slot">More slots</string>
+    <string name="check_availability">Check Availability</string>
+    <string name="start_record">Start Recording</string>
+    <string name="take_pic">Take Picture</string>
+    <string name="end_call">End Call</string>
+
+    <string name="reschedule">Reschedule</string>
+    <string name="reschedule_appointment">Reschedule Appointment</string>
+    <string name="check_in">Check-In</string>
+    <string name="scan_visit_number">Scan Visit Number</string>
+
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="pay_only">Pay Only</string>
+    <string name="pay_and_checkin">Pay &amp; Check-In</string>
+    <string name="checkin_now">Check In Now</string>
+    <string name="confirm_arrival">Confirm Arrival</string>
+    <string name="confirm_arrival_content">Please confirm that you are in the hospital for your consultation with requested doctor.</string>
+    <string name="pending">Pending</string>
+    <string name="paid">Paid</string>
+
+    <string name="assessments">Assessments</string>
+    <string name="payment">Payment</string>
+    <string name="payment_status">Payment</string>
+
+    <string name="arrived">Arrived</string>
+    <string name="reported_date">Reported Date: </string>
+    <string name="exam_date">Exam Date: </string>
+    <string name="report_number">Report Number: </string>
+
+    <string name="updated_bill">Updated Bill</string>
+    <string name="co_payment">Co Payment</string>
+    <string name="nin_reimbursable">Nin-reimbursable</string>
+    <string name="total_estimated">Total:\nEstimated</string>
+    <string name="insurance">Insurance</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="pay_later">Pay Later</string>
+
+    <string name="payment_successful">Payment Successful</string>
+    <string name="payment_success_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="duration_of_guardian">Duration of Guardian</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="no_of_days">Number of days</string>
+
+    <!--    &lt;!&ndash;Request Appointment &ndash;&gt;-->
+    <!--    <string name="first_name_en">First Name (English)</string>-->
+    <!--    <string name="first_name_ar_req">First Name (Arabic)</string>-->
+
+    <!--    <string name="mid_name_father_en">Father/Middle Name (English)</string>-->
+    <!--    <string name="mid_name_father_ar_req">Father/Middle Name (Arabic)</string>-->
+
+    <!--    <string name="grand_father_name_en">Grandfather Name (English)</string>-->
+    <!--    <string name="grand_father_name_ar">Grandfather Name (Arabic)</string>-->
+
+    <!--    <string name="last_name_family_en">Family/Last Name (English)</string>-->
+    <!--    <string name="last_name_family_ar_req">Family/Last Name (Arabic)</string>-->
+
+    <!--Request Appointment -->
+    <string name="first_name_en">First Name</string>
+    <string name="first_name_ar_req">First Name</string>
+
+    <string name="mid_name_father_en">Father/Middle Name</string>
+    <string name="mid_name_father_ar_req">Father/Middle Name</string>
+
+    <string name="grand_father_name_en">Grandfather Name</string>
+    <string name="grand_father_name_ar">Grandfather Name</string>
+
+    <string name="last_name_family_en">Family/Last Name</string>
+    <string name="last_name_family_ar_req">Family/Last Name</string>
+    <string name="id_exp_date">ID Expiry Date *</string>
+    <string name="select_natioality">Please Select Nationality</string>
+    <string name="select_city">Please Select City</string>
+    <string name="select_distt">Please Select District</string>
+    <string name="select_country">Please Select Country</string>
+
+    <string name="dob_">Date of Birth *</string>
+
+    <string name="who_are_you_looking_for">Who are you looking for?</string>
+    <string name="myself">Myself</string>
+    <string name="someone_else">Someone else</string>
+    <string name="is_it_visit_first">Is this your first visit?</string>
+    <string name="what_your_relationship">What\’s your relationship to the patient?</string>
+    <string name="your_info">Your Contact information</string>
+
+    <string name="last_name_family">Family/Last Name</string>
+    <string name="reason_visit">Reason for Visit</string>
+    <string name="request_appointment_">Request an Appointment</string>
+    <string name="content_request">Appointment scheduling by phone is available from 7:00AM to 7:00PM on weekdays. Alternatively, complete our online form and receive a callback to confirm your appointment.
+
+\n\nThe Emergency Department operates 24 hours a day, seven days a week, 365 days a year.
+
+\n\nPlease note that you may call us at any time for general information.</string>
+
+    <string name="read_more">Read more</string>
+    <string name="select_card">Select Your Card</string>
+    <string name="pay_cash">Pay Cash</string>
+    <string name="select_gender">Please select gender</string>
+    <!--<string name="select_lang">Please select language</string>-->
+    <string name="select_dob">Please select date of birth</string>
+    <!--<string name="select__lang_dob">Please select language and date of birth</string>-->
+    <!--<string name="select_lang_gender">Please select gender and language</string>-->
+
+    <string name="invalid">Invalid</string>
+    <string name="enter_id_here">Enter Number here*</string>
+
+
+    <!--Validations-->
+    <string name="mrn_empty_error">Please enter either your MR Number or any ID number to login to IMC</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty_fields">Empty Fields</string>
+    <string name="take_a_photo">Camera</string>
+    <string name="choose_from_gallery">Gallery</string>
+
+    <string name="no_network_title">Internet Error!</string>
+    <string name="network_content">Please check network connection and try again</string>
+
+
+    <!--Retail module-->
+    <string name="categories">Categories</string>
+    <string name="view_product">View Product</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="quantity">Quantity</string>
+    <string name="benefits">Benefits</string>
+    <string name="expiry">Expiry</string>
+    <string name="notes">Notes</string>
+    <string name="reviews">%1$s Reviews</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="review_empty">No Reviews</string>
+    <string name="reviews_t">All Reviews</string>
+    <string name="place_order">Place Order</string>
+    <string name="my_cart">My Cart (%1$s)</string>
+
+    <string name="price_details">Price Details</string>
+    <string name="price_items">Price (%1$s items) </string>
+    <string name="delivery">Delivery</string>
+    <string name="payable_amount">Amount Payable</string>
+    <string name="remove">Remove</string>
+
+    <string name="remove_cart_item_content">Are you want to remove this item?</string>
+    <string name="remove_item">Remove Item</string>
+    <string name="removed_success">Item removed from cart</string>
+
+    <string name="fill_info_guest_order">Place Order</string>
+    <string name="your_info_for_delivery">Order delivery information</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="order_placed_content">Your order has been placed successfully, you will get email for your order\'s status.</string>
+    <string name="item_added">Item added to cart successfully</string>
+    <string name="go_to_cart">Go to Cart</string>
+
+
+    <!--Address-->
+    <string name="adress_">Saved Address List</string>
+    <string name="add_address">Add Address</string>
+    <string name="edit_address">Update Address</string>
+    <string name="edit">Edit</string>
+
+    <string name="pincode">Pincode*</string>
+    <string name="house_no_villa_no_building">HNO/Villa No., Building name*</string>
+    <string name="road_name_area">Road Name, Area, Colony*</string>
+    <string name="city">City  *</string>
+    <string name="state">State*</string>
+    <string name="district">District *</string>
+    <string name="country">Country *</string>
+
+    <string name="landmark">landmark (Optional)</string>
+    <string name="name_">Name*</string>
+    <string name="phone_number_o">10-digit mobile number*</string>
+
+    <string name="address_type">Address Type</string>
+    <string name="home_address">Home Address</string>
+    <string name="work_address">Work/Office Address</string>
+    <string name="address_added">Address saved successfully</string>
+    <string name="address_updated">Address update successfully</string>
+
+    <string name="remove_address_item_content">Are you want to remove this address?</string>
+    <string name="remove_address">Remove Address</string>
+    <string name="removed_success_address">Address removed from list</string>
+
+    <string name="my_orders">My Orders</string>
+    <string name="my_orders_">My Orders</string>
+    <string name="health_calculators">Health Calculators</string>
+
+    <string name="need_help">Need help?</string>
+    <string name="orders_detail">Order Detail</string>
+    <string name="phone_value"><b>Phone number: </b>9876543210</string>
+    <string name="shipping_detail">Shipping Detail</string>
+    <string name="other_items_in_order">Other items in this order</string>
+    <string name="payment_mode">Payment mode: Cash On Delivery</string>
+
+    <string name="debit_card">Debit Card</string>
+    <string name="cod">Cash on Delivery</string>
+    <string name="payment_success">Your payment for Order ID OD123217647123  has been confirmed. You will get notification when order\'s status changes.</string>
+
+    <!--POP UPS-->
+
+    <string name="visit_reception">Please visit at Reception for payment</string>
+    <string name="payment_option">Payment Option</string>
+    <string name="payment_cash">Payment by Cash</string>
+    <string name="credit_card">Credit card</string>
+    <string name="medical_card">Medical card</string>
+    <string name="upload_medical_card">Upload Medical Card</string>
+    <string name="goto_ocr_validity">Go for ORC validity</string>
+    <string name="click_here_to_upload">Click here for upload</string>
+
+    <string name="payment_unsuccess">Payment unsuccessful</string>
+
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+
+    <string name="find_by_doc">Find By\nDoctor</string>
+    <string name="find_by_spec">Find By\nSpecialization</string>
+
+    <!--Validations-->
+    <string name="otp_not_matched">OTP Not Matched!</string>
+    <string name="otp_invalid">Enter a valid OTP</string>
+    <string name="required">Required</string>
+    <string name="enter_valid_email">Invalid email</string>
+    <string name="enter_valid_phone">Invalid phone number</string>
+    <string name="enter_some_more_text">Add some more text</string>
+
+    <string name="select_any_id">Select one ID</string>
+    <string name="agree_to_terms">Please agree to IMC terms of uses and privacy policies.</string>
+    <string name="agree_to_consent">Please read the general health consent and accept it.</string>
+
+    <string name="alert">Alert</string>
+
+    <string name="no_net_title">Check your internet connection and try again</string>
+    <string name="no_net_des">We couldn\’t connect to the server.</string>
+    <string name="try_again">Try Again</string>
+    <string name="oops">Oops…</string>
+    <string name="time_out">Session timed out</string>
+    <string name="otp_resent">OTP re-sent to your registered mobile number </string>
+
+    <string name="no_data_available">No Data Available</string>
+    <string name="no_data_content">There is no data to show you right now.</string>
+    <string name="load_more">Load more…</string>
+
+    <!--Dialog text-->
+    <string name="confirmation">Confirmation!</string>
+
+    <string name="want_cancel_booking">Are you sure you want to cancel this appointment?</string>
+    <string name="want_include_diagnosis">Do you want to include Diagnosis in the sick leave report?</string>
+    <string name="diagnosis">Do you want to include diagnosis in sick leave report?</string>
+    <string name="want_reschedule_booking">Are you sure you want to reschedule this appointment?</string>
+    <string name="want_go_consult">Are you sure you want to start your TeleMedicine video conferencing with requested doctor?</string>
+
+    <string name="success">Success</string>
+    <string name="download_dialog">Your report downloaded successfully.</string>
+    <string name="download_confirmation">Your confirmation slip downloaded successfully.</string>
+    <string name="download_invoice">Your Invoice slip downloaded successfully.</string>
+
+
+    <!--<string name="download_dialog">Your report downloaded successfully in <b>ImcReports</b> folder in storage.</string>-->
+    <string name="open">Open Now</string>
+    <string name="later">Later</string>
+    <string name="filter">Filters</string>
+    <string name="rating">Rating</string>
+    <string name="select">--Select--</string>
+    <string name="title">Title</string>
+
+    <string name="by_rating">By Rating</string>
+    <string name="lab">Lab</string>
+    <string name="radiology">Radiology</string>
+    <string name="sick_levae">Sick Leave Reports</string>
+
+    <string name="confirm_booking">Confirm Appointment</string>
+    <string name="no_time_slot">No Time Slot Available</string>
+    <string name="please_select_time_slot">Select Time Slot</string>
+    <string name="wrong_captcha">Wrong Captcha</string>
+
+    <string name="time_out_messgae">Time out. Please try again.</string>
+    <string name="phyisician_">Physician</string>
+
+    <string name="clinic_">Clinic</string>
+    <string name="clinics">Clinics</string>
+
+    <string name="speciality">Speciality</string>
+    <string name="appointment_date">Date</string>
+    <string name="appointment_time">Time</string>
+    <string name="appointment_type">Consultation Type</string>
+    <string name="patient_pay">Patient Pay</string>
+    <string name="patient_discount">Patient Discount</string>
+    <string name="patient_vat">Patient VAT</string>
+    <string name="appointment_price">Appointment Price</string>
+
+    <!--BookingStatus-->
+    <string name="failed">Failed</string>
+    <string name="success_booking">Your appointment booked successfully. You will get a reminder for this appointment.</string>
+    <string name="booking_slot_taken">The Time slot you are trying to book is already taken by other patient.</string>
+    <string name="booking_exist">Appointment is denied due to another appointment in the same clinic please call the Reservation and Appointment Contact Center on: %1$s</string>
+    <string name="booking_max">You have exceeded the number of appointments allowed per day.</string>
+    <string name="booking_age_less">Your age is less than required age so you can not book appointment.</string>
+    <string name="booking_age_more">Your age is greater than required age so you can not book appointment.</string>
+    <string name="booking_gender">Your gender conflicts, so you right now can not book appointment.</string>
+    <string name="booking_failed">Your appointment has been failed with unknown reason.</string>
+    <string name="booking_time_in_other_clinic">Your appointment already exist on same date and time in another clinic. Please try other date or time.</string>
+
+    <string name="success_booking_reschedue">Your appointment rescheduled successfully.</string>
+    <string name="pending_pre_authorization">Dear Customer , this service needs prior approval from your insurance company ,please wait and we will  get back to you with the response soon. Wishing you rapid recovery.</string>
+    <!--You will get a reminder for this appointment prior 45 minutes of scheduled time.</string>-->
+
+    <string name="no_result_available">No result available</string>
+    <string name="result_not_made">Result not released yet</string>
+
+    <string name="deleted">Deleted</string>
+    <string name="login_captch_text">Please enter number showing in image to verify that you are not a Robot.</string>
+    <string name="please_accept_condent">Please accept this consent</string>
+
+    <string name="no_show_message">Appointment is denied due to missed appointment. You can not book appointment for next 2 weeks of missed appointment date. \n\nPlease contact support.</string>
+    <!--Booking is denied due to a missed appointment-->
+
+    <string name="no_dates">No dates available.</string>
+
+    <string name="no_service_content">Please call the unified number %1$s to make an appointment.</string>
+    <!--bookings.no_services_found-->
+
+    <string name="ser_med">Search for Radiology Report</string>
+    <string name="ser_lab">Search for Lab Report</string>
+    <string name="accept">Accept</string>
+
+    <string name="consent_data_t"><![CDATA[
+<div class="modal-body">
+    <p><strong>Terms and Conditions</strong></p>
+    <p>These terms and conditions establish and control use of
+      our website whereas by using this website you acknowledge full acceptance of all these terms and conditions. If
+      you do not agree to the terms or any part thereof you should refrain from using our website.</p>
+    <strong>1. Use of Website</strong>
+    <p>
+    <br/>
+      The website has been prepared basically to facilitate possibility
+      of obtaining healthcare services and information rendered by the center.The website is intended solely for your
+      personal use.
+    </p>
+    <strong>2. Absence of Guarantees </strong>
+    <p>
+        <br/>
+
+      2.1 We do not guarantee, acknowledge or undertake any of
+      the following:
+    </p>
+    <p>
+      2.2 The website shall meet your needs or function without interruption or in a
+      disciplined manner or safe or without errors or viruses.
+    </p>
+    <p>
+      2.3 The website shall meet your needs or function without interruption or in a
+      disciplined manner or safe or without errors or viruses.
+    </p>
+    <p>
+      2.4 The description of
+      content or photographs or video clips available in the website are accurate with regard to healthcare services
+      rendered by the center.
+    </p>
+    <strong>3. Conditions for Appointment Booking</strong>
+    <p>
+    <br/>
+    3.1 The website can not be used to make false or fraudulent appointment booking. Moreover, you
+      guarantee, acknowledge and undertake that all the information given on yourself or any other
+      person are correct and accurate at the time of making the appointment booking.</p>
+    <p>3.2 Appointments can only be booked via the website for selected IMC clinics determined at our absolute
+      discretion.</p>
+    <p>3.3 For IMC clinics
+      that are not allowed for making website appointment booking, appointment shall be made by phone or personal
+      attendance.</p>
+    <p>3.4 To make a website appointment booking you must have a medical record (file) that
+      already exists in the hospital.</p>
+    <p>3.5 Upon using the website you have the right only to:
+    </p>
+    <div style="padding-left: 8px">
+      <li>Make an appointment in an IMC clinic in which you have been registered as a patient.</li>
+      <li>Make a maximum of three appointments on the same day.</li>
+      <li>Make one appointment in a single clinic</li>
+    </div>
+    <p>3.6 We reserve the right to deprive you from using the website appointment booking feature for any period as
+      determined at our absolute discretion in the following conditions:</p>
+    <div style="padding-left: 8px">
+      <li>Failure to attend any appointment made through the website.</li>
+      <li>If we decide to do so at our absolute discretion for any reason.</li>
+    </div>
+    <br />
+    <strong>4. Prohibited Uses</strong>
+    <p>
+    <br/>
+      4.1 You have no right to use the website in a way that may cause harm to or overloads our servers Or any network
+      connected to any of our servers. Furthermore, you may not use the website in any way that may conflict
+      with the use of any other party to the website or any way that is likely to be in violation of the
+      regulations in force or harm the rights of any party or result in legal entitlements in accordance of any of the
+      applicable regulations.</p>
+    <p>4.2 You may not misuse the website by way of deliberately leading
+      to entry of viruses or Sub Seven Trojan or malicious or technically harmful substances. Also you have no
+      right to try to use unauthorized access to the website or host server in which the website is stored or
+      any other server or computer or connected to the website database. Also you may not attack the website by using
+      programs intended to cut the service.</p>
+    <p>4.3 We will inform the law enforcement authorities of any violation to item 5-3 by disclosing your identity and
+      in the event of
+      occurrence of such violation you will immediately be denied the right to use the website.</p>
+    <p>4.4 Accordingly, you agree not to do any of the following whether by yourself or through a third party:</p>
+    <div style="padding-left: 8px">
+      <li>Use any Robots, search engine spiders, screen scanners, data collection tools, any other automatic
+        equipment or processes for processing, monitoring , photocopying the website or any information or content or
+        data therein or may be obtained via the website without our written prior approval.</li>
+      <li>Use of any automatic processes to collect or merge information or content or data available or reachable via
+        the website with the information or content or data that can be reached or obtained via any third party.</li>
+      <li>Use of any automatic process to overlap or attempt to overlap the work of the website.
+      </li>
+      <li>Take any action that puts illogical or inappropriate huge load on the website
+        infrastructures or the bandwidth connected to the website.</li>
+      <li>To do a reverse
+        engineering or reverse assembly or dismantling or attempt by any means to detect the source code or any
+        algorithm equation or other processes pertaining to basic software infrastructure and the processes related to
+        the website.</li>
+
+      <li>To copy or reproduce or change or amend or create derivatives of
+        any part or content obtained from the website or its public presentation without obtaining our prior written
+        approval.</li>
+    </div>
+    <br />
+    <strong>5. Access</strong>
+    <p>
+        <br/>
+      5.1 You are using the website at your personal responsibility.</p>
+    <p>5.2 You may not get access to the website by use of equipment or services designed to provide recurrent high
+      speed automatic access.</p>
+    <p>5.3 Specific parts in the website are protected by passwords or require to log in. Therefore, you are prohibited
+      from accessing or attempting to gain unauthorized access to these parts or to any materials or
+      other protected information we deliberately made unavailable to be used for this purpose.</p>
+
+    <p>5.4 In order to be able to use the website you have to:</p>
+    <div style="padding-left: 8px">
+      <li>Enter your identification data (Saudi ID number or Medical record Number).</li>
+      <li>Enter your personal identification number usable once and will be sent to you by SMS message.</li>
+
+    </div>
+    <p>5.5 By using the website you acknowledge, undertake and ensure that:</p>
+    <div style="padding-left: 8px">
+      <li>You have fulfilled the minimum age requirement.</li>
+      <li>You have provided complete,
+        correct registration information which you will continue to update immediately. You authorize us to implement
+        all the instructions and transaction on your behalf with regard to your use of websites.</li>
+      <li>Your use of
+        the website does not violate these terms and conditions of use or any applicable regulations.</li>
+    </div>
+
+    <p>5.6 We reserve the right to:</p>
+    <div style="padding-left: 8px">
+      <li>Reject or cancel your request to get access to the website for
+        any reason at our discretion or freeze possibility to access the website.</li>
+      <li>Utilize your information
+        registered in our records for analysis reason without obtaining your prior approval according to these terms
+        and conditions of use.</li>
+    </div>
+
+    <p>5.7 To enable you to use the website you have to connect to the
+      internet and you will solely bear the internet connection fees and any other service - related fees and fees for
+      provision of all necessary equipment for internet connection including a computer set, modem or any other
+      equipment that has the ability to connect.</p>
+    <strong>6. Password Security &amp; its
+      notifications</strong>
+
+    <p>
+        <br/>
+      6.1 You shall solely bear responsibility for all activities related to
+      registration details of your access to the website and therefore you have to take all the necessary steps
+      to ensure confidentiality of registration details of you access to the website.</p>
+    <p>6.2 You
+      have to report to us immediately as soon as you know about disclosure, loss, stealing or unauthorized use of
+      your access registration details.</p>
+
+    <strong>7. Electronic Links to Websites</strong>
+
+    <p>
+        <br/>
+      The web design framework may not be copied and placed in another website and you may not create a link
+      connecting to any part of our website other than the main page. Furthermore we reserve our right to withdraw the
+      website connection permission without nee to send you a prior notification in that matter.</p>
+
+    <strong>8. Determination of Liability</strong>
+
+    <p><br/>      8.1 Taking into account any
+      responsibilities provided for by regulation which can not be exempted or disavowed, none of our managers, staff
+      or
+      clients shall bear responsibility towards you for any losses, compensations, responsibility, claims or expenses
+      (including for example but not limited to legal or defense expenses in front of legal authorities or settlement
+      expenses) of any kind whether direct or indirect or subordination resulting from or any foreign matter or
+      foreign
+      companies or on your access to the website whether that responsibility is contractual , relates to negligence,
+      violation of legal duty or other. Beyond doubt, we shall not bear any responsibility for any shortage,
+      incompleteness, not available or any delay attributable or accompanying any sort of data mentioned in item 5-4.
+    </p>
+
+    <p>8.2 We shall not bear responsibility towards you or any other body for any loss resulting from a
+      reason beyond our control which includes electronic or mechanical breakdown of equipment or communication lines
+      or
+      unauthorized access or viruses or theft or operator\'s mistakes or bad weather or unusual weather conditions
+      (including floods, earthquake, or other of fate and destiny) or fires or wars or cases of armed rebellion or
+      terrorist attacks or riots or labor disputes or any other problems related to workers or accidents or emergency
+      cases or delays or excessive bookings exceeding the limit or cancellations or transfer of power or any action
+      taken by the government.</p>
+
+    <strong>9. Website Availability</strong>
+    <p>
+    <br/>
+
+      9.1 Whereas website services are susceptible to interruption or breakdown the availability of access to the
+      website shall be provided as it is available just no other.</p>
+
+    <p>9.2 We may according to our absolute
+      estimation enforce limits on your use of the website, we may also for security, technical, legal, legislative
+      reasons or for reasons related to maintenance or due to any violation of terms of use withdraw the website or
+      block your access at any time without need to provide any notification.</p>
+
+
+    <strong>10. Privacy</strong>
+    <p>
+    <br/>
+
+      10.1 Your privacy and security are very important to us and we are
+      accountable for respecting your privacy at any legal authority vested on us. Furthermore, we are committed to
+      all our obligations provided for in relevant data protection laws in force including legal provisions applicable
+      in
+      Saudi Arabia. Your approval of terms of use is considered to be an explicit consent to use the data as indicated
+      in the terms and conditions of use of website.</p>
+
+    <p>10.2 We may collect processing data and retain the
+      following information about you:</p>
+    <div style="padding-left: 8px">
+      <li>Information that can identify your identity which was provided to
+        us at time of your registration to obtain our services or those information collected via your use of the
+        website.</li>
+      <li>Information you consider to be personal and sensitive that relate to
+        your health condition which may include:</li>
+      <li>Information on your personal health
+        including your medical history.</li>
+      <li>Information on any disabilities you have suffered or still suffer
+        from.</li>
+      <li>Information on any healthcare provided or continue to be provide to you.</li>
+      <li>Information
+        on you relating to any of your organ or substance from your body donated or derived from any tests or checkups
+        done for any part or substance of your body.</li>
+      <li>Information relating to you that was collected before or
+        during provision of any health care to you.</li>
+    </div>
+    <p>10.3 We are using your personal information
+      only when necessary in a way that enables us to provide service to you or to implement the processes you have
+      requested or operate the website. We may use these personal information for the following purposes:</p>
+
+    <div style="padding-left: 8px">
+      <li>Tracing data traffic patterns from ant to the website ( which may include retention of details relating to
+        your own Internet Protocol Address\'s IPs or the operating system or browser or range or information on any
+        other user ( such as your user name, for example).</li>
+      <li>Simplify logging in of your personal information in
+        some Analyze online models and enable you to log in and obtain some website information.</li>
+      <li>Analyze
+        patient medical records including for example but not limited to diagnosis, medical prescriptions, laboratory
+        test results etc.</li>
+    </div>
+
+    <p>10.4 We will not disclose any personal information to any third party
+      except within cases provided for in the terms of use or within legally allowed limits or authorized by a
+      competent
+      court. </p>
+
+    <p>10.5 The website will record and track your use of the website via many tracking tools
+      such as the (Cookies)
+ and other monitoring devices. You may choose to disable the cookies in your browser or
+      delete it from the hard
+      drive as you do not need to operate the cookies to use the website but you will need it to access and use some
+      website sites or reach any dedicated or secure content on the website. Some website pages may not work properly
+      if the cookies are not operated.</p>
+
+    <p>10.6 We are using sensitive personal information to make sure that
+      we can provide you with the services you have requested which are delivered by IMC in the best way we can. We
+      will
+      use the sensitive personal information to help provide you with information about your health or your medical
+      records.</p>
+
+    <p>10.7 We, on our part, will not disclose any of your sensitive personal information to
+      any other party apart from those referred to in item 10-8 except in the following cases:</p>
+    <div style="padding-left: 8px">
+      <li>If we
+        obtain an explicit written approval from you (or your designee) which we may request from you from time to
+        time.
+      </li>
+      <li>If it is necessary to protect your health and safety or health and safety of another person (or a group
+        of other persons) including in emergency cases or for protection of public health and safety.</li>
+      <li>If the
+        disclosure of such information is done to one of the professional healthcare practitioners in order to ensure
+        provision and promotion of any medical treatment provided in a timely manner or any health services or for
+        provision of medication.</li>
+      <li>If the disclosure of the information is done in accordance with common
+        customary and accepted practices.</li>
+      <li>If these information are known to others as legally disclosed by you
+        or your designee.</li>
+      <li>If we are required by law, regulation or any competent court.</li>
+    </div>
+
+    <p>10.8 We may share the information you provided to us with our partners and we, any of our partners or any of
+      our subordinates may use the information provided to us for the following reasons:</p>
+    <div style="padding-left: 8px">
+      <li>To ensure that the website content is delivered in the most effective manner for you and the device you are
+        using to access the
+        website.</li>
+      <li>To facilitate or improve the website performance and the services made available to you.</li>
+      <li>Provide you with the information and services as requested by you or we consider may interest you.</li>
+      <li>Inform you of any changes in the website or our services where applicable.</li>
+      <li>Analyze website performance.</li>
+      <li>Analyze patient medical records.</li>
+    </div>
+
+
+    <p>10.9 We may share your
+      information in the form of anonymous data with third parties through which individuals can not be identified for
+      research, statistics or study epidemiological characteristics according to legal requirements / or regulations
+      or decisions of competent courts.</p>
+
+    <strong>11. Website and Trademark Rights</strong>
+
+    <p><br/>11.1 All intellectual property rights are owned by us or entities licensed by us.</p>
+    <p>11.2 The trademark is exclusively owned by us or entities licensed by us.</p>
+    <p>11.3 You may not use the trademark except after obtaining our express written consent.</p>
+    <p>11.4 You may not reproduce or store any part of the website in any electronic system or any other retrieval
+      system or amend, configure, load in sites owned by third
+      parties or reproduce its frame design or presented to the public or transform it into any other form through any
+      process whatsoever without obtaining our specific prior written consent with the exception of as necessary for
+      personal presentation of the website via your own web browser or what follows or as permitted by current terms
+      of use or under the applicable regulations.</p>
+
+    <strong>12. Termination</strong>
+    <p><br/>12.1 We terminate your use or access to the websites with or without reason at any time whether with or
+      without notification without any liability to you.</p>
+    <p>12.2 The terms and conditions relating to limitations
+      and discharge and exemption from liability shall remain valid after any termination and in case of termination
+      you are prohibited from accessing and using the website directly or indirectly.</p>
+    <p>12.3 Any violation of the items may result immediately in suspension of you use and accessing the websites.</p>
+
+    <strong>13. General Provisions</strong>
+    <p>
+    <br/>
+    13.1 The websites and the disputes arising therefrom shall
+      subject to the regulations in force in the Kingdom of Saudi Arabia taking into account your obligations provided
+      for in the regulations applicable in the country of your residence and accordingly you acknowledge your final
+      and
+      definitively irrevocable submission to the jurisdiction of the Saudi Arabian Courts.</p>
+    <p>13.2 We may implement
+      any of our obligations and use any of the rights granted to us subject to said terms of use through any third
+      party. Also we may waiver in whole or in part our rights and obligations provided for in these terms and
+      conditions of use to any third party.</p>
+    <p>13.3 If it is ascertained that any item of the terms of use or any
+      part thereof is void or unenforceable or not valid it shall be separated from these terms of use and the rest of
+      the terms shall remain valid and enforceable with the whole of its effect provided that such separation shall
+      not
+      change the basic nature of these terms of use.</p>
+    <p>13.4 No any of our phrase or phrases or behavior may be
+      construed as a waiver on our part of any right and shall not be considered as a relinquishment of the right.</p> &nbsp;
+  </div>  ]]>
+  </string>
+    <string name="session_expired">Session expired or logged in on a different device.</string>
+    <string name="exit_alert">Are you sure to exit application?</string>
+
+    <!--ID names-->
+    <string name="passport_id">Passport No.</string>
+    <string name="iqama_id">Iqama No.</string>
+    <string name="national_id">National ID No.</string>
+    <string name="birth_notification">Birth Notification</string>
+
+    <string name="delivery_number">Delivery Number</string>
+    <string name="delivery_date">Delivery Date</string>
+
+    <string name="discard_booking">Are you sure to discard appointment ?</string>
+    <string name="no_service_print">Device not supported print service</string>
+    <string name="pay_zero">*Currently you are not able to make payment at this time</string>
+
+    <string name="language">Language</string>
+    <string name="language_m">Language *</string>
+    <string name="please_try_again">Please try again</string>
+
+    <string name="total_lab_reports">Total Lab Reports:</string>
+
+    <string name="total_lab_radio">Total Radiology Reports:</string>
+    <string name="total_lab_sick">Total Sick Leaves:</string>
+
+    <string name="total_upcoming">Total Upcoming Appointments:</string>
+    <string name="total_completed">Total Completed Appointments:</string>
+    <string name="total_cancelled">Total Cancelled Appointments:</string>
+    <string name="total_no_show">Total No Show Appointments:</string>
+    <string name="profile_data_not_avalible">Profile data is not available</string>
+
+    <string name="clear_notifications">Are you sure to clear all notifications ?</string>
+    <string name="clear_all">Clear All</string>
+
+    <string name="time_passed_away">Your selected time is passed, please select future time.</string>
+    <string name="doctor_not_available">Sorry, this doctor is not available for appointment. For more information, please call our unified number %1$s .</string>
+    <string name="print">Print</string>
+    <string name="download">Download</string>
+    <string name="dr">DR.</string>
+    <string name="request_a_callback">Request a Callback</string>
+    <string name="complete_form_get_call">Complete a simple form and we will call you back in the next 24 hours.</string>
+    <string name="call_us_direct">Call Us</string>
+    <string name="call_us_content">Call us on %1$s where our Contact Center Team will be happy to assist.</string>
+    <string name="request_for_report">Request a Report</string>
+    <string name="complete_form_request_for_report">Complete a simple form and we will send your requested report via email.</string>
+    <string name="string_please_fill_empty">Please fill empty fields</string>
+
+    <!--ABOUT US-->
+
+    <string name="select_from">Select FROM date first</string>
+
+    <string name="health_summary">Health Summary</string>
+    <string name="view_health_summary">View your health summary in one place</string>
+
+
+    <!--Retail data-->
+    <string name="talah">Talah</string>
+    <string name="little_flower">Little Flower</string>
+    <string name="lavera">Lavera</string>
+    <string name="fine_chocolate">Godiva</string>
+    <string name="gardenia">Gardenia Florist </string>
+    <string name="baby_fitaihi">Baby Fitaihi</string>
+
+    <string name="talah_emp">Yasser</string>
+    <string name="little_flower_emp">Mounir</string>
+    <string name="lavera_emp">Bashir - Ayman - Noha</string>
+    <string name="fine_chocolate_emp">--</string>
+    <string name="gardenia_emp">Mohammed</string>
+    <string name="baby_fitaihi_emp">Ihsan - Promise</string>
+
+    <string name="sat_sun">Saturday-Thursday:</string>
+    <string name="contact">Contact:</string>
+    <string name="fridays">Friday:</string>
+    <string name="everyday">Everyday:</string>
+
+
+    <string name="employee">Employees</string>
+    <string name="open_time">Open Time</string>
+
+    <string name="gender">Gender</string>
+    <string name="gender_req">Gender *</string>
+
+    <string name="both">Both</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="unspecified">Unspecified</string>
+    <string name="sort_by">Sort By</string>
+
+    <string name="first_a_z">First Name ( A - Z )</string>
+    <string name="first_z_a">First Name ( Z - A )</string>
+    <string name="last_a_z">Last Name ( A - Z )</string>
+    <string name="last_z_a">Last Name ( Z - A )</string>
+
+    <string name="delivery_status">Delivery Status</string>
+    <string name="urgency">How to Use</string>
+
+    <!--<string name="urgency">Urgency</string>-->
+    <string name="description">Description</string>
+
+
+    <string name="consent_for_add_guardian"><![CDATA[<p>This Consent of the data subject means you are granting a user to access your all information including appointments, reports and personal information. When Guardian MR Number user logins into My IMC then he/she will be able to see your MR Number in dependent list and can switch to your MR Number. By switching MR Number your all detail will be accessible.</p>
+<p><strong>By adding and linking guardian below operations can be done by guardian:</strong></p>
+<ul style="list-style-type: circle;">
+<li>View all appointments</li>
+<li>View all reports.</li>
+<li>View Allergies.</li>
+<li>View Medication.</li>
+<li>View profile information.</li>
+<li>Request an appointment.</li>
+<li>Cancel and reschedule appointment.</li>
+</ul>
+<p><strong>Note</strong>: You can Link/Unlink or Remove guardian any time.</p>
+<p>&nbsp;</p>
+<p>By accepting this consent you are granting access to guardian to operate your records.</p>]]></string>
+    <!--This Consent of the data subject means any freely given, specific, informed and unambiguous indication of the data subject\'s wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her.</string>-->
+    <string name="active">Unlink Guardian</string>
+    <string name="inactive">Link Guardian</string>
+
+    <string name="guardian_name">Guardian Name</string>
+    <string name="guardian_detail">Guardian Detail</string>
+    <string name="switch_to_dependent">Switch to Dependent MRN</string>
+    <string name="switch_to_my">Switch to My MRN</string>
+    <string name="dependent_list">Select Dependent MR Number</string>
+
+    <string name="viewing_dependent">You are viewing dependent\'s records.</string>
+    <string name="remove_gurdian_content">Do you want to remove this Guardian?</string>
+    <string name="switch_to_dependent_content">Do you want to switch to %1$s Dependent MR Number?</string>
+    <string name="num_day_greater">Number of days shoukd be greater than 0</string>
+    <string name="edit_guardian_content">You can edit duration of guardian in edit option.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="update_available">New Version Available</string>
+    <string name="update_meaage">"My IMC Version %1$s is available on Play Store."</string>
+    <!--<string name="update_meaage">\nNew Version of MY IMC application is available on Play Store. Please update to get new features and improvements.\n</string>-->
+    <string name="update_now">Update Now</string>
+
+    <string name="report_type">Choose a report type *</string>
+    <string name="booking_id_date">Appointment Number and Date *</string>
+    <string name="booking_id_date_">Appointment Number and Date</string>
+
+    <string name="booking_date">Appointment Date *</string>
+    <string name="appointment_date_">Appointment Date:</string>
+    <string name="submission_date">Submission Date:</string>
+
+    <string name="subject">Subject</string>
+    <string name="select_report_type">Select report type</string>
+    <string name="select_appon_date_id">Select appointment number and date</string>
+    <string name="what_you_need">What type of report copies do you need?</string>
+    <string name="physical_copy">Physical Copy</string>
+    <string name="scanned_copy">Scanned Copy</string>
+    <string name="request_translation">Request for Translation</string>
+    <string name="request_translation_file">Please attach scanned copy of report* (Max 2 MB)</string>
+
+    <string name="general_report">General Report</string>
+    <string name="recent_visit_report">Recent Visit Report</string>
+    <string name="other_reports">Other Reports</string>
+
+    <string name="vital_signs">Patient Vital Signs</string>
+    <string name="view_vital_signs">View your vital signs and measurement in one place</string>
+
+    <string name="bmi">BMI</string>
+    <string name="bmi_cal">BMI Calculator</string>
+
+    <string name="temperature">Temperature</string>
+    <string name="pulse_rate">Pulse Rate</string>
+    <string name="bp">Blood Pressure</string>
+    <string name="respiratory">Respiratory Rate</string>
+    <string name="ox_gen">Oxygen Saturation</string>
+    <string name="bloos_sugar">Blood Sugar</string>
+    <string name="reading_date">Reading Date: </string>
+    <string name="vital_patient">Patient Vital Signs</string>
+    <string name="bee">BEE</string>
+    <string name="bsa">BSA</string>
+    <string name="ibw">IBW</string>
+    <string name="bmr">BMR</string>
+    <string name="bmr_cal">BMR Calculator</string>
+
+    <string name="vital_capacity">Vital Capacity</string>
+    <string name="ideal_body_weight">Ideal Body Weight</string>
+    <string name="sleep_cycle">Sleep Cycle</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="calculate">Calculate</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="age">Age</string>
+    <string name="activity_level">Please select your activity level</string>
+
+    <string name="bmi_under_weight">Your BMI is %1$s kg/m²\nYou are under weight.</string>
+    <string name="bmi_normal_weight">Your BMI is %1$s kg/m²\nYour weight is Normal.</string>
+    <string name="bmi_over_weight">Your BMI is %1$s kg/m²\nYou are over weight.</string>
+    <string name="bmi_obese_weight">Your BMI is %1$s kg/m²\nYour weight is Obese.</string>
+
+    <string name="level_sedentary">I am sedentary (little or no exercise)</string>
+    <string name="level_lightly">I am lightly active (light exercise or sports 1–3 days per week)</string>
+    <string name="level_moderately">I am moderately active (moderate exercise or sports 3–5 days per week)</string>
+    <string name="level_active">I am very active (hard exercise or sports 6–7 days per week)</string>
+    <string name="level_super">I am super active (very hard exercise or sports and a physical job)</string>
+    <string name="your_bmr">Your BMR</string>
+    <string name="maintenance_calory_per_day">Maintenance calories per day</string>
+    <string name="please_select_activity_level">Please select activity level</string>
+
+    <string name="option_one_bmi">0 – 18.5\nUnder</string>
+    <string name="option_two_bmi">18.6 – 24.9\nNormal</string>
+    <string name="option_three_bmi">25.0 – 29.9\nOver</string>
+    <string name="option_four_bmi">> 30.0\nObese</string>
+
+    <string name="ibw_cal">IBW Calculator</string>
+    <string name="age_validation">Please provide an age between 15 and 80</string>
+
+    <!--Medicine Reminder-->
+    <string name="reminder_noti_message">%1$s you need to take your medicine \'%2$s\'.</string>
+    <string name="medicine_reminder">Medicine Reminder</string>
+    <string name="select_time_schedule">Select schedule time</string>
+    <string name="select_at_least_one_time">Select at least one time of day</string>
+    <string name="select_at_least_one_day">Select at least one week day</string>
+    <string name="reminder_saved">Reminder saved</string>
+    <string name="select_end_date">Select end date</string>
+
+    <string name="once">Once</string>
+    <string name="hourly">Hourly</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="view_operative_reports">View reports of current and past surgeries</string>
+
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="no_of_hours">Number of hours</string>
+    <string name="booking_confirmed">Appointment Booked Successfully!</string>
+
+    <string name="tooltip_message"><![CDATA[Cancel, reschedule and more actions are now here]]></string>
+    <string name="location_not_accessible">Your location was not accessible, please try again</string>
+    <string name="app_email">Email</string>
+    <string name="app_email_value">xxxxxxx @</string>
+    <string name="app_verify">Verify</string>
+
+    <string name="select_a_visit">Select a visit*</string>
+
+    <string name="i_would_like_to_receive">I would like to receive it by email.</string>
+    <string name="receive_it_by_in_person">I would like to receive it in Person.</string>
+    <string name="full_name">Full Name*</string>
+    <string name="national_id_iquama">National ID/Iqama Number*</string>
+    <string name="dob_title">DOB*</string>
+    <string name="i_submitted">I, the submitter, certify that the information provided above is accurate to the best of my knowledge. I also aknowledge that if informtion is not correct, my request may be delayed or rejected.</string>
+    <!-- <string name="i_agree_to">I accept Terms &amp; Conditions and Privacy Policy.></string>-->
+    <string name="add_email">Add Email</string>
+    <string name="add_email_id">Add/Verify Email</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="make_sure">Make sure to use your own email address. This email will become tied to your medcial record.</string>
+    <string name="otp_title">OTP*</string>
+    <string name="enter_the_verification">Enter the verification code you received in your email.</string>
+    <string name="close"> Close </string>
+    <string name="detail_of_person">Details of person picking up the reports:</string>
+    <string name="i_agree_to">I accept Terms &amp; Conditions and Privacy Policy.</string>
+    <string name="order_no">Order ID:</string>
+    <string name="smart_report">Smart Report</string>
+    <string name="smart">Smart</string>
+    <string name="checked_in">Checked in</string>
+    <string name="physician_name">Ordered Doctor:</string>
+    <string name="visit_date">Collection Date and Time:</string>
+
+    <!--    Health And Fitness-->
+    <string name="health_fitness">Health &amp; Fitness</string>
+    <string name="health_and_fitness">Health &amp; Fitness</string>
+    <string name="apple_watch">Apple Watch</string>
+    <string name="android_watch">Smart Watch</string>
+    <string name="connected">Connected</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="health_features">Health Features</string>
+    <string name="activity">Activity</string>
+    <string name="heat_amp_vitals"><![CDATA[Heart & Vitals]]></string>
+    <string name="_6_7">6.7</string>
+    <string name="exercise">Exercise</string>
+    <string name="time">Time</string>
+    <string name="steps">steps</string>
+    <string name="hours">Hours</string>
+    <string name="sleep">Sleep</string>
+    <string name="cycle">Cycle</string>
+    <string name="heart">Heart</string>
+    <string name="rate">Rate</string>
+    <string name="body_measurements">Body Measurements</string>
+    <string name="today">Today</string>
+    <string name="height_amp_weight"><![CDATA[Height & Weight]]></string>
+    <string name="healthyweight">/HealthyWeight</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="blood_glucose">Blood Glucose</string>
+    <string name="blood_oxygen">Blood Oxygen</string>
+    <string name="body_temp">Body Temp</string>
+    <string name="set_sleep_target">Set sleep target</string>
+    <string name="record_manually">Record Manually</string>
+    <string name="calories">Calories</string>
+    <string name="burned">Burned</string>
+    <string name="steps_counter">Steps Counter</string>
+    <string name="walking_distance">Walking Distance</string>
+    <string name="mile">Mile</string>
+    <string name="km">kilometers</string>
+    <string name="move_minutes">Move Minutes</string>
+    <string name="_8000_goal">8000 Goal</string>
+    <string name="awake">Awake</string>
+    <string name="out_of_bed">Out Of Bed</string>
+    <string name="light">Light</string>
+    <string name="deep">Deep</string>
+    <string name="rem">REM</string>
+    <!--Emergency-->
+    <string name="emergency_call">Urgent Care</string>
+
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="deliveryOptions">
+        <item>Select Option</item>
+        <item>Home Delivery</item>
+        <item>Collect from OP Pharmacy</item>
+    </string-array>
+
+    <string-array name="hospitalsTempList">
+        <item>Select Hospital</item>
+        <item>MY IMC</item>
+        <item>First Clinic</item>
+        <item>PR</item>
+    </string-array>
+
+    <!--    Rate The Aap-->
+    <string name="rta_dialog_title">Rate this app</string>
+    <string name="rta_dialog_message">If you enjoy using this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thank you for your support!</string>
+    <string name="rta_dialog_ok">Rate now</string>
+    <string name="rta_dialog_cancel">Later</string>
+    <string name="rta_dialog_no">No, thanks</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="string_appointment">Appointment</string>
+    <string name="string_information">Information</string>
+    <string name="string_user_amp_payment"><![CDATA[User & Payment]]></string>
+    <string name="string_continue">Continue</string>
+    <string name="string_appointment_information">Appointment Information</string>
+    <string name="string_download_invoice">Download Invoice</string>
+    <string name="txt_healthcare">Home HealthCare</string>
+    <string name="txt_form_select_something">Please select at least one option to proceed</string>
+    <string name="txt_form_submitted">Form Submitted Successfully.</string>
+    <string name="txt_proceed">Proceed</string>
+    <string name="txt_total">Total</string>
+    <string name="txt_enter_home_address">Enter Home Address</string>
+    <string name="txt_select_all">Select All</string>
+    <string name="txt_deselect_all">DeSelect All</string>
+    <string name="txt_delivery_options">Select Delivery Options</string>
+
+    <string name="txt_in_process">In-process</string>
+    <string name="txt_approved">Approved</string>
+    <string name="txt_partial_approved">Partial Approved</string>
+    <string name="txt_reject">Reject</string>
+    <string name="session_exp">Session has been Expired</string>
+
+    <string name="txt_details">Details</string>
+    <string name="txt_duration">Duration</string>
+    <string name="txt_route">Route</string>
+    <string name="txt_dose">Dose</string>
+    <string name="txt_status">Status</string>
+    <string name="txt_insurance_status">Insurance Status</string>
+
+    <!--    SYSQUO-->
+
+
+    <string name="txt_payment_success_home_delivery">"Payment Successful.\nYour medication will be delivered to address saved in home delivery."</string>
+    <string name="txt_payment_success_op_pharmacy">"Payment successful.\nPlease collect your medication from OP Pharmacy."</string>
+
+    <string name="txt_success_home_delivery">Your Home delivery request is raised successfully. Your medication will be delivered to address saved in home delivery.</string>
+    <string name="txt_success_op_pharmacy">Medication Request raised successfully. Please collect your medication from OP Pharmacy.</string>
+    <string name="txt_out_of_stock">Out of Stock</string>
+    <string name="txt_unpaid">Unpaid</string>
+    <string name="txt_payment_pending">Payment Pending</string>
+    <string name="txt_paid">Paid</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="txt_healthcare_description">Tap on to request any home healthcare service from listed. Home Healthcare team will call you back as soon as the request received.</string>
+    <string name="enter_email_address">Enter Email Address</string>
+
+    <string name="txt_download_receipt">Download Receipt</string>
+    <string name="txt_success_download_receipt">Your Receipt was downloaded successfully.</string>
+
+    <string name="txt_orderId">Order Id</string>
+    <string name="txt_placed_on">Placed On</string>
+    <string name="txt_pharmacy_continue">Continue</string>
+    <string name="txt_search_for_place">Search for place</string>
+    <string name="pdf">PDF</string>
+
+    <string name="message_elipses">Write something</string>
+    <string name="app_send">Send</string>
+    <string name="generic_error">An error occurred, please try again</string>
+    <string name="loading_channels_message">Loading channel information</string>
+    <string name="new_channel_prompt">Enter a name for the new channel:</string>
+    <string name="login_user_progress_message">signing in…</string>
+    <string name="login_all_fields_required">All fields are required</string>
+    <string name="logo_text">logo</string>
+    <string name="twilio_first_line">A simple chat app built using the</string>
+    <string name="twilio_second_line">Twilio Chat API</string>
+    <string name="image_text">image</string>
+    <string name="login_button_text">Login</string>
+    <string name="username_placeholder">username</string>
+    <string name="doctor_name">Doctor Name *</string>
+    <string name="identityError">Please enter Identity / Patient Name</string>
+    <string name="doctorError">Please enter Doctor Name</string>
+    <string name="app_emergencyall">Emergency call</string>
+    <string name="app_add_your_symptoms">Add your symptoms</string>
+    <string name="app_whatCare">What type of care are you considering for these symptoms?</string>
+    <string name="app_doYouHaveSymptoms">Do you have any of the following symptoms?</string>
+    <string name="app_submit_call"><![CDATA[Submit & Call]]></string>
+    <string name="identity_username">Identity/ UserName *</string>
+    <string name="app_chat">Chat</string>
+    <string name="app_call_doctor">Call Doctor</string>
+    <string name="permissions_needed">Camera and Microphone permissions needed. Please allow in App Settings for additional functionality.</string>
+    <string name="room_screen_select_device">Select Device</string>
+    <string name="error_retrieving_access_token">Error retrieving token</string>
+    <string name="action_leave_channel">Leave channel</string>
+    <string name="action_delete_channel">Delete channel</string>
+
+    <string name="codec_title">Set your preferred audio and video codec. Not all codecs are supported with Group rooms. The media server will fallback to OPUS or VP8 if a preferred codec is not supported.</string>
+    <string name="pref_title_audio_codec">Audio Codec</string>
+    <string name="pref_title_video_codec">Video Codec</string>
+    <string name="sender_bandwidth_constraints">Set sender bandwidth constraints. Zero represents the WebRTC default value which varies by codec.</string>
+    <string name="max_audio_bitrate">Max Audio Bitrate (bits per second)</string>
+    <string name="max_video_bitrate">Max Video Bitrate (bits per second)</string>
+    <string name="vp8_simulcast">VP8 Simulcast</string>
+    <string name="audio_device">Audio Device</string>
+    <string name="title_activity_main_chat">General Channel</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="call">Call</string>
+    <string name="select_file">Select File</string>
+    <string name="fileSelectionError">You have selected an invalid file, please select a .pdf/imgae/text file</string>
+
+
+    <string name="text">text</string>
+    <string name="doctor_offline">Doctor is offline right now</string>
+    <string name="openSetting">You need to give permission in settings to allow access to all files. Please follow the path\n</string>
+    <string name="openSeetingPath">App manager>My IMC>storage>Allow management of all files</string>
+    <string name="informationMessage">Information  message</string>
+    <string name="fileNotExists">file not exists</string>
+    <string name="drAnotherCall">Please wait doctor is looking after another patient.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone_number_code">(+966)</string>
+
+
+    <string name="report_already_requested_ar">لديك بالفعل طلب بنفس النوع قيد التقدم.</string>
+    <string name="report_successfully_requested_ar">تم تقديم طلبك وستتم معالجته. ستستلمه في غضون خمسة (5) أيام عمل.</string>
+
+
+</resources>

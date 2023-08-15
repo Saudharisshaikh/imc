@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lay_lab_reports"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/background_home_option"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lab_icon" />
+
+            <TextView
+                android:id="@+id/tv_report_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/lab_reports"
+                android:textColor="@color/text_color_home_blue"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_lab_reports"
+                android:textColor="@color/text_grey_color"
+                android:textSize="@dimen/text_size_extra_small" />
+
+        </LinearLayout>
+
+</LinearLayout>

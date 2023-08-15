@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <EditText
+            android:id="@+id/edComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/iv_post_comment"
+            android:background="@color/colorWhite"
+            android:gravity="start|center_vertical"
+            android:hint="@string/type_here"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLines="3"
+            android:minLines="1"
+            android:padding="@dimen/_5sdp"
+            android:textColorHint="#a1a1a1"
+            android:textSize="@dimen/text_size_normal" />
+
+
+        <ImageView
+            android:id="@+id/iv_post_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/btn_language_background"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="@dimen/_8sdp"
+            android:scaleType="center"
+            android:src="@drawable/ic_send"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+

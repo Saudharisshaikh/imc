@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <ImageView
+                android:id="@+id/iv_back_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_close_blue" />
+
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="@string/confirm_payment"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/text_size_big"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_toolbar">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_toolbar"
+                android:layout_margin="@dimen/_8sdp"
+                android:elevation="@dimen/_3sdp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:id="@+id/lay_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/time_slot_bg"
+                    android:padding="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:id="@+id/lay_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".80"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/clinic_"
+                                android:textColor="@color/nav_title_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_clinic_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.20"
+                                android:padding="@dimen/_3sdp"
+                                android:textColor="@color/grey_dark_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".80"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/phyisician_"
+                                android:textColor="@color/nav_title_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_physician_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.20"
+                                android:padding="@dimen/_3sdp"
+                                android:textColor="@color/grey_dark_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".80"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/speciality"
+                                android:textColor="@color/nav_title_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_physician_speciality"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.20"
+                                android:padding="@dimen/_3sdp"
+                                android:textColor="@color/grey_dark_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".80"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/appointment_date"
+                                android:textColor="@color/nav_title_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.20">
+
+                                <TextView
+                                    android:id="@+id/tv_appointment_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_3sdp"
+                                    android:textColor="@color/grey_dark_color"
+                                    android:textSize="@dimen/text_size_normal"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".80"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/appointment_time"
+                                android:textColor="@color/nav_title_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.20">
+
+                                <TextView
+                                    android:id="@+id/tv_appointment_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_3sdp"
+                                    android:textColor="@color/grey_dark_color"
+                                    android:textSize="@dimen/text_size_normal"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".80"
+                                android:padding="@dimen/_3sdp"
+                                android:text="@string/appointment_type"
+                                android:textColor="@color/nav_title_color"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.20">
+
+                                <TextView
+                                    android:id="@+id/tv_appointment_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_3sdp"
+                                    android:textColor="@color/grey_dark_color"
+                                    android:textSize="@dimen/text_size_normal"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".80"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/patient_pay"
+                                    android:textColor="@color/nav_title_color"
+                                    android:textSize="@dimen/text_size_normal"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.20">
+
+                                    <TextView
+                                        android:id="@+id/tv_patient_pay"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="@dimen/_3sdp"
+                                        android:textColor="@color/grey_dark_color"
+                                        android:textSize="@dimen/text_size_normal"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".80"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/patient_discount"
+                                    android:textColor="@color/nav_title_color"
+                                    android:textSize="@dimen/text_size_normal"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.20">
+
+                                    <TextView
+                                        android:id="@+id/tv_patient_discount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="@dimen/_3sdp"
+                                        android:textColor="@color/grey_dark_color"
+                                        android:textSize="@dimen/text_size_normal"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".80"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/patient_vat"
+                                    android:textColor="@color/nav_title_color"
+                                    android:textSize="@dimen/text_size_normal"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.20">
+
+                                    <TextView
+                                        android:id="@+id/tv_patient_vat"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="@dimen/_3sdp"
+                                        android:textColor="@color/grey_dark_color"
+                                        android:textSize="@dimen/text_size_normal"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".80"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/appointment_price"
+                                    android:textColor="@color/nav_title_color"
+                                    android:textSize="@dimen/text_size_normal"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.20">
+
+                                    <TextView
+                                        android:id="@+id/tv_appointment_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="@dimen/_3sdp"
+                                        android:textColor="@color/grey_dark_color"
+                                        android:textSize="@dimen/text_size_normal"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_line_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/lay_b"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/grey_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_line_top"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv_pay_cash"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_sign_up"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/pay_and_checkin"
+                            android:textColor="@color/button_click_text_white_blue"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/tv_cancel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bt_login_guest"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/cancel"
+                            android:textColor="@color/app_blue"
+                            android:textSize="@dimen/text_size_small" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

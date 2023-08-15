@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_home_icon"
+        android:title="@string/dashboard_menu" />
+
+    <item
+        android:id="@+id/nav_retail"
+        android:icon="@drawable/ic_retails_icon"
+        android:title="@string/retail"
+        android:visible="true" />
+
+    <item
+        android:visible="false"
+        android:id="@+id/nav_documents"
+        android:icon="@drawable/ic_documents_icon"
+        android:title="@string/documents_menu" />
+
+    <item
+        android:visible="false"
+        android:id="@+id/nav_medical_cards"
+        android:icon="@drawable/ic_medical_cards_icon"
+        android:title="@string/medical_cards_menu" />
+
+    <item
+        android:visible="true"
+        android:id="@+id/nav_add_guardian"
+        android:icon="@drawable/ic_add_guardian_icon"
+        android:title="@string/add_guardian_menu" />
+
+    <item
+        android:visible="false"
+        android:id="@+id/nav_my_orders"
+        android:icon="@drawable/ic_orders"
+        android:title="@string/my_orders" />
+
+    <item
+        android:visible="false"
+        android:id="@+id/nav_health_calculators"
+        android:icon="@drawable/ic_health_calculate"
+        android:title="@string/health_calculators" />
+
+    <item
+        android:visible="false"
+        android:id="@+id/nav_heath_care"
+        android:icon="@drawable/ic_pdfresizer_com_pdf_crop"
+        android:title="@string/txt_healthcare" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings_icon"
+        android:title="@string/settings_menu" />
+
+    <item
+        android:id="@+id/nav_about_us"
+        android:icon="@drawable/ic_about_us_icon"
+        android:title="@string/about_us_menu" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_help_menu_icon"
+        android:title="@string/help_menu" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout_menu" />
+
+
+</menu>

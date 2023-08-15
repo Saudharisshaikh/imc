@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_65sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_line_top"
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:background="@color/app_green" />
+
+        <ImageView
+            android:id="@+id/iv_dot"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_below="@+id/view_line_top"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:src="@drawable/green_dot_bg" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/iv_dot"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:background="@color/app_green" />
+
+        <LinearLayout
+            android:id="@+id/lay_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/iv_dot"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Ordered"
+                android:textColor="@color/grey_dark_color"
+                android:textSize="@dimen/text_size_normal" />
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_3sdp"
+                android:paddingEnd="@dimen/_3sdp"
+                android:text="Thu, 15 Aug 2019"
+                android:textColor="@color/nav_title_color"
+                android:textSize="@dimen/text_size_extra_small" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

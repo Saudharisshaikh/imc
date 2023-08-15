@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color"
+    tools:context="sa.med.imc.myimc.Departments.view.DepartmentDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/_3sdp"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardPreventCornerOverlap="true">
+
+
+                        <ImageView
+                            android:id="@+id/iv_depart"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_200sdp"
+                            android:scaleType="centerCrop" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_department_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_top"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="@dimen/_8sdp"
+                        android:textColor="@color/text_blue_color"
+                        android:textSize="@dimen/text_size_extra_big"
+                        android:textStyle="bold" />
+
+                    <WebView
+                        android:scrollbars="none"
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:background="@color/transparent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_department_name"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/label"
+                        android:layout_below="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/phyisician"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:textColor="@color/text_blue_color"
+                        android:textSize="@dimen/text_size_extra_big"
+                        android:textStyle="bold" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_doctors"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/label"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:clipToPadding="false"
+                        android:paddingBottom="@dimen/_40sdp" />
+
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/content_no_network" />
+
+    <include layout="@layout/content_time_out" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_back_blue" />
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/design_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/telemedcinice_consent_form"
+                android:textColor="#005497"
+                android:textSize="@dimen/text_size_big"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_toolbar"
+            android:clipToPadding="false"
+            android:fadeScrollbars="false"
+            android:paddingBottom="@dimen/_50sdp"
+            android:scrollbarSize="@dimen/_4sdp"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_i_agree"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_consent"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/i_agree"
+                        android:textColor="@color/button_click_text_white_blue"
+                        android:textSize="@dimen/text_size_normal" />
+
+
+                    <TextView
+                        android:id="@+id/tv_i_disagree"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt_disagree"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:text="@string/i_disagree"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+
+                <!--                   <TextView-->
+                <!--                       android:layout_below="@+id/tv_content"-->
+                <!--                    android:id="@+id/tccc"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+                <!--                    android:layout_marginStart="@dimen/_10sdp"-->
+                <!--                    android:layout_marginTop="@dimen/_5sdp"-->
+                <!--                    android:text="@string/do_you_suffer"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="@dimen/text_size_normal"-->
+                <!--                    android:textStyle="bold" />-->
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_15sdp" />
+
+                <WebView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:justificationMode="inter_word"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:textColor="@color/grey_dark_color"
+                    android:textSize="@dimen/text_size_normal"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

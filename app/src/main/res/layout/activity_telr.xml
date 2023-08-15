@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_bg_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:background="@drawable/ic_blue_style_bg_v_calen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/steps"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/appointment_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ProgressBar
+                android:id="@+id/progressBarOneStar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="100"
+                android:progressTint="@color/app_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.rey.material.widget.ImageView
+                android:id="@+id/tick"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:src="@drawable/tick_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/string_appointment"
+                android:textColor="@color/app_green"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/tick"
+                app:layout_constraintStart_toStartOf="@+id/tick"
+                app:layout_constraintTop_toBottomOf="@+id/progressBarOneStar" />
+
+            <com.rey.material.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_information"
+                android:textColor="@color/app_green"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/user"
+                app:layout_constraintStart_toStartOf="@+id/user"
+                app:layout_constraintTop_toBottomOf="@+id/user" />
+
+            <com.rey.material.widget.ImageView
+                android:id="@+id/tickGrey"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_70sdp"
+                android:src="@drawable/tick_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/Payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/string_user_amp_payment"
+                android:textColor="@color/app_green"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/tickGrey"
+                app:layout_constraintStart_toStartOf="@+id/tickGrey"
+                app:layout_constraintTop_toBottomOf="@+id/progressBarOneStar" />
+
+            <com.rey.material.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_information"
+                android:textColor="@color/app_green"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/Payment"
+                app:layout_constraintStart_toStartOf="@+id/Payment"
+                app:layout_constraintTop_toBottomOf="@+id/Payment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/appointment_background"
+            app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/steps">
+
+        </WebView>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:background="#005497"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingTop="@dimen/_4sdp"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabTextAppearance="@style/MineCustomTabText"
+            app:tabTextColor="@color/grey_color_menu">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/tabs1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentBottom="true"
+                android:background="#005497"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tabGravity="fill"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="0dp"
+                app:tabPaddingStart="0dp"
+                app:tabPaddingTop="@dimen/_4sdp"
+                app:tabSelectedTextColor="@color/colorWhite"
+                app:tabTextAppearance="@style/MineCustomTabText"
+                app:tabTextColor="@color/grey_color_menu"
+                tools:layout_editor_absoluteX="0dp">
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/homeimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/ic_home_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tabs1" />
+
+            <TextView
+                android:id="@+id/hometv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/homeimage"
+                app:layout_constraintStart_toStartOf="@+id/homeimage"
+                app:layout_constraintTop_toBottomOf="@id/homeimage" />
+
+            <ImageView
+                android:id="@+id/record1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/ic_records_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/homeimage"
+                app:layout_constraintTop_toTopOf="@id/tabs1" />
+
+            <TextView
+                android:id="@+id/Recordtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="@string/records"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/record1"
+                app:layout_constraintStart_toStartOf="@+id/record1" />
+
+            <ImageView
+                android:id="@+id/appoint_center_button"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:src="@drawable/ic_appointment_center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/record1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appointment"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tabs1"
+                app:layout_constraintEnd_toEndOf="@+id/appoint_center_button"
+                app:layout_constraintStart_toStartOf="@+id/appoint_center_button"
+                app:layout_constraintTop_toBottomOf="@+id/appoint_center_button" />
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mayoimage"
+                app:layout_constraintTop_toTopOf="@id/tabs1"
+                app:srcCompat="@drawable/ic_profile_icon" />
+
+            <TextView
+                android:id="@+id/profiletv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="@string/profile"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/profileImage"
+                app:layout_constraintStart_toStartOf="@+id/profileImage" />
+
+            <ImageView
+                android:id="@+id/mayoimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/mayo"
+                app:layout_constraintStart_toEndOf="@+id/appoint_center_button"
+                app:layout_constraintTop_toTopOf="@+id/tabs1" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="@string/mayo_clinic"
+                android:textColor="@color/grey_color_menu"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mayoimage"
+                app:layout_constraintStart_toStartOf="@+id/mayoimage" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

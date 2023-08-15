@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View.OnClickListener"/>
+        <variable
+            name="name"
+            type="String" />
+        <variable
+            name="email"
+            type="String" />
+        <variable
+            name="phone"
+            type="String" />
+        <variable
+            name="submitClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/white_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:text="@{name}"
+            android:hint="@string/enter_name"
+            android:padding="10dp"
+            android:background="@drawable/input_enter_sms_code_background"
+            android:id="@+id/etSubmittedFor"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <EditText
+            android:text="@{email}"
+            android:inputType="textEmailAddress"
+            android:hint="@string/enter_email_address"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/input_enter_sms_code_background"
+            android:id="@+id/etEmail"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/etSubmittedFor"
+            />
+
+
+        <EditText
+            android:text="@{phone}"
+            android:inputType="phone"
+            android:hint="@string/enter_phone_number"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/input_enter_sms_code_background"
+            android:id="@+id/etPhoneNumber"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/etEmail"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="@{submitClick}"
+            android:layout_marginTop="10dp"
+            android:id="@+id/placeOrder"
+            android:background="@drawable/rounded_btn"
+            app:layout_constraintTop_toBottomOf="@id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/string_continue"
+            android:textColor="@color/white"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

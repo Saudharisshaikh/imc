@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_3sdp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardPreventCornerOverlap="true">
+
+    <RelativeLayout
+        android:id="@+id/lay_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/time_slot_bg"
+        android:gravity="center"
+        android:paddingStart="@dimen/_2sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_15sdp">
+
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_image"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textColor="@color/text_blue_color"
+            android:textSize="@dimen/text_size_normal" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

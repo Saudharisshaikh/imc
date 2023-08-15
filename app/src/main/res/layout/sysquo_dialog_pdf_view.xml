@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:layout_gravity="center|start"
+        android:gravity="center|start"
+        android:background="#005497">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_record"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_back_blue"
+            app:tint="@color/white" />
+        <TextView
+            android:id="@+id/textPdfFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pdf Heading"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal"/>
+    </LinearLayout>
+<com.github.barteksc.pdfviewer.PDFView
+    android:id="@+id/PdfView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center" />
+</LinearLayout>
